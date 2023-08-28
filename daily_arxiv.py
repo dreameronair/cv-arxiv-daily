@@ -113,6 +113,10 @@ def get_daily_papers(topic,query="slam", max_results=2):
         update_time         = result.updated.date()
         comments            = result.comment
 
+        # replace author to abstract
+        paper_first_author = paper_abstract
+
+      
         logging.info(f"Time = {update_time} title = {paper_title} author = {paper_first_author}")
 
         # eg: 2108.09112v1 -> 2108.09112
