@@ -23,8 +23,10 @@ md_wechat_path: './docs/wechat.md'
 # keywords to search
 keywords:
     "3D": 
-        filters: ["Computational Geometry", "Graphics", "Computer Vision and Pattern Recognition", "NeRF", "3D Reconstruction"]
+        filters: ["Mesh", "Rendering", "SDF", "MVS", "MultiView", "Multiple Views", "NVS", "View Synthesis"]
     "3D Reconstruction": 
-        filters: ["3D Reconstruction"]
+        filters: ["3D Reconstruction", "MVS"]
+    "Diffusion": 
+        filters: ["Diffusion"]
     "NeRF":
         filters: ["NeRF"]
