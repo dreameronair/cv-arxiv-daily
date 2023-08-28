@@ -43,6 +43,7 @@ jobs:
           pip install arxiv
           pip install requests
           pip install pyyaml
+          pip install git+https://github.com/17097239132/baidu-translate.git
           
       - name: Run daily arxiv 
         run: |
