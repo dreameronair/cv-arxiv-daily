@@ -23,7 +23,7 @@ md_wechat_path: './docs/wechat.md'
 # keywords to search
 keywords:
     "3D": 
-        filters: ["Mesh", "Rendering", "SDF", "MVS", "MultiView", "Multiple Views", "NVS", "View Synthesis"]
+        filters: ["3D", "Mesh", "Rendering", "SDF", "MVS", "MultiView", "Multiple Views", "NVS", "View Synthesis"]
     "3D Reconstruction": 
         filters: ["3D Reconstruction", "MVS"]
     "Diffusion": 
