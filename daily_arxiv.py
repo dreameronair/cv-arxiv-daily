@@ -7,6 +7,7 @@ import logging
 import argparse
 import datetime
 import requests
+import baidu_translate as fanyi
 
 logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S',
@@ -114,7 +115,7 @@ def get_daily_papers(topic,query="slam", max_results=2):
         comments            = result.comment
 
         # replace author to abstract
-        paper_first_author = paper_abstract
+        paper_first_author = fanyi.translate_text(paper_abstract)
 
       
         logging.info(f"Time = {update_time} title = {paper_title} author = {paper_first_author}")
