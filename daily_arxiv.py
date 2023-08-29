@@ -228,7 +228,7 @@ def update_json_file(filename,data_dict):
         if not content:
             m = {}
         else:
-            m = json.loads(content)
+            m = {}  #json.loads(content) #No need for old papers
             
     json_data = m.copy() 
     
