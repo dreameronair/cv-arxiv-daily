@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.08.31
+## Updated on 2023.09.01
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -41,7 +41,7 @@
 |**2023-08-23**|**Information Theory-Guided Heuristic Progressive Multi-View Coding**|多视图表示学习旨在从共享上下文的多个视图中获取综合信息。最近的工作以成对的方式将对比学习直观地应用于不同的视图，这仍然是可扩展的：在学习视图共享表示时，视图特定的噪声没有被过滤；假负对，其中负项实际上与正项在同一类中，而真负对被同等对待；均匀地测量术语之间的相似性可能会干扰优化。重要的是，很少有作品研究广义自监督多视角学习的理论框架，尤其是两种以上的视角。为此，我们从信息论的角度重新思考了现有的多视角学习范式，并提出了一个新的广义多视角学习的信息理论框架。在此基础上，我们构建了一种具有三层渐进结构的多视图编码方法，即信息论引导的分层渐进多视图编码（IPMC）。在分布层中，IPMC将视图之间的分布对齐，以减少视图特定的噪声。在设置层中，IPMC构建自调整对比池，并通过视图过滤器进行自适应修改。最后，在实例层，我们采用设计的统一损失来学习表示，并减少梯度干扰。从理论和经验上，我们证明了IPMC优于最先进的方法。 et.al.|[2308.10522](http://arxiv.org/abs/2308.10522)|null|
 |**2023-08-19**|**ControlCom: Controllable Image Composition using Diffusion Model**|图像合成的目标是从一对前景图像和背景图像合成逼真的合成图像。最近，考虑到生成合成方法在图像生成中的巨大潜力，在大型预训练扩散模型的基础上建立了生成合成方法来生成合成图像。然而，它们在前景属性上缺乏可控制性，前景身份保存较差。为了应对这些挑战，我们提出了一种可控的图像合成方法，该方法将四个任务统一在一个扩散模型中：图像混合、图像协调、视图合成和生成合成。同时，我们设计了一个自我监督的训练框架，并结合了一个量身定制的训练数据准备管道。此外，我们提出了一个局部增强模块来增强扩散模型中的前景细节，提高了合成图像的前景保真度。在公共基准和真实世界的数据上对所提出的方法进行了评估，这表明我们的方法可以生成比现有方法更忠实和可控的合成图像。代码和型号将在https://github.com/bcmi/ControlCom-Image-Composition. et.al.|[2308.10040](http://arxiv.org/abs/2308.10040)|**[link](https://github.com/bcmi/controlcom-image-composition)**|
 
-<p align=right>(<a href=#updated-on-20230831>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230901>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -68,7 +68,7 @@
 |**2023-08-17**|**Deep Learning Framework for Spleen Volume Estimation from 2D Cross-sectional Views**|异常脾脏肿大（脾肿大）被认为是一系列疾病的临床指标，包括肝脏疾病、癌症和血液疾病。虽然从超声图像中测量的脾脏长度是脾脏大小的常用替代品，但脾脏体积仍然是评估脾肿大和相关临床状况严重程度的金标准。计算机断层扫描是测量脾脏体积的主要成像方式，但在脾肿大发病率高的地区（如全球南部），它不太容易获得。我们的目标是通过二维横截面分割实现脾脏体积的自动测量，这可以从超声成像中获得。在这项研究中，我们描述了一种基于变分自动编码器的框架，用于从单视图或双视图2D脾脏分割中测量脾脏体积。我们在此框架内提出并评估了三种体积估计方法。我们还展示了如何产生体积估计的95%置信区间，使我们的方法在临床上更有用。我们的最佳模型在单视图和双视图分割中分别实现了86.62%和92.58%的平均相对体积准确率，超过了使用手动测量的线性回归临床标准方法和基于比较深度学习的2D-3D重建方法的性能。所提出的脾脏体积估计框架可以集成到目前使用2D超声图像来测量脾脏长度的标准临床工作流程中。据我们所知，这是第一项从2D脾脏分割中直接实现3D脾脏体积估计的工作。 et.al.|[2308.08038](http://arxiv.org/abs/2308.08038)|null|
 |**2023-08-17**|**ObjectSDF++: Improved Object-Compositional Neural Implicit Surfaces**|近年来，神经隐式表面重建已成为多视图三维重建的一种流行范式。与传统的多视图立体方法不同，基于神经隐式表面的方法利用神经网络将3D场景表示为符号距离函数（SDF）。然而，它们往往忽略场景中单个对象的重建，这限制了它们的性能和实际应用。为了解决这个问题，以前的工作ObjectSDF引入了一个很好的对象组合神经隐式曲面框架，该框架利用2D实例掩码来监督单个对象的SDF。在本文中，我们提出了一个名为ObjectSDF++的新框架来克服ObjectSDF的局限性。首先，与ObjectSDF相比，ObjectSDF的性能主要受其转换的语义场的限制，我们模型的核心组件是一个感知遮挡的对象不透明度渲染公式，该公式直接对要使用实例掩码进行监督的对象不透明进行体绘制。其次，我们设计了一个新的正则化项来区分对象，它可以有效地缓解ObjectSDF由于缺乏防止碰撞的约束而可能在不可见区域中导致意外重建的问题。我们的大量实验表明，我们的新框架不仅产生了优越的对象重建结果，而且显著提高了场景重建的质量。可以在\url中找到代码和更多资源{https://qianyiwu.github.io/objectsdf++} et.al.|[2308.07868](http://arxiv.org/abs/2308.07868)|**[link](https://github.com/qianyiwu/objectsdf_plus)**|
 
-<p align=right>(<a href=#updated-on-20230831>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230901>back to top</a>)</p>
 
 ## Diffusion
 
@@ -95,7 +95,7 @@
 |**2023-08-30**|**Asymptotics for Short Maturity Asian Options in a Jump-Diffusion model with Local Volatility**|我们研究了具有局部波动性成分的跳跃-扩散模型中亚洲期权的短期到期渐近性，其中跳跃被建模为复合泊松过程，该过程后来扩展到L’vy跳跃，其中包括作为特例的指数L’｛e｝vy模型。固定和浮动打击亚洲选项都被考虑。对于文献中流行的几个模型：Merton跳跃扩散模型、双指数跳跃模型和方差Gamma模型，得到了亚洲期权价格的一阶渐近性的显式结果。我们提出了一个满足短期渐近约束的亚洲期权价格的分析近似，并用蒙特卡罗模拟对其进行了检验。对于足够小的成熟度，渐近结果与数值模拟非常一致。 et.al.|[2308.15672](http://arxiv.org/abs/2308.15672)|null|
 |**2023-08-29**|**Non-local Interactions are Essential Elements for Dark Matter Halo Stability: A Cross-Model Study**|本文介绍了一种检查暗物质（DM）晕稳定性的综合方法，强调了非局部粒子间相互作用的必要性，无论它们在本质上是基本的还是有效的，以保持晕的稳定性。我们强调了无香草冷碰撞DM模型在预测稳定光环时的不足，而没有考虑光环有效自由能中的“非局部”相互作用，这可能是由重子反馈、自相互作用或暗粒子的固有量子特性等因素引起的。稳定性的先决条件需要光环内任何两点之间的显著有效相互作用，无论它们与中心的距离如何。本文提出的方法提供了一个系统的框架来仔细检查各种DM模型的稳定性并细化它们的参数空间。我们推断，模型中的DM晕，与标准的无冷碰撞框架的偏差仅限于晕中心附近的区域，不太可能在其外部区域表现出稳定性。在我们的研究中，我们证明了DM晕内的不稳定性问题不能使用微扰量子效应来充分解决。对于费米子DM来说，这个问题不那么明显，但在考虑玻色子DM时，它的严重程度更高。我们发现，由具有显著量子效应的玻色子制成的晕具有尖锐的边缘，而由费米子制成的晕则显示出向无穷大延伸的更扩散的边界。我们还探索了在选定的质量轮廓周围有效自由能的最广泛形式。 et.al.|[2308.15592](http://arxiv.org/abs/2308.15592)|null|
 
-<p align=right>(<a href=#updated-on-20230831>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230901>back to top</a>)</p>
 
 ## NeRF
 
@@ -122,7 +122,7 @@
 |**2023-08-24**|**Strivec: Sparse Tri-Vector Radiance Fields**|我们提出了Strivec，这是一种新的神经表示，它将3D场景建模为具有稀疏分布和紧凑因子分解的局部张量特征网格的辐射场。在最近的工作TensoRF之后，我们的方法利用张量分解来对张量网格进行建模。与使用全局张量并专注于向量矩阵分解的TensoRF不同，我们建议使用局部张量云，并应用经典的CANDECOMP/PARAFAC（CP）分解将每个张量分解为三个向量，这些向量表示沿空间轴的局部特征分布，并对局部神经场进行紧凑编码。我们还应用多尺度张量网格来发现几何和外观的共性，并在多个局部尺度上利用三向量分解来利用空间相干性。通过聚集来自所有尺度上的多个局部张量的神经特征来回归最终的辐射场特性。我们的三向量张量稀疏地分布在实际场景表面周围，这是通过利用3D场景的稀疏性进行快速粗略重建发现的。我们证明，我们的模型可以实现更好的渲染质量，同时使用比以前的方法（包括TensoRF和Instant NGP）更少的参数。 et.al.|[2307.13226](http://arxiv.org/abs/2307.13226)|**[link](https://github.com/zerg-overmind/strivec)**|
 |**2023-07-21**|**EndoSurf: Neural Surface Reconstruction of Deformable Tissues with Stereo Endoscope Videos**|从立体内窥镜视频重建软组织是许多医学应用的必要前提。以前的方法由于对3D场景的表示不足，难以产生高质量的几何体和外观。为了解决这个问题，我们提出了一种新的基于神经场的方法，称为EndoSurf，它可以有效地从RGBD序列中学习表示变形表面。在EndoSurf中，我们用三个神经场对表面动力学、形状和纹理进行建模。首先，使用变形场将3D点从观测空间转换到规范空间。然后，符号距离函数（SDF）场和辐射场分别预测它们的SDF和颜色，利用它们可以通过可微分体绘制合成RGBD图像。我们通过剪裁多个正则化策略并解开几何和外观来约束所学习的形状。在公共内窥镜数据集上的实验表明，EndoSurf显著优于现有解决方案，尤其是在重建高保真形状方面。代码可在https://github.com/Ruyi-Zha/endosurf.git. et.al.|[2307.11307](http://arxiv.org/abs/2307.11307)|**[link](https://github.com/ruyi-zha/endosurf)**|
 
-<p align=right>(<a href=#updated-on-20230831>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230901>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
