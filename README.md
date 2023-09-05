@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.09.04
+## Updated on 2023.09.05
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-08-22**|**Enhancing NeRF akin to Enhancing LLMs: Generalizable NeRF Transformer with Mixture-of-View-Experts**|跨场景可推广的NeRF模型可以直接合成看不见场景的新视图，已成为NeRF领域的一个新焦点。现有的几种尝试依赖于越来越端到端的“神经化”架构，即用变压器等高性能神经网络取代场景表示和/或渲染模块，并将新颖的视图合成转化为前馈推理管道。虽然这些前馈“神经化”架构仍然不能很好地开箱即用地适应不同的场景，但我们建议将它们与来自大型语言模型（LLM）的强大的专家混合（MoE）思想联系起来，该思想通过在更大的整体模型容量和灵活的每实例专业化之间进行平衡，展示了卓越的泛化能力。从最近一种名为GNT的可推广NeRF架构开始，我们首先证明了MoE可以巧妙地插入以增强模型。我们进一步定制了共享的永久专家和几何体感知的一致性损失，以分别增强跨场景一致性和空间平滑性，这对于可推广的视图合成至关重要。我们提出的模型被称为GNT with Mixture-of-View-Experts（GNT-MOVE），在转移到看不见的场景时，实验显示了最先进的结果，表明在零样本和少拍摄设置中都有更好的跨场景泛化。我们的代码可在https://github.com/VITA-Group/GNT-MOVE. et.al.|[2308.11793](http://arxiv.org/abs/2308.11793)|**[link](https://github.com/vita-group/gnt-move)**|
 |**2023-08-22**|**IT3D: Improved Text-to-3D Generation with Explicit View Synthesis**|从强大的大型文本到图像扩散模型（LDM）中提取知识，推动了文本到3D技术的最新进展。尽管如此，现有的文本到3D方法经常会遇到诸如过度饱和、细节不足和不切实际的输出等挑战。这项研究提出了一种新的策略，利用显式合成的多视图图像来解决这些问题。我们的方法涉及利用LDM授权的图像到图像管道，以基于粗略3D模型的渲染生成高质量的图像。尽管生成的图像在很大程度上缓解了上述问题，但由于大扩散模型固有的生成性质，诸如视图不一致和显著的内容差异等挑战仍然存在，这给有效利用这些图像带来了巨大的困难。为了克服这一障碍，我们主张将鉴别器与新的扩散GAN双重训练策略相结合，以指导3D模型的训练。对于合并的鉴别器，合成的多视图图像被视为真实数据，而优化的3D模型的渲染则充当假数据。我们进行了一系列全面的实验，证明了我们的方法相对于基线方法的有效性。 et.al.|[2308.11473](http://arxiv.org/abs/2308.11473)|**[link](https://github.com/buaacyw/it3d-text-to-3d)**|
 
-<p align=right>(<a href=#updated-on-20230904>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230905>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-08-27**|**Sparse3D: Distilling Multiview-Consistent Diffusion for Object Reconstruction from Sparse Views**|从极其稀疏的视图重建3D对象是一个长期存在且具有挑战性的问题。虽然最近的技术使用图像扩散模型来在新视点生成看似合理的图像，或者使用分数蒸馏采样（SDS）将预先训练的扩散先验提取到3D表示中，但这些方法通常难以同时实现新视点合成（NVS）和几何体的高质量、一致和详细的结果。在这项工作中，我们提出了Sparse3D，这是一种为稀疏视图输入量身定制的新型3D重建方法。我们的方法从多视点一致扩散模型中提取鲁棒先验，以细化神经辐射场。具体来说，我们使用了一个控制器，该控制器利用输入视图中的核线特征，引导预先训练的扩散模型，如稳定扩散，以生成与输入保持3D一致性的新视图图像。通过利用强大的图像扩散模型中的2D先验，我们的集成模型即使在面对开放世界对象时也能始终如一地提供高质量的结果。为了解决传统SDS引入的模糊性，我们引入了类别分数蒸馏采样（C-SDS）来增强细节。我们在CO3DV2上进行了实验，这是一个真实世界对象的多视图数据集。定量和定性评估都表明，我们的方法在NVS和几何重建方面优于以往最先进的工作。 et.al.|[2308.14078](http://arxiv.org/abs/2308.14078)|null|
 |**2023-08-27**|**Multi-plane denoising diffusion-based dimensionality expansion for 2D-to-3D reconstruction of microstructures with harmonized sampling**|获得可靠的微观结构数据集是借助集成计算材料工程（ICME）方法进行材料系统设计的关键一步。然而，由于高实验成本或技术限制，获得三维（3D）微观结构数据集通常具有挑战性，而获得二维（2D）显微照片相对更容易。为了解决这个问题，本研究提出了一种使用基于扩散的生成模型（DGM）进行微观结构二维到三维重建的新框架，称为Micro3Diff。具体而言，这种方法仅需要预先训练的DGM来生成2D样本，并且维度扩展（2D到3D）仅在生成过程（即反向扩散过程）中发生。所提出的框架结合了一个称为多平面去噪扩散的新概念，该概念将来自不同平面的噪声样本（即潜在变量）转换为数据结构，同时保持3D空间中的空间连通性。此外，还开发了一个协调的采样过程，以解决在维度扩展过程中DGM的反向马尔可夫链的可能偏差。结合起来，我们证明了Micro3Diff在重建具有连接切片的3D样本方面的可行性，这些切片在形态学上与原始2D图像保持等效。为了验证Micro3Diff的性能，重建了各种类型的微观结构（合成和实验观察），并对生成的样品的质量进行了定性和定量评估。成功的重建结果激发了Micro3Diff在即将到来的ICME应用中的潜在应用，同时在理解和操纵DGM的潜在空间方面取得了突破。 et.al.|[2308.14035](http://arxiv.org/abs/2308.14035)|null|
 
-<p align=right>(<a href=#updated-on-20230904>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230905>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-09-01**|**Fast Diffusion EM: a diffusion model for blind inverse problems with application to deconvolution**|使用扩散模型来求解逆问题是一个日益增长的研究领域。目前的方法假设退化是已知的，并在恢复质量和多样性方面提供了令人印象深刻的结果。在这项工作中，我们利用这些模型的效率来联合估计退化模型的恢复图像和未知参数。特别地，我们设计了一种基于众所周知的期望最小化（EM）估计方法和扩散模型的算法。我们的方法在使用从扩散模型中提取的样本来近似逆问题的预期对数似然性和估计未知模型参数的最大化步骤之间交替。对于最大化步骤，我们还引入了一种新的基于即插即用去噪器的模糊核正则化。扩散模型运行时间很长，因此我们提供了算法的快速版本。与其他最先进的方法相比，在盲图像去模糊方面的大量实验证明了我们的方法的有效性。 et.al.|[2309.00287](http://arxiv.org/abs/2309.00287)|null|
 |**2023-09-01**|**Data-driven Topology Optimization of Channel Flow Problems**|典型的拓扑优化方法需要复杂的迭代计算，无法满足快速计算应用的要求。研究神经网络是为了减少计算优化结果的时间，然而，流体拓扑优化的数据驱动方法很少被讨论。本文旨在介绍一种神经网络结构，该结构避免了耗时的迭代过程，并对Stokes流的拓扑优化具有较强的泛化能力。对已经成功用于固体结构优化问题的不同神经网络方法进行了变异，并针对流体拓扑优化情况进行了检验，包括卷积神经网络（CNN）、条件生成对抗性网络（cGAN）和去噪扩散隐式模型（DDIM）。将所提出的神经网络方法应用于Stokes流的通道流拓扑优化问题。结果表明，我们提出的方法具有较高的像素精度，与传统方法相比，我们的执行时间平均减少了663倍。 et.al.|[2309.00278](http://arxiv.org/abs/2309.00278)|null|
 
-<p align=right>(<a href=#updated-on-20230904>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230905>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-08-21**|**Canonical Cortical Field Theories**|我们根据场论，使用放置在皮层表面2D晶格上的神经单元来表征神经元活动的动力学。分析神经元单元的电活动，目的是推导出一个具有简单功能形式的神经场模型，该模型仍然能够预测或重现经验发现。使用神经质量对每个神经单元进行建模，并在连续极限中导出伴随的场论。场论包括耦合的（真实的）克莱因-戈登场，其中模型的预测属于实验结果的范围。这些预测包括从皮层测量的电活动频谱，该频谱是使用能量对神经场本征函数的平分得出的。此外，神经场模型在一组参数内对用于建模每个神经元质量的动力学系统是不变的。具体而言，拓扑等效的动力学系统在连接到晶格中时产生相同的神经场模型；这表明所导出的场可以被解读为典型的皮层场论。我们专门研究了为传入信息的编码（或表示）提供结构的非分散场。进一步阐述随后的神经场理论，包括分散力的影响，对于理解皮层对信息的处理可能具有重要意义。 et.al.|[2308.10645](http://arxiv.org/abs/2308.10645)|null|
 |**2023-08-14**|**S3IM: Stochastic Structural SIMilarity and Its Unreasonable Effectiveness for Neural Fields**|最近，神经辐射场（NeRF）通过学习仅使用姿态RGB图像的隐式表示，在渲染给定场景的新视图图像方面取得了巨大成功。NeRF和相关的神经场方法（例如，神经表面表示）通常优化逐点损失并进行逐点预测，其中一个数据点对应于一个像素。不幸的是，这一研究未能使用对远处像素的集体监督，尽管已知图像或场景中的像素可以提供丰富的结构信息。据我们所知，我们是第一个通过一种新的随机结构相似性（S3IM）损失为NeRF和相关神经场方法设计非局部多重训练范式的人，该损失将多个数据点作为一个整体处理，而不是独立处理多个输入。我们的大量实验证明了S3IM在几乎免费改进NeRF和神经表面表示方面的不合理有效性。质量度量的改进对于那些相对困难的任务可能特别显著：例如，TensoRF和DVGO在八个新的视图合成任务中的测试MSE损失意外下降了90%以上；在八个表面重建任务中，NeuS的198%F分数增益和64%的倒角$L_。此外，即使在稀疏输入、损坏图像和动态场景的情况下，S3IM也始终是稳健的。 et.al.|[2308.07032](http://arxiv.org/abs/2308.07032)|**[link](https://github.com/madaoer/s3im_nerf)**|
 
-<p align=right>(<a href=#updated-on-20230904>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230905>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
