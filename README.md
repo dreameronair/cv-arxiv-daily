@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.09.07
+## Updated on 2023.09.08
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-08-27**|**Depth self-supervision for single image novel view synthesis**|在本文中，我们解决了在给定单个帧作为输入的情况下从任意视点生成新图像的问题。虽然在这种设置中操作的现有方法旨在预测目标视图深度图以指导合成，但在没有明确监督此类任务的情况下，我们共同优化了新视图合成和深度估计的框架，以最大限度地释放两者之间的协同作用。具体地，以自监督的方式训练共享深度解码器，以预测在源视图和目标视图中一致的深度图。我们的结果证明了我们的方法在解决这两项任务的挑战方面的有效性，这两项工作允许生成更高质量的图像，并为目标视点提供更准确的深度。 et.al.|[2308.14108](http://arxiv.org/abs/2308.14108)|**[link](https://github.com/johnminelli/twowaysynth)**|
 |**2023-08-27**|**Sparse3D: Distilling Multiview-Consistent Diffusion for Object Reconstruction from Sparse Views**|从极其稀疏的视图重建3D对象是一个长期存在且具有挑战性的问题。虽然最近的技术使用图像扩散模型来在新视点生成看似合理的图像，或者使用分数蒸馏采样（SDS）将预先训练的扩散先验提取到3D表示中，但这些方法通常难以同时实现新视点合成（NVS）和几何体的高质量、一致和详细的结果。在这项工作中，我们提出了Sparse3D，这是一种为稀疏视图输入量身定制的新型3D重建方法。我们的方法从多视点一致扩散模型中提取鲁棒先验，以细化神经辐射场。具体来说，我们使用了一个控制器，该控制器利用输入视图中的核线特征，引导预先训练的扩散模型，如稳定扩散，以生成与输入保持3D一致性的新视图图像。通过利用强大的图像扩散模型中的2D先验，我们的集成模型即使在面对开放世界对象时也能始终如一地提供高质量的结果。为了解决传统SDS引入的模糊性，我们引入了类别分数蒸馏采样（C-SDS）来增强细节。我们在CO3DV2上进行了实验，这是一个真实世界对象的多视图数据集。定量和定性评估都表明，我们的方法在NVS和几何重建方面优于以往最先进的工作。 et.al.|[2308.14078](http://arxiv.org/abs/2308.14078)|null|
 
-<p align=right>(<a href=#updated-on-20230907>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230908>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-09-01**|**Dense Voxel 3D Reconstruction Using a Monocular Event Camera**|事件摄像机是受生物系统启发，专门捕捉亮度变化的传感器。与传统的基于帧的相机相比，这些新兴相机具有许多优势，包括高动态范围、高帧率和极低功耗。由于这些优势，事件摄像机越来越多地应用于各个领域，如帧插值、语义分割、里程计和SLAM。然而，它们在VR应用的3D重建中的应用还没有得到充分的探索。该领域以前的方法主要集中在通过深度图估计进行三维重建。产生密集3D重建的方法通常需要多个相机，而利用单个事件相机的方法只能产生半密集的结果。可以产生密集3D重建的其他单相机方法依赖于创建管道，该管道结合了上述方法或其他现有的运动结构（SfM）或多视图立体（MVS）方法。在本文中，我们提出了一种仅使用单个事件相机来解决密集三维重建的新方法。据我们所知，我们的工作是这方面的第一次尝试。我们的初步结果表明，所提出的方法可以直接产生视觉上可区分的密集三维重建，而不需要像现有方法那样使用管道。此外，我们还使用事件相机模拟器创建了一个合成数据集，其中包含39739$的对象扫描。该数据集将有助于加速该领域的其他相关研究。 et.al.|[2309.00385](http://arxiv.org/abs/2309.00385)|null|
 |**2023-09-01**|**On the Localization of Ultrasound Image Slices within Point Distribution Models**|甲状腺疾病最常见的诊断方法是使用高分辨率超声（US）。纵向结节追踪是监测甲状腺病理形态变化的关键诊断方案。然而，由于维持器官的心理3D重建的固有挑战，这项任务给临床医生带来了巨大的认知负荷。因此，我们提出了一个在3D形状表示中自动定位US图像切片的框架，以简化如何进行这种超声诊断。我们提出的方法通过对比度量学习，学习US图像块和个人甲状腺形状的3D表面之间的共同潜在嵌入空间，或统计形状模型（SSM）形式的统计聚合。使用跨模态配准和Procrustes分析，我们利用模型中的特征将US切片配准为甲状腺形状的3D网格表示。我们证明了我们的多模态配准框架可以在患者特定器官的3D表面拓扑结构和SSM的平均形状上定位图像。实验结果表明，在患者特定的3D解剖结构上，切片位置可以在距离地面实况切片位置平均1.2毫米和SSM平均4.6毫米的范围内预测，这证明了其在超声采集期间对切片定位的有用性。代码公开：\href{https://github.com/vuenc/slice-to-shape}{https://github.com/vuenc/slice-to-shape} et.al.|[2309.00372](http://arxiv.org/abs/2309.00372)|null|
 
-<p align=right>(<a href=#updated-on-20230907>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230908>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-09-06**|**Time-dependent properties of run-and-tumble particles. II.: Current fluctuations**|我们研究了 $L$站点环上运行和翻滚粒子（RTP）的两个模型中的稳态电流波动，对于\textit｛任意｝翻滚速率$\gamma＝\tau_p^｛-1｝$和密度$\rho$；模型I由标准的硬核RTP组成，而模型II是模型I的一种可分析处理的变体，称为长程晶格气体（LLG）。我们证明，在$L$大的极限下，在$T\gg 1/D$的时间间隔内，累积电流$Q_i（T，L）$在第$i$个债券上的波动首先随$T$次扩散｝，然后随$T$$扩散｝（线性）增长，其中$D$是体扩散系数。值得注意的是，无论模型细节如何，作为标度变量$y=DT/L^2$的函数的标度债券电流波动$D\langle Q_i^2（T，L）\rangle/2\chi L\equiv｛\cal W｝（y）$塌陷到｛\ccal W｝｛\cl W｝｝（y）$上，其中$\chi（\rho，\gamma）$是集体粒子的迁移率。在小密度和翻滚速率$\rho，\gamma\rightarrow0$的极限下，$\psi=\rho/\gamma$固定，存在一个标度定律：标度迁移率$\gamma^{a}\chi（\rho、\gamma）/\chi^{（0）}\equiv｛\cal H｝，并且$\chi^{（0）}$是对称简单排除过程（SSEP）的极限情况下的迁移率。对于模型II（LLG），我们在截断方案中精确计算缩放函数${\cal W}（y）$和${\cl H}（\psi）$。我们还计算了电流的空间相关函数，并将我们的理论与模型I的模拟结果进行了比较；对于这两个模型，相关函数呈指数衰减，相关长度$\neneneba xi \sim\taup^｛1/2｝$随着持续时间$\taup\gg 1$ 而发散。总的来说，我们的理论与模拟非常一致，并补充了参考文献的发现。 et.al.|[2309.02896](http://arxiv.org/abs/2309.02896)|null|
 |**2023-09-06**|**Stochastic modelling of cosmic ray sources for diffuse high-energy gamma-rays and neutrinos**|能量高达几个PeV的宇宙射线被认为是银河系起源的，但单个来源尚未明确。由于与星际气体的非弹性碰撞，宇宙射线核产生高能伽马射线和中微子的扩散通量。费米LAT提供了GeV能量下的星系伽马射线图，这些伽马射线可以由强子和轻子过程产生。另一方面，中微子完全由备受追捧的强子过程产生，但它们只能在数百TeV的背景下被探测到。通常，扩散发射图是从GeV到PeV能量推断出来的，但在这两种能量下的贡献源可能不同。考虑到源的离散性质，我们用蒙特卡罗方法模拟了GeV通过PeV能量产生的扩散发射。我们可以在几秒钟内实现漫射天空，从而能够表征方向和能量的相关性。在数百TeV的情况下，与LHAASO、西藏AS伽马、冰立方和即将到来的SWGO的观测相关，不同实现之间的差异相当大。具体来说，我们证明了从GeV到PeV能量的扩散发射的外推一定是失败的，并将我们的结果应用于最近的实验发现。 et.al.|[2309.02860](http://arxiv.org/abs/2309.02860)|null|
 
-<p align=right>(<a href=#updated-on-20230907>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230908>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-08-22**|**Approaching human 3D shape perception with neurally mappable models**|人类毫不费力地推断出物体的三维形状。这种能力的基础是什么计算？尽管已经提出了各种计算模型，但它们都没有捕捉到人类在不同视点之间匹配物体形状的能力。在这里，我们询问是否以及如何缩小这一差距。我们从一类相对新颖的计算模型3D神经场开始，它通过深度神经网络（DNN）中的合成封装了经典分析的基本原理。首先，我们发现3D光场网络（3D-LFN）支持与人类完全一致的3D匹配判断，用于类别内比较、强调标准DNN模型的3D失败情况的对抗性定义比较，以及用于无类别结构的算法生成形状的对抗性定义比较。然后，我们通过一系列计算实验研究了3D-LFN实现人类对齐性能的能力来源。在训练过程中暴露于物体的多个视角和多视角学习目标是模型-人对齐背后的主要因素；当使用多视图目标进行训练时，即使是传统的DNN架构也更接近人类行为。最后，我们发现，虽然用多视图学习目标训练的模型能够部分推广到新的对象类别，但它们不能达到人类的一致性。这项工作为理解可神经映射的计算架构中的人形推断提供了基础，并突出了未来工作的重要问题。 et.al.|[2308.11300](http://arxiv.org/abs/2308.11300)|null|
 |**2023-08-21**|**Canonical Cortical Field Theories**|我们根据场论，使用放置在皮层表面2D晶格上的神经单元来表征神经元活动的动力学。分析神经元单元的电活动，目的是推导出一个具有简单功能形式的神经场模型，该模型仍然能够预测或重现经验发现。使用神经质量对每个神经单元进行建模，并在连续极限中导出伴随的场论。场论包括耦合的（真实的）克莱因-戈登场，其中模型的预测属于实验结果的范围。这些预测包括从皮层测量的电活动频谱，该频谱是使用能量对神经场本征函数的平分得出的。此外，神经场模型在一组参数内对用于建模每个神经元质量的动力学系统是不变的。具体而言，拓扑等效的动力学系统在连接到晶格中时产生相同的神经场模型；这表明所导出的场可以被解读为典型的皮层场论。我们专门研究了为传入信息的编码（或表示）提供结构的非分散场。进一步阐述随后的神经场理论，包括分散力的影响，对于理解皮层对信息的处理可能具有重要意义。 et.al.|[2308.10645](http://arxiv.org/abs/2308.10645)|null|
 
-<p align=right>(<a href=#updated-on-20230907>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230908>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
