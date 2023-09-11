@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.09.10
+## Updated on 2023.09.11
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-08-28**|**Flexible Techniques for Differentiable Rendering with 3D Gaussians**|快速、可靠的形状重建是许多计算机视觉应用中的重要组成部分。Neural Radiance Fields证明，真实感的新视图合成是触手可及的，但受到真实场景和对象快速重建性能要求的限制。最近的一些方法建立在替代形状表示的基础上，特别是3D高斯。我们开发了这些渲染器的扩展，例如集成可微分光流、导出防水网格和渲染每光线法线。此外，我们还展示了最近的两种方法是如何相互操作的。这些重建快速、稳健，并且可以在GPU或CPU上轻松执行。有关代码和可视化示例，请参见https://leonidk.github.io/fmb-plus et.al.|[2308.14737](http://arxiv.org/abs/2308.14737)|null|
 |**2023-08-27**|**Depth self-supervision for single image novel view synthesis**|在本文中，我们解决了在给定单个帧作为输入的情况下从任意视点生成新图像的问题。虽然在这种设置中操作的现有方法旨在预测目标视图深度图以指导合成，但在没有明确监督此类任务的情况下，我们共同优化了新视图合成和深度估计的框架，以最大限度地释放两者之间的协同作用。具体地，以自监督的方式训练共享深度解码器，以预测在源视图和目标视图中一致的深度图。我们的结果证明了我们的方法在解决这两项任务的挑战方面的有效性，这两项工作允许生成更高质量的图像，并为目标视点提供更准确的深度。 et.al.|[2308.14108](http://arxiv.org/abs/2308.14108)|**[link](https://github.com/johnminelli/twowaysynth)**|
 
-<p align=right>(<a href=#updated-on-20230910>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230911>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-09-05**|**TiAVox: Time-aware Attenuation Voxels for Sparse-view 4D DSA Reconstruction**|四维数字减影血管造影（4D DSA）在许多医学疾病的诊断中起着至关重要的作用，如动静脉畸形（AVM）和动静脉瘘（AVF）。尽管4D DSA的重建具有重要的应用价值，但它需要大量的视图来有效地模拟复杂的血管和放射造影流，从而意味着显著的辐射剂量。为了解决这个高辐射问题，我们提出了一种用于稀疏视图4D DSA重建的时间感知衰减体素（TiAVox）方法，为高质量的4D成像铺平了道路。此外，可以从重建的4D DSA图像生成2D和3D DSA成像结果。TiAVox引入了4D衰减体素网格，从空间和时间维度反映衰减特性。它通过最小化渲染图像和稀疏2D DSA图像之间的差异来进行优化。在没有任何神经网络参与的情况下，TiAVox享有特定的物理可解释性。每个可学习体素的参数表示衰减系数。我们在临床和模拟数据集上验证了TiAVox方法，在临床来源的数据集上仅使用30个视图，就实现了31.23的新视图合成峰值信噪比（PSNR），而传统的Feldkamp-Davis-Kress方法需要133个视图。类似地，在合成数据集中只有10个视图的情况下，TiAVox对于新视图合成产生了34.32的PSNR，对于3D重建产生了41.40的PSNR。我们还进行了消融研究，以证实TiAVox的主要成分。该代码将公开提供。 et.al.|[2309.02318](http://arxiv.org/abs/2309.02318)|null|
 |**2023-09-05**|**Iterative Superquadric Recomposition of 3D Objects from Multiple Views**|人类善于重组新物体，即他们可以识别未知物体之间的共性，从一般结构到更精细的细节，这是机器难以复制的能力。我们提出了一个框架ISCO，在不训练使用3D监督的模型的情况下，直接从2D视图使用3D超二次曲面作为语义部分来重新组合对象。为了实现这一点，我们优化了组成对象特定实例的超二次曲面参数，比较了其渲染的3D视图和2D图像轮廓。我们的ISCO框架在重建误差高的地方迭代地添加新的超二次曲面，首先提取目标对象的粗略区域，然后提取目标对象更精细的细节。通过这种简单的从粗到细的归纳偏差，ISCO为相关的对象部分提供了一致的超二次曲面，尽管没有任何语义监督。由于ISCO不训练任何神经网络，因此它对分布外的对象也具有固有的鲁棒性。实验表明，与最近的单实例超二次曲面重建方法相比，ISCO提供了持续更准确的3D重建，即使是从野外图像中也是如此。代码可在https://github.com/ExplainableML/ISCO。 et.al.|[2309.02102](http://arxiv.org/abs/2309.02102)|null|
 
-<p align=right>(<a href=#updated-on-20230910>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230911>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-09-07**|**Diffuse gamma-ray emission around the Rosette Nebula**|玫瑰星云是一个年轻的星团和分子云复合体，位于中年SNR Monoceros环（G205.5+0.5）的南壳边缘。我们使用超过13年的费米LAT数据重新研究了玫瑰星云的GeV伽马射线发射。我们测试了几个空间模型，发现与仅使用CO气体模板的结果相比，包含HII气体模板可以显著提高似然拟合。我们使用新的空间模板进行了光谱分析。利用伽马射线观测和CO+HII气体数据，我们导出了玫瑰星云附近不同成分的宇宙射线光谱。我们发现玫瑰星云的伽马射线发射比之前报道的要困难得多，这可能意味着玫瑰星云是另一个发射伽马射线的年轻大质量星团的例子。 et.al.|[2309.03577](http://arxiv.org/abs/2309.03577)|null|
 |**2023-09-07**|**Text2Control3D: Controllable 3D Avatar Generation in Neural Radiance Fields using Geometry-Guided Text-to-Image Diffusion Model**|ControlNet等扩散模型的最新进展使几何可控、高保真的文本到图像生成成为可能。然而，它们都没有解决将这种可控性添加到文本到三维生成中的问题。作为回应，我们提出了Text2Control3D，这是一种可控的文本到3D化身生成方法，在手持相机随意拍摄的单眼视频中，其面部表情是可控的。我们的主要策略是在神经辐射场（NeRF）中构建3D化身，该神经辐射场使用我们从ControlNet生成的一组可控视点感知图像进行优化，ControlNet的条件输入是从输入视频中提取的深度图。在生成视点感知图像时，我们利用交叉注意力通过交叉注意力注入控制良好的、参考性的面部表情和外观。我们还对扩散模型的高斯潜像进行低通滤波，以改善我们从经验分析中观察到的视点不可知的纹理问题，其中视点感知图像在相同的像素位置上包含在3D中无法理解的相同纹理。最后，为了使用视点感知但在几何结构上不严格一致的图像来训练NeRF，我们的方法将每个图像的几何变化视为来自共享3D规范空间的变形视图。因此，我们通过经由变形字段表学习一组每图像变形来在可变形NeRF的规范空间中构造3D化身。我们展示了实证结果，并讨论了我们的方法的有效性。 et.al.|[2309.03550](http://arxiv.org/abs/2309.03550)|null|
 
-<p align=right>(<a href=#updated-on-20230910>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230911>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-08-24**|**NeO 360: Neural Fields for Sparse View Synthesis of Outdoor Scenes**|最近的隐式神经表示在新的视图合成中显示出了很好的结果。然而，现有的方法需要从许多视图进行昂贵的每场景优化，因此限制了它们在真实世界的无边界城市环境中的应用，在这些环境中，从极少数视图观察到感兴趣的对象或背景。为了缓解这一挑战，我们引入了一种名为NeO360的新方法，用于户外场景稀疏视图合成的神经场。NeO 360是一种可推广的方法，它从单个或几个摆出姿势的RGB图像重建360｛\deg｝场景。我们方法的本质是捕捉复杂的真实世界户外3D场景的分布，并使用可以从任何世界点查询的混合图像条件三平面表示。我们的表示结合了基于体素和鸟瞰图（BEV）的最佳表示，比每种表示都更有效、更具表现力。NeO 360的表示使我们能够从大量无界3D场景中学习，同时在推理过程中从一张图像中提供对新视图和新场景的可推广性。我们在所提出的具有挑战性的360｛\deg｝无界数据集NeRDS 360上演示了我们的方法，并表明NeO 360在新视图合成方面优于最先进的可推广方法，同时还提供编辑和合成功能。项目页面：https://zubair-irshad.github.io/projects/neo360.html et.al.|[2308.12967](http://arxiv.org/abs/2308.12967)|**[link](https://github.com/zubair-irshad/NeO-360)**|
 |**2023-08-23**|**Semantic-Aware Implicit Template Learning via Part Deformation Consistency**|学习隐式模板作为神经场最近在无监督形状对应方面表现出了令人印象深刻的性能。尽管取得了成功，但我们观察到，目前仅依赖几何信息的方法往往会在具有高结构可变性的通用物体形状中学习次优变形。在本文中，我们强调了零件变形一致性的重要性，并提出了一个语义感知的隐式模板学习框架，以实现语义上合理的变形。通过利用自监督特征提取器的语义先验，我们建议使用新的语义感知变形代码进行局部条件调节，并对零件变形、全局变形和全局缩放进行变形一致性正则化。我们的大量实验证明了所提出的方法在各种任务中优于基线：关键点转移、零件标签转移和纹理转移。更有趣的是，我们的框架在更具挑战性的环境下显示出更大的性能提升。我们还提供了定性分析来验证语义感知变形的有效性。代码可在https://github.com/mlvlab/PDC. et.al.|[2308.11916](http://arxiv.org/abs/2308.11916)|null|
 
-<p align=right>(<a href=#updated-on-20230910>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230911>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
