@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.09.11
+## Updated on 2023.09.12
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-08-29**|**Pose-Free Neural Radiance Fields via Implicit Pose Regularization**|无姿态神经辐射场（NeRF）旨在用未经处理的多视图图像训练NeRF，近年来取得了令人印象深刻的成功。大多数现有工作共享一个管道，首先用渲染图像训练粗略的姿态估计器，然后联合优化估计的姿态和神经辐射场。然而，由于姿态估计器仅用渲染图像进行训练，由于真实图像和渲染图像之间的域间隙，姿态估计通常对真实图像有偏差或不准确，导致真实图像的姿态估计鲁棒性差，并且在联合优化中存在进一步的局部最小值。我们设计了IR NeRF，这是一种创新的无姿态NeRF，它引入了隐式姿态正则化来改进未聚焦真实图像的姿态估计器，并提高了真实图像姿态估计的鲁棒性。通过特定场景的2D图像的集合，IR NeRF构建了一个场景码本，该场景码本存储场景特征，并隐式地捕捉特定场景的姿势分布作为先验。因此，根据只有当2D真实图像的估计姿势位于姿势分布内时才可以从场景码本很好地重建2D真实图像这一原理，可以利用场景先验来提高姿势估计的鲁棒性。大量实验表明，IR NeRF实现了卓越的新视图合成，并在多个合成和真实数据集上始终优于最先进的视图合成。 et.al.|[2308.15049](http://arxiv.org/abs/2308.15049)|null|
 |**2023-08-28**|**CLNeRF: Continual Learning Meets NeRF**|新颖的视图合成旨在呈现给定一组校准图像的看不见的视图。在实际应用中，场景的覆盖范围、外观或几何结构可能会随着时间的推移而变化，不断捕捉新的图像。有效地整合这种持续的变化是一个公开的挑战。标准NeRF基准测试仅涉及场景覆盖范围的扩展。为了研究其他实际的场景变化，我们提出了一个新的数据集，即跨时间世界（WAT），由外观和几何结构随时间变化的场景组成。我们还提出了一种简单而有效的方法CLNeRF，它将连续学习（CL）引入到神经辐射场（NeRF）中。CLNeRF结合了生成回放和即时神经图形原件（NGP）架构，以有效防止灾难性遗忘，并在新数据到达时有效更新模型。我们还向NGP添加了可训练的外观和几何嵌入，允许单个紧凑模型处理复杂的场景变化。在不需要存储历史图像的情况下，在变化场景的多次扫描上顺序训练的CLNeRF与在一次所有扫描上训练的上界模型性能相当。与其他CL基线相比，CLNeRF在标准基准和WAT上的表现要好得多。源代码和WAT数据集可在https://github.com/IntelLabs/CLNeRF.视频演示可在以下网址获得：https://youtu.be/nLRt6OoDGq0?si=8yD6k-8MMBJInQP et.al.|[2308.14816](http://arxiv.org/abs/2308.14816)|**[link](https://github.com/intellabs/clnerf)**|
 
-<p align=right>(<a href=#updated-on-20230911>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230912>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-09-05**|**TiAVox: Time-aware Attenuation Voxels for Sparse-view 4D DSA Reconstruction**|四维数字减影血管造影（4D DSA）在许多医学疾病的诊断中起着至关重要的作用，如动静脉畸形（AVM）和动静脉瘘（AVF）。尽管4D DSA的重建具有重要的应用价值，但它需要大量的视图来有效地模拟复杂的血管和放射造影流，从而意味着显著的辐射剂量。为了解决这一高辐射问题，我们提出了一种用于稀疏视图4D DSA重建的时间感知衰减体素（TiAVox）方法，为高质量的4D成像铺平了道路。此外，可以从重建的4D DSA图像生成2D和3D DSA成像结果。TiAVox引入了4D衰减体素网格，从空间和时间维度反映衰减特性。它通过最小化渲染图像和稀疏2D DSA图像之间的差异来进行优化。在没有任何神经网络参与的情况下，TiAVox享有特定的物理可解释性。每个可学习体素的参数表示衰减系数。我们在临床和模拟数据集上验证了TiAVox方法，在临床来源的数据集上仅使用30个视图，就实现了31.23的新视图合成峰值信噪比（PSNR），而传统的Feldkamp-Davis-Kress方法需要133个视图。类似地，在合成数据集中只有10个视图的情况下，TiAVox对于新视图合成产生了34.32的PSNR，对于3D重建产生了41.40的PSNR。我们还进行了消融研究，以证实TiAVox的主要成分。该代码将公开提供。 et.al.|[2309.02318](http://arxiv.org/abs/2309.02318)|null|
 |**2023-09-05**|**Iterative Superquadric Recomposition of 3D Objects from Multiple Views**|人类善于重组新物体，即他们可以识别未知物体之间的共性，从一般结构到更精细的细节，这是机器难以复制的能力。我们提出了一个框架ISCO，在不训练使用3D监督的模型的情况下，直接从2D视图使用3D超二次曲面作为语义部分来重新组合对象。为了实现这一点，我们优化了组成对象特定实例的超二次曲面参数，比较了其渲染的3D视图和2D图像轮廓。我们的ISCO框架在重建误差高的地方迭代地添加新的超二次曲面，首先提取目标对象的粗略区域，然后提取目标对象更精细的细节。通过这种简单的从粗到细的归纳偏差，ISCO为相关的对象部分提供了一致的超二次曲面，尽管没有任何语义监督。由于ISCO不训练任何神经网络，因此它对分布外的对象也具有固有的鲁棒性。实验表明，与最近的单实例超二次曲面重建方法相比，ISCO提供了持续更准确的3D重建，即使是从野外图像中也是如此。代码可在https://github.com/ExplainableML/ISCO。 et.al.|[2309.02102](http://arxiv.org/abs/2309.02102)|**[link](https://github.com/explainableml/isco)**|
 
-<p align=right>(<a href=#updated-on-20230911>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230912>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-09-08**|**The role of tumbling in bacterial scattering at convex obstacles**|由细菌和Janus颗粒进行的主动推进，结合流体动力学相互作用，导致细菌在平壁上积聚。然而，在具有足够小半径的圆柱形柱的微流体设备中，自推进颗粒可以沿着柱的表面滑动并散射，而不会被长期捕获。与经历经典镜面反射的粒子不同，这种非平衡散射过程被预测会导致大的扩散率，即使在高障碍物密度下也是如此。在这里，我们通过实验研究推进器状游泳者在微流体障碍物晶格中的非平衡散射来测试这一预测。为了探索翻滚在散射过程中的作用，我们用显微镜追踪了从微流体柱上散射的大肠杆菌的野生型（奔跑和翻滚）和平滑游动（仅奔跑）突变体。我们量化了关键散射参数，并将其与之前提出的模型联系起来，其中包括扩散率的预测，讨论了它们的相关性。最后，我们讨论了翻滚在散射过程中作用的潜在解释，并将我们的工作与对多孔介质中游泳者的更广泛研究联系起来。 et.al.|[2309.04326](http://arxiv.org/abs/2309.04326)|null|
 |**2023-09-08**|**Universal diffusion of dendrimers in a semidilute solution of linear polymers**|用布朗动力学模拟方法研究了树枝状大分子在类似尺寸线性链的半稀释溶液中的静态和动态性质。各种低生成树枝状聚合物和线性链在溶液中的回转半径和扩散率遵循普遍的比例定律，与它们的拓扑结构无关。对树枝状聚合物的形状函数和内部密度的分析表明，它们比直链更球形，并且具有致密的核。在中间阶段，树枝状聚合物变得亚扩散，其指数高于之前报道的半稀释聚合物溶液中纳米颗粒的指数。树枝状大分子的长期扩散率并没有遵循纳米颗粒的理论预测。我们提出了一种新的树枝状聚合物长时间扩散系数的标度定律，该定律解释了与纳米颗粒不同，树枝状聚合物随着背景溶液浓度的增加而收缩的事实。对更高官能度树枝状聚合物的特殊情况的性质分析表明，从类似聚合物的行为转变为类似纳米颗粒的行为。 et.al.|[2309.04290](http://arxiv.org/abs/2309.04290)|null|
 
-<p align=right>(<a href=#updated-on-20230911>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230912>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-08-30**|**NSF: Neural Surface Fields for Human Modeling from Monocular Depth**|从单眼相机获得个性化的3D可动画化化身在游戏、虚拟试穿、动画和VR/XR等领域有几个现实世界的应用。然而，从这种稀疏的数据中建模动态和细粒度的服装变形是非常具有挑战性的。现有的从深度数据建模3D人类的方法在计算效率、网格一致性以及分辨率和拓扑结构的灵活性方面具有局限性。例如，使用隐式函数重建形状和每帧提取显式网格在计算上是昂贵的，并且不能确保跨帧的连贯网格。此外，在具有离散表面的预先设计的人类模板上预测每个顶点的变形在分辨率和拓扑结构上缺乏灵活性。为了克服这些局限性，我们提出了一种新的方法“关键特征：神经表面场”，用于从单目深度对穿着3D衣服的人类进行建模。NSF仅在基面上定义了一个神经场，该神经场对连续和灵活的位移场进行建模。NSF可以适应不同分辨率和拓扑结构的基面，而无需在推理时进行重新训练。与现有方法相比，我们的方法在保持网格一致性的同时消除了昂贵的每帧表面提取，并且能够在不重新训练的情况下重建任意分辨率的网格。为了促进这方面的研究，我们在项目页面上发布了我们的代码：https://yuxuan-xue.com/nsf. et.al.|[2308.14847](http://arxiv.org/abs/2308.14847)|null|
 |**2023-08-28**|**A Transformer-Conditioned Neural Fields Pipeline with Polar Coordinate Representation for Astronomical Radio Interferometric Data Reconstruction**|在射电天文学中，能见度数据是对射电望远镜波信号的测量，被转换成图像，用于观测遥远的天体。然而，由于信号稀疏性和其他因素，这些结果图像通常包含真实源和伪影。获得更干净图像的一种方法是在成像之前将样本重建成致密的形式。不幸的是，现有的可见性重建方法可能会错过频率数据的一些分量，因此模糊的对象边缘和持久的伪影仍然存在于图像中。此外，由于数据偏斜，在不规则可见性样本上的计算开销很高。为了解决这些问题，我们提出了PolarRec，这是一种干涉能见度数据的重建方法，它由具有极坐标表示的变压器条件神经场管道组成。这种表示与望远镜在地球自转时观察天体区域的方式相匹配。我们进一步提出了径向频率损失函数，使用极坐标系中的径向坐标与频率信息进行关联，以帮助重建完整的可见性。我们还根据极坐标系中的角坐标对可见性采样点进行分组，并使用分组作为随后使用Transformer编码器进行编码的粒度。因此，我们的方法可以有效地捕捉可见性数据的固有特征。我们的实验表明，PolarRec通过忠实地重建可见性域中的所有频率分量，显著提高了成像结果，同时显著降低了计算成本。 et.al.|[2308.14610](http://arxiv.org/abs/2308.14610)|null|
 
-<p align=right>(<a href=#updated-on-20230911>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230912>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
