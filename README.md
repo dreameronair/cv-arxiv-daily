@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.09.18
+## Updated on 2023.09.19
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-09-07**|**BluNF: Blueprint Neural Field**|神经辐射场（NeRF）彻底改变了场景新颖的视图合成，提供了视觉逼真、精确和稳健的隐式重建。虽然最近的方法允许NeRF编辑，例如对象删除、3D形状修改或材料特性操纵，但在这种编辑之前的手动注释使该过程变得乏味。此外，传统的2D交互工具缺乏对3D空间的准确感知，阻碍了对场景的精确操作和编辑。在本文中，我们介绍了一种新的方法，称为蓝图神经场（BluNF），以解决这些编辑问题。BluNF提供了一个强大且用户友好的2D蓝图，实现了直观的场景编辑。通过利用隐式神经表示，BluNF使用先前的语义和深度信息构建场景的蓝图。生成的蓝图可以轻松编辑和操作NeRF表示。我们通过直观的点击和更改机制展示了BluNF的可编辑性，实现了3D操作，如遮罩、外观修改和对象移除。我们的方法对视觉内容创作做出了重大贡献，为该领域的进一步研究铺平了道路。 et.al.|[2309.03933](http://arxiv.org/abs/2309.03933)|null|
 |**2023-09-07**|**SyncDreamer: Generating Multiview-consistent Images from a Single-view Image**|在本文中，我们提出了一种新的扩散模型，称为，从单视图图像生成多视图一致图像。最近的工作Zero123使用预先训练的大规模2D扩散模型，展示了从物体的单视图图像生成看似新颖的视图的能力。然而，为生成的图像保持几何图形和颜色的一致性仍然是一个挑战。为了解决这个问题，我们提出了一种同步多视点扩散模型，该模型对多视点图像的联合概率分布进行建模，从而能够在单个反向过程中生成多视点一致图像。SyncDreamer通过3D感知特征注意力机制在反向过程的每一步同步所有生成图像的中间状态，该机制将不同视图中的相应特征关联起来。实验表明，SyncDreamer生成的图像在不同视图之间具有高度一致性，因此非常适合各种3D生成任务，如新颖的视图合成、文本到3D和图像到3D。 et.al.|[2309.03453](http://arxiv.org/abs/2309.03453)|null|
 
-<p align=right>(<a href=#updated-on-20230918>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230919>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-09-07**|**A Food Package Recognition and Sorting System Based on Structured Light and Deep Learning**|基于视觉算法的机械臂抓取系统是一种可以应用于各种场景的机械臂系统。它使用算法自动识别目标的位置，并引导机械臂抓取目标，这比可教的机械臂抓取系统具有更灵活的特点。然而，对于一些食品包装来说，其透明包装或反射材料给视觉算法的识别带来了挑战，传统的视觉算法无法实现这些包装的高精度。此外，在机械臂抓取过程中，在z轴高度上的定位仍然需要手动设置参数，这可能会导致错误。基于上述两个问题，我们使用深度学习算法和结构光三维重建技术设计了一个食品包装分拣系统。使用预先训练好的MASK-R-CNN模型识别图像中物体的类别并获得其二维坐标，然后使用结构光三维重建技术计算其三维坐标，最后经过坐标系转换来引导机械臂进行抓取。经过测试表明，该方法可以实现对不同种类食品包装的全自动识别和抓取，具有较高的精度。使用这种方法，可以帮助食品制造商降低生产成本，提高生产效率。 et.al.|[2309.03704](http://arxiv.org/abs/2309.03704)|null|
 |**2023-09-06**|**SADIR: Shape-Aware Diffusion Models for 3D Image Reconstruction**|从有限数量的2D图像重建3D图像一直是计算机视觉和图像分析中的一个长期挑战。虽然基于深度学习的方法在这一领域取得了令人印象深刻的性能，但现有的深度网络往往无法有效利用图像中呈现的对象的形状结构。因此，重建对象的拓扑结构可能无法很好地保存，导致不同部分之间存在诸如不连续性、孔洞或不匹配连接之类的伪影。在本文中，我们提出了一种基于扩散模型的三维图像重建形状感知网络，称为SADIR，以解决这些问题。与之前主要依赖图像强度的空间相关性进行3D重建的方法不同，我们的模型利用从训练数据中学习的形状先验来指导重建过程。为了实现这一点，我们开发了一个联合学习网络，该网络可以同时学习变形模型下的平均形状。然后，每个重建的图像被认为是平均形状的变形变体。我们在大脑和心脏磁共振成像（MRI）上验证了我们的模型SADIR。实验结果表明，我们的方法优于基线，具有更低的重建误差和更好地保留图像中物体的形状结构。 et.al.|[2309.03335](http://arxiv.org/abs/2309.03335)|null|
 
-<p align=right>(<a href=#updated-on-20230918>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230919>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-09-15**|**Isotropic active colloids: explicit vs. implicit descriptions of propulsion mechanisms**|对活性粒子之间的耦合进行建模往往忽略了控制推进机制的可能的多体效应。考虑到这种影响，需要对活动起源处的分子细节进行明确的建模。在这里，我们利用了最近各向同性活性粒子的二维模型，其推进源于浴中溶质粒子之间的相互作用。胶体在其附近催化化学反应，导致溶质颗粒的局部相分离，溶质颗粒的密度波动导致胶体的扩散增强。在本文中，我们使用（i）显式模型研究了这种活性颗粒的组装，其中考虑了溶质颗粒的微观动力学；和（ii）隐式模型，其参数是在无限稀释时从显式模型推断的。在显式溶质模型中，活性胶体的有效扩散系数随着密度的增加而强烈降低，这一效应在推导的隐式模型中没有得到体现。这表明，通常将对相互作用与活性解耦的经典模型无法描述由溶质-溶质相互作用驱动的活性胶体系统中的集体动力学。 et.al.|[2309.08455](http://arxiv.org/abs/2309.08455)|null|
 |**2023-09-15**|**Fractional Advection Diffusion Asymmetry Equation, derivation, solution and application**|非马尔可夫连续时间随机行走模型是一个研究得很好的异常扩散模型，它具有胖尾等待时间和非零均值的窄分布位移。使用分析方法，我们最近证明了分数空间平流-扩散不对称方程（通常与马尔可夫L’evy飞行有关）如何描述粒子包的扩散。由于我们通过等待时间的胖尾分布使用高斯统计来计算跳跃长度，因此动力学方程中分数空间导数的出现需要在本文中进行解释。作为应用，我们分析了示踪剂的二维扩散，在水文污染扩散领域研究的突破曲线和首次通过时间统计。我们提出了一种适用于平均等待时间有限且方差发散的情况的隶属方案，该方案与过程中续订次数的L’evy统计有关。 et.al.|[2309.08391](http://arxiv.org/abs/2309.08391)|null|
 
-<p align=right>(<a href=#updated-on-20230918>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230919>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-09-01**|**GNFactor: Multi-Task Real Robot Learning with Generalizable Neural Feature Fields**|开发能够在非结构化现实世界环境中通过视觉观察执行各种操作任务的代理是机器人技术中的一个长期问题。为了实现这一目标，机器人需要对场景的3D结构和语义有全面的了解。在这项工作中，我们提出了 $\textbf｛GNFactor｝$，一种用于多任务机器人操作的视觉行为克隆代理，具有$\textbf｛G｝$通用$\textbf｛N｝$eural功能$\textbf｛F｝$字段。GNFactor联合优化了作为重建模块的可推广神经场（GNF）和作为决策模块的感知转换器，利用了共享的深度3D体素表示。为了在3D中结合语义，重建模块利用视觉语言基础模型（$\textit｛例如｝$ ，Stable Diffusion）将丰富的语义信息提取到深度3D体素中。我们在3个真实机器人任务中评估了GNFactor，并在10个RLBench任务中进行了详细的消融，演示次数有限。我们观察到GNFactor在可见和不可见任务中比当前最先进的方法有了实质性的改进，证明了GNFactor强大的泛化能力。我们的项目网站是https://yanjieze.com/GNFactor/。 et.al.|[2308.16891](http://arxiv.org/abs/2308.16891)|**[link](https://github.com/YanjieZe/GNFactor)**|
 |**2023-08-30**|**Active Neural Mapping**|我们用不断学习的神经场景表示来解决主动映射的问题，即主动神经映射。关键在于通过有效的代理移动积极找到要探索的目标空间，从而最大限度地减少在以前看不见的环境中飞行中的地图不确定性。在本文中，我们检验了连续学习神经场的权重空间，并从经验上表明，神经变异性，即对随机权重扰动的预测鲁棒性，可以直接用于测量神经映射的瞬时不确定性。结合神经映射中继承的连续几何信息，可以引导agent找到一条可遍历的路径，以逐渐获得环境知识。我们首次提出了一种用于在线场景重建的具有基于坐标的隐式神经表示的主动映射系统。在视觉逼真的Gibson和Matterport3D环境中的实验证明了所提出方法的有效性。 et.al.|[2308.16246](http://arxiv.org/abs/2308.16246)|null|
 
-<p align=right>(<a href=#updated-on-20230918>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230919>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
