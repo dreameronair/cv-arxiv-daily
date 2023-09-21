@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.09.20
+## Updated on 2023.09.21
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-09-13**|**SAMPLING: Scene-adaptive Hierarchical Multiplane Images Representation for Novel View Synthesis from a Single Image**|最近的新颖视图合成方法对于相对较小的场景（例如，室内环境和具有少数对象的场景）获得了有希望的结果，但对于具有单个图像作为输入的无边界室外场景往往失败。在本文中，我们介绍了SAMPLING，这是一种基于改进的多平面图像（MPI）的场景自适应分层多平面图像表示，用于从单个图像合成新视图。观察到无边界户外场景的深度分布变化很大，我们为MPI采用了自适应仓策略，根据每个场景图像排列平面。为了表示复杂的几何结构和多尺度细节，我们进一步引入了一个层次细化分支，它可以产生高质量的合成新视图。我们的方法在KITTI数据集上使用单个图像合成大规模无界户外场景时表现出了相当大的性能提升，并很好地推广到了看不见的Tanks和Temples数据集。代码和模型将很快提供。 et.al.|[2309.06323](http://arxiv.org/abs/2309.06323)|null|
 |**2023-09-11**|**FlowIBR: Leveraging Pre-Training for Efficient Neural Image-Based Rendering of Dynamic Scenes**|我们介绍了一种用于动态场景的单目新颖视图合成的新方法。现有技术已经显示出令人印象深刻的渲染质量，但倾向于在不利用先验知识的情况下专注于单个场景内的优化。这种限制主要归因于缺乏可用于训练的动态场景数据集以及场景动力学的多样性。我们的方法FlowIBR通过集成基于神经图像的渲染方法来规避这些问题，该方法在广泛可用的静态场景的大型语料库上进行了预训练，并具有每个场景优化的场景流场。利用该流场，我们弯曲摄影机光线以抵消场景动力学，从而将动态场景呈现为渲染网络的静态场景。所提出的方法将每个场景的优化时间减少了一个数量级，实现了与现有方法相当的结果——所有这些都在单个消费级GPU上。 et.al.|[2309.05418](http://arxiv.org/abs/2309.05418)|null|
 
-<p align=right>(<a href=#updated-on-20230920>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230921>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-09-14**|**Combining Multiple View Components for Exploratory Visualization**|结构化复杂数据的分析，如基于聚类图的数据集，通常应用各种视觉表示技术和格式。目前大多数可用的探索性可视化工具和方法都建立在集成方案之上，用于同时显示研究对象和过程的多个方面。通常，这种方案将由多个视图组成的屏幕空间进行分区，并采用交互模式来关注数据驱动的项目。众所周知的概念，如概述加细节和重点加上下文，在用技术术语解释时是模棱两可的。因此，UI设计从业者需要对图形表示模块的视觉合成的基本方法进行审查和分类。我们建议对视图和焦点的基本组成部分进行描述，并概述它们的多种组合。 et.al.|[2309.07580](http://arxiv.org/abs/2309.07580)|null|
 |**2023-09-13**|**Exploiting Multiple Priors for Neural 3D Indoor Reconstruction**|神经隐式建模允许在小物体上实现令人印象深刻的3D重建结果，而在大型室内场景中表现出显著的局限性。在这项工作中，我们提出了一种新的神经隐式建模方法，该方法利用多种正则化策略来实现大型室内环境的更好重建，同时仅依赖于图像。稀疏但准确的深度先验用于将场景锚定到初始模型。还引入了密集但不太准确的深度先验，它足够灵活，仍然可以让模型偏离它，以改进估计的几何结构。然后，提出了一种新的自监督策略来正则化估计的曲面法线。最后，可学习的曝光补偿方案允许应对具有挑战性的照明条件。实验结果表明，我们的方法在具有挑战性的室内场景中产生了最先进的3D重建。 et.al.|[2309.07021](http://arxiv.org/abs/2309.07021)|null|
 
-<p align=right>(<a href=#updated-on-20230920>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230921>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-09-19**|**Ni/Bi bilayers: The effect of thickness on the superconducting properties**|镍/铋（Ni/Bi）双层由于在超导状态下发生时间反转对称性断裂而引起了人们的关注。在此，我们报道了具有几种Bi厚度的薄膜Ni/Bi双层的结构、磁性和电学特性。我们观察到由Bi和Ni的相互扩散引起的复杂层状结构的形成取决于Bi的厚度，这导致NiBi $_{3}$在Bi/Ni界面处的稳定。超导转变温度和转变宽度高度依赖于Bi厚度和层结构。在各向异性Ginzburg-Landau理论和Werthamer-Helfand-Hohenberg模型的框架内，使用垂直和平行磁场中的磁电输运测量来研究温度相关的上临界场。对于较厚的样本，我们观察到类似于NiBi$_｛3｝$体样本所示的常规行为，包括小的Maki参数（$\alpha_｛M｝$＝0）、无自旋-位散射（$\lambda_｛SO｝$=0）和几乎各向同性的相干长度（$\gamma$＝$\si_。这些性质的值与表征NiBi$_{3}$单晶的值接近。另一方面，在非常薄的样本中，Maki参数增加到大约$\alpha_{M}$=2.8。此外，相干长度变得各向异性（$\gamma$=0.32），并且必须考虑自旋轨道散射（$\lambda_{SO}$ =1.2）。我们的结果明确地表明，表征Ni/Bi超导态的性质强烈依赖于样品厚度。 et.al.|[2309.10705](http://arxiv.org/abs/2309.10705)|null|
 |**2023-09-19**|**Unbiased Parameter Estimation for Partially Observed Diffusions**|在本文中，我们考虑在固定时间间隔上具有离散时间观测的部分观测扩散过程的静态参数估计。特别是，我们假设必须对部分观测到的扩散过程进行时间离散，并在有偏差的情况下使用模型，并考虑最大化由此产生的对数似然性。利用一种新的双随机化方案，在马尔可夫随机近似的基础上，我们提出了一种无偏估计静态参数的新方法，即在没有时间离散化偏差的情况下获得最大似然估计量。在假设条件下，我们证明了我们的估计量是无偏的，并在几个数值例子中研究了该方法，表明它可以在经验上优于现有的无偏方法。 et.al.|[2309.10589](http://arxiv.org/abs/2309.10589)|null|
 
-<p align=right>(<a href=#updated-on-20230920>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230921>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-09-01**|**GNFactor: Multi-Task Real Robot Learning with Generalizable Neural Feature Fields**|开发能够在非结构化现实世界环境中通过视觉观察执行各种操作任务的代理是机器人技术中的一个长期问题。为了实现这一目标，机器人需要对场景的3D结构和语义有全面的了解。在这项工作中，我们提出了 $\textbf｛GNFactor｝$，一种用于多任务机器人操作的视觉行为克隆代理，具有$\textbf｛G｝$通用$\textbf｛N｝$eural功能$\textbf｛F｝$字段。GNFactor联合优化了作为重建模块的可推广神经场（GNF）和作为决策模块的感知转换器，利用了共享的深度3D体素表示。为了在3D中结合语义，重建模块利用视觉语言基础模型（$\textit｛例如｝$ ，Stable Diffusion）将丰富的语义信息提取到深度3D体素中。我们在3个真实机器人任务中评估了GNFactor，并在10个RLBench任务中进行了详细的消融，演示次数有限。我们观察到GNFactor在可见和不可见任务中比当前最先进的方法有了实质性的改进，证明了GNFactor强大的泛化能力。我们的项目网站是https://yanjieze.com/GNFactor/。 et.al.|[2308.16891](http://arxiv.org/abs/2308.16891)|**[link](https://github.com/YanjieZe/GNFactor)**|
 |**2023-08-30**|**Active Neural Mapping**|我们用不断学习的神经场景表示来解决主动映射的问题，即主动神经映射。关键在于通过有效的代理移动积极找到要探索的目标空间，从而最大限度地减少在以前看不见的环境中飞行中的地图不确定性。在本文中，我们检验了连续学习神经场的权重空间，并从经验上表明，神经变异性，即对随机权重扰动的预测鲁棒性，可以直接用于测量神经映射的瞬时不确定性。结合神经映射中继承的连续几何信息，可以引导agent找到一条可遍历的路径，以逐渐获得环境知识。我们首次提出了一种用于在线场景重建的具有基于坐标的隐式神经表示的主动映射系统。在视觉逼真的Gibson和Matterport3D环境中的实验证明了所提出方法的有效性。 et.al.|[2308.16246](http://arxiv.org/abs/2308.16246)|null|
 
-<p align=right>(<a href=#updated-on-20230920>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230921>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
