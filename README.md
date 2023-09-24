@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.09.23
+## Updated on 2023.09.24
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-09-21**|**ExBluRF: Efficient Radiance Fields for Extreme Motion Blurred Images**|我们提出了ExBluRF，这是一种基于有效辐射场优化的极端运动模糊图像的新视图合成方法。我们的方法由两个主要组成部分组成：基于6自由度相机轨迹的运动模糊公式和基于体素的辐射场。从极其模糊的图像中，我们通过联合估计生成模糊图像的相机轨迹来优化清晰的辐射场。在训练中，沿着相机轨迹的多条光线被累积以重建单个模糊的颜色，这相当于物理运动模糊操作。我们最小化了模糊图像空间上的照片一致性损失，并获得了具有相机轨迹的清晰辐射场，这些轨迹解释了所有图像的模糊。模糊图像空间上的联合优化需要与模糊大小成比例地痛苦地增加计算和资源。我们的方法通过将基于MLP的框架替换为低维6自由度相机姿态和基于体素的辐射场来解决这个问题。与现有作品相比，我们的方法从具有挑战性的运动模糊视图中恢复了更清晰的3D场景，训练时间和GPU内存消耗减少了10倍。 et.al.|[2309.08957](http://arxiv.org/abs/2309.08957)|null|
 |**2023-09-16**|**DynaMoN: Motion-Aware Fast And Robust Camera Localization for Dynamic NeRF**|利用神经辐射场（NeRF）进行动态重建需要精确的相机姿态。这些通常很难用现有的运动结构（SfM）管道来检索，因为相机和场景内容都可能发生变化。我们提出了DynaMoN，它利用同步定位和映射（SLAM）与运动掩蔽相结合来处理动态场景内容。我们基于SLAM的稳健跟踪模块显著加快了动态NeRF的训练过程，同时提高了合成视图的质量。对TUM RGB-D、BONN RGB-D Dynamic和DyCheck的iPhone数据集这三个真实世界的数据集进行了广泛的实验验证，显示了DynaMoN在相机姿态估计和新颖视图合成方面的优势。 et.al.|[2309.08927](http://arxiv.org/abs/2309.08927)|null|
 
-<p align=right>(<a href=#updated-on-20230923>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230924>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-09-15**|**Uncertainty-Aware Multi-View Visual Semantic Embedding**|图像文本检索的关键挑战是有效地利用语义信息来测量视觉和语言数据之间的相似性。然而，使用实例级二进制标签，即每个图像与单个文本配对，无法捕捉不同语义单元之间的多个对应关系，导致多模态语义理解的不确定性。尽管最近的研究通过更复杂的模型结构或预训练技术捕获了细粒度的信息，但很少有研究直接建模对应关系的不确定性，以充分利用二进制标签。为了解决这个问题，我们提出了一个不确定性感知的多视图视觉语义嵌入（UAMVSE）}框架，该框架将整个图像-文本匹配分解为多视图-文本匹配。我们的框架引入了一个不确定性感知损失函数（UALoss），通过自适应地建模每个视图文本对应关系中的不确定性来计算每个视图文本损失的权重。不同的权重引导模型关注不同的语义信息，增强了模型理解图像和文本对应关系的能力。我们还通过对相似度矩阵进行归一化，设计了一种优化的图像-文本匹配策略，以提高模型性能。在Flicker30k和MS-COCO数据集上的实验结果表明，UAMVSE的性能优于最先进的模型。 et.al.|[2309.08154](http://arxiv.org/abs/2309.08154)|null|
 |**2023-09-14**|**High-fidelity 3D Reconstruction of Solar Coronal Physics with the Updated CROBAR Method**|我们提出了一种将冠状重建到B对齐区域（CROBAR）方法扩展到线性无力场（LFFF）外推的方法，并将其应用于AIA、MDI和STEREO EUVI数据集的重建。结果表明，CROBAR不仅可以重建日冕发射结构，而且可以通过LFFF的螺旋度 $\alpha$ 参数帮助约束日冕场外推。他们还提供了一个真实世界的例子，说明CROBAR如何轻松地从多个角度整合信息，以改进其重建，我们还使用其他角度来帮助验证重建。我们还谈到了使用真实世界的发射通带，而不是使用DEM的理想化幂律型通带。最后，我们将CROBAR产生的发射与观测到的发射以及基于理想DEM的幂律产生的发射进行了比较。这些结果进一步说明了CROBAR在现实世界应用中的前景，我们提供了该软件的初步版本供下载。 et.al.|[2309.08053](http://arxiv.org/abs/2309.08053)|null|
 
-<p align=right>(<a href=#updated-on-20230923>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230924>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-09-21**|**Tuning brittleness in multi-component metallic glasses through chemical disorder aging**|缓慢驱动大块金属玻璃（BMG）中的剪切局部化通常伴随着大块应力响应的急剧下降，这是塑性屈服转变的标志。还观察到，这种弹塑性动力学转变的锐度取决于局部化学和微观结构秩序的程度，以及玻璃制备方案（即热退火）。在这里，我们研究了分子动力学（MD）模拟中的剪切多元素BMG，并证明了通过混合蒙特卡罗（MC）-MD过程实现的玻璃老化，通过明显的交叉来锐化弹塑性转变，在应变模式中可以看到，应变模式从淬火样品中的扩散特征逐渐转变为良好退火玻璃中的局部（但系统跨越）模式。玻璃老化对弹塑性转变的这种影响被发现与老化诱导的二十面体有序化和剪切转变区的协同形成之间的内在相互作用有关。观察到的交叉是通过测量年龄依赖性对塑性重排的易感性来量化的，表现出与局部有序特征的强（反）相关性，并且相应的空间相关性长度随着老化时间尺度的增长而增长。 et.al.|[2309.11867](http://arxiv.org/abs/2309.11867)|null|
 |**2023-09-21**|**Stellar model calibrations with the Ai Phe binary system. Open questions about the robustness of the fit**|我们探索了用Ai-Phe双星系统校准恒星模型的稳健性。通过SCEPtER管道，我们研究了不同假设对微观扩散表面效率的影响。在参考场景中，我们允许由于微观扩散而改变表面金属性，而在替代场景中，假设来自其他来源的竞争混合抵消了这种影响。由于主星已经经历了第一次疏通，而副星还没有，测试的场景显示出有趣的差异。虽然估计的年龄相当稳健（4.70^｛+0.13｝_｛-0.14｝ $Gyr和4.62^｛+1.13｝_{-0.06｝$Gyr），但对流核心超调参数$\beta$的校准显示出明显的差异。参考情景表明，$\beta$的可能值的多模态范围很广，约为0.10；备选方案的计算指向一个尖锐且较低的$\beta$ ，约为0.04。无法获得明确的拟合证实了使用双星系统对恒星模型的自由参数进行合理校准的困难，即使在可以获得非常精确的质量和半径的情况下也是如此。 et.al.|[2309.11837](http://arxiv.org/abs/2309.11837)|null|
 
-<p align=right>(<a href=#updated-on-20230923>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230924>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-09-01**|**GNFactor: Multi-Task Real Robot Learning with Generalizable Neural Feature Fields**|开发能够在非结构化现实世界环境中通过视觉观察执行各种操作任务的代理是机器人技术中的一个长期问题。为了实现这一目标，机器人需要对场景的3D结构和语义有全面的了解。在这项工作中，我们提出了 $\textbf｛GNFactor｝$，一种用于多任务机器人操作的视觉行为克隆代理，具有$\textbf｛G｝$通用$\textbf｛N｝$eural功能$\textbf｛F｝$字段。GNFactor联合优化了作为重建模块的可推广神经场（GNF）和作为决策模块的感知转换器，利用了共享的深度3D体素表示。为了在3D中结合语义，重建模块利用视觉语言基础模型（$\textit｛例如｝$ ，Stable Diffusion）将丰富的语义信息提取到深度3D体素中。我们在3个真实机器人任务中评估了GNFactor，并在10个RLBench任务中进行了详细的消融，演示次数有限。我们观察到GNFactor在可见和不可见任务中比当前最先进的方法有了实质性的改进，证明了GNFactor强大的泛化能力。我们的项目网站是https://yanjieze.com/GNFactor/。 et.al.|[2308.16891](http://arxiv.org/abs/2308.16891)|**[link](https://github.com/YanjieZe/GNFactor)**|
 |**2023-08-30**|**Active Neural Mapping**|我们用不断学习的神经场景表示来解决主动映射的问题，即主动神经映射。关键在于通过有效的代理移动积极找到要探索的目标空间，从而最大限度地减少在以前看不见的环境中飞行中的地图不确定性。在本文中，我们检验了连续学习神经场的权重空间，并从经验上表明，神经变异性，即对随机权重扰动的预测鲁棒性，可以直接用于测量神经映射的瞬时不确定性。结合神经映射中继承的连续几何信息，可以引导agent找到一条可遍历的路径，以逐渐获得环境知识。我们首次提出了一种用于在线场景重建的具有基于坐标的隐式神经表示的主动映射系统。在视觉逼真的Gibson和Matterport3D环境中的实验证明了所提出方法的有效性。 et.al.|[2308.16246](http://arxiv.org/abs/2308.16246)|null|
 
-<p align=right>(<a href=#updated-on-20230923>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20230924>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
