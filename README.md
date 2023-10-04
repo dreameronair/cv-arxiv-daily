@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.10.03
+## Updated on 2023.10.04
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-09-21**|**ORTexME: Occlusion-Robust Human Shape and Pose via Temporal Average Texture and Mesh Encoding**|在单目视频的3D人体形状和姿势估计中，用有限的标记数据训练的模型不能很好地推广到具有遮挡的视频，这在野生视频中很常见。最近的人类神经渲染方法专注于由现成的人形和姿势方法初始化的新颖视图合成，具有校正初始人形的潜力。然而，现有的方法存在一些缺点，例如，在处理遮挡时出错，对不准确的人体分割敏感，以及由于非正则化的不透明度场而导致的无效损失计算。为了解决这些问题，我们引入了ORTexME，这是一种遮挡鲁棒的时间方法，它利用来自输入视频的时间信息来更好地正则化被遮挡的身体部位。虽然我们的ORTexME是基于NeRF的，但为了确定NeRF射线采样的可靠区域，我们利用我们新颖的平均纹理学习方法来学习人的平均外观，并基于平均纹理推断面具。此外，为了指导NeRF中的不透明度场更新以抑制模糊和噪声，我们建议使用人体网格。定量评估表明，我们的方法在具有挑战性的多人3DPW数据集上实现了显著的改进，其中我们的方法实现了1.8P-MPJPE的误差降低。基于SOTA渲染的方法失败了，并在同一数据集上将错误扩大到5.6。 et.al.|[2309.12183](http://arxiv.org/abs/2309.12183)|null|
 |**2023-09-21**|**Fast Satellite Tensorial Radiance Field for Multi-date Satellite Imagery of Large Size**|现有的卫星图像NeRF模型速度较慢，必须输入太阳信息，并且在处理大型卫星图像方面存在局限性。作为回应，我们提出了SatensoRF，它显著加快了整个过程，同时为大尺寸卫星图像使用了更少的参数。此外，我们观察到，在神经辐射场中，朗伯表面的普遍假设不符合植物和水生元素。与传统的基于分层MLP的场景表示相比，我们选择了一种针对颜色、体积密度和辅助变量的多尺度张量分解方法来对具有镜面颜色的光场进行建模。此外，为了纠正多日期图像中的不一致性，我们结合了总变化损失来恢复密度张量场，并将该问题视为去噪任务。为了验证我们的方法，我们使用空间网多视图数据集的子集对SatensoRF进行了评估，该数据集包括多日期和单日期多视图RGB图像。我们的结果清楚地表明，SatensoRF在新颖的视图合成性能方面超过了最先进的Sat-NeRF系列。值得注意的是，SatensoRF需要更少的参数进行训练，从而提高训练和推理速度，降低计算需求。 et.al.|[2309.11767](http://arxiv.org/abs/2309.11767)|null|
 
-<p align=right>(<a href=#updated-on-20231003>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231004>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-09-26**|**Three-dimensional Tracking of a Large Number of High Dynamic Objects from Multiple Views using Current Statistical Model**|从多个视图对多个对象进行三维跟踪有着广泛的应用，特别是在需要研究对象精确轨迹的生物集群行为研究中。然而，当物体彼此相似、频繁机动和大量聚集时，存在显著的时空关联不确定性。针对这种多视图多目标三维跟踪场景，在贝叶斯跟踪的同时重构框架下，提出了一种基于统计模型的卡尔曼粒子滤波器（CSKPF）方法。CSKPF算法通过当前统计模型预测对象的状态，估计对象的状态协方差对重要粒子采样效率的影响，并通过卡尔曼滤波器抑制测量噪声。仿真实验证明，与现有的基于恒速的粒子滤波器（CVPF）方法相比，CSKPF方法可以提高跟踪的完整性、连续性和精度。对果蝇集群的实际实验也证实了CSKPF方法的有效性。 et.al.|[2309.14820](http://arxiv.org/abs/2309.14820)|null|
 |**2023-09-26**|**3D Density-Gradient based Edge Detection on Neural Radiance Fields (NeRFs) for Geometric Reconstruction**|从神经辐射场（NeRF）生成几何三维重建是一个非常有趣的问题。然而，基于密度值的准确和完整的重建是具有挑战性的。网络输出取决于输入数据、NeRF网络配置和超参数。因此，密度值的直接使用，例如通过全局密度阈值的过滤，通常需要经验调查。在密度从非物体区域增加到物体区域的假设下，相对值的密度梯度的利用是明显的。由于密度表示与位置相关的参数，因此可以各向异性地处理它，因此对体素化3D密度场的处理是合理的。在这方面，我们处理基于密度梯度的几何3D重建，而梯度来自一阶和二阶导数的3D边缘检测滤波器，即Sobel、Canny和拉普拉斯高斯。梯度依赖于所有方向上的相对相邻密度值，因此与绝对大小无关。因此，梯度滤波器能够提取宽密度范围的边缘，几乎独立于假设和经验调查。我们的方法证明了在物体表面以高几何精度和显著的物体完整性实现几何三维重建的能力。值得注意的是，Canny滤波器有效地消除了间隙，提供了均匀的点密度，并在整个场景的正确性和完整性之间取得了良好的平衡。 et.al.|[2309.14800](http://arxiv.org/abs/2309.14800)|null|
 
-<p align=right>(<a href=#updated-on-20231003>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231004>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-09-29**|**Well-posedness and stationary states for a crowded active Brownian system with size-exclusion**|我们证明了一个非线性、非局部、退化方程解的存在性，该方程先前被导出为活跃布朗粒子系统的形式流体动力学极限，其中粒子被赋予了位置和方向。该方程包含了空间坐标和角度坐标中的扩散，以及取决于角度无关密度的非线性非局部漂移项。空间扩散是非线性退化的，并且还包括角度无关密度的扩散，可以将其解释为具有无限多个物种的交叉扩散。我们的证明依赖于将方程解释为Wasserstein型空间中梯度流的扰动。它将熵方法的有界性推广到这个设置，并利用角扩散引起的可积增益。对于后一步，我们将经典插值引理应用于依赖于时间的函数空间。我们还证明了非局部漂移项为零的特殊情况下的唯一性，并给出了平稳平衡解的存在唯一性结果。 et.al.|[2309.17326](http://arxiv.org/abs/2309.17326)|null|
 |**2023-09-29**|**Adaptive nonparametric drift estimation for multivariate jump diffusions under sup-norm risk**|我们研究了基于连续观测的多维跳跃扩散的非参数漂移估计。结果是在各向异性光滑性假设下得出的，估计量的性能是根据超范数损失来衡量的。我们提出了两种不同的Nadaraya-WWatson型估计量，它们都被证明在跳跃测度的不同假设下实现了经典的非参数收敛率。两种估计量的完全数据驱动版本也被引入，并被证明达到了相同的收敛速度。结果依赖于与所研究的跳跃扩散相关的经验过程的新的一致矩界，这是独立的兴趣。 et.al.|[2309.17306](http://arxiv.org/abs/2309.17306)|null|
 
-<p align=right>(<a href=#updated-on-20231003>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231004>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-09-08**|**Single View Refractive Index Tomography with Neural Fields**|折射率层析成像是一个反问题，我们试图从2D投影图像测量中重建场景的3D折射场。折射场本身是不可见的，而是影响光线在空间中传播时路径的连续弯曲。折射场出现在各种各样的科学应用中，从显微镜中的半透明细胞样本到弯曲来自遥远星系的光的暗物质场。这个问题带来了一个独特的挑战，因为折射场直接影响光的路径，使其恢复成为一个非线性问题。此外，与传统的层析成像相比，我们试图通过利用散射在整个介质中的光源的知识，仅从单个视点使用投影图像来恢复折射场。在这项工作中，我们介绍了一种使用基于坐标的神经网络对场景中潜在的连续折射场进行建模的方法。然后，我们使用射线三维空间曲率的显式建模来优化该网络的参数，通过综合分析方法重建折射场。通过在模拟中恢复折射场，并分析光源分布对恢复的影响，证明了我们方法的有效性。然后，我们在模拟暗物质映射问题上测试了我们的方法，在该问题中，我们恢复了真实模拟暗物质分布下的折射场。 et.al.|[2309.04437](http://arxiv.org/abs/2309.04437)|null|
 |**2023-09-07**|**BluNF: Blueprint Neural Field**|神经辐射场（NeRF）彻底改变了场景新颖的视图合成，提供了视觉逼真、精确和稳健的隐式重建。虽然最近的方法允许NeRF编辑，例如对象删除、3D形状修改或材料特性操纵，但在这种编辑之前的手动注释使该过程变得乏味。此外，传统的2D交互工具缺乏对3D空间的准确感知，阻碍了对场景的精确操作和编辑。在本文中，我们介绍了一种新的方法，称为蓝图神经场（BluNF），以解决这些编辑问题。BluNF提供了一个强大且用户友好的2D蓝图，实现了直观的场景编辑。通过利用隐式神经表示，BluNF使用先前的语义和深度信息构建场景的蓝图。生成的蓝图可以轻松编辑和操作NeRF表示。我们通过直观的点击和更改机制展示了BluNF的可编辑性，实现了3D操作，如遮罩、外观修改和对象移除。我们的方法对视觉内容创作做出了重大贡献，为该领域的进一步研究铺平了道路。 et.al.|[2309.03933](http://arxiv.org/abs/2309.03933)|null|
 
-<p align=right>(<a href=#updated-on-20231003>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231004>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
