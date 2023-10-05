@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.10.04
+## Updated on 2023.10.05
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-09-25**|**NAS-NeRF: Generative Neural Architecture Search for Neural Radiance Fields**|神经辐射场（NeRF）能够实现高质量的新视图合成，但其高得令人望而却步的计算复杂性限制了可部署性，尤其是在资源受限的平台上。为了实现NeRF的实际使用，质量调整对于降低计算复杂性至关重要，类似于视频游戏中的可调整图形设置。然而，尽管现有的解决方案努力提高效率，但无论场景复杂程度如何，它们都使用一刀切的架构，尽管相同的架构对于简单场景可能不必要地大，但对于复杂场景则不够。因此，随着NeRF越来越广泛地用于3D可视化，需要动态优化NeRF的神经网络组件，以实现计算复杂性和合成质量特定目标之间的平衡。为了解决这一差距，我们引入了NAS NeRF：一种生成神经架构搜索策略，通过优化复杂性和性能之间的权衡，同时遵守计算预算和最低合成质量的限制，专门针对每个场景生成NeRF架构。我们在Blender合成数据集上的实验表明，与基线NeRF相比，所提出的NAS NeRF在GPU上生成的架构可以小5.74 $\times$，FLOP少4.19$\times$，速度快1.93$\times]，而SSIM不会下降。此外，我们还表明，NAS NeRF还可以实现比基线NeRF小23$\times$、FLOP少22$\times$和快4.7$ \times\的架构，平均SSIM下降5.3\%。我们工作的源代码也可在https://saeejithnair.github.io/NAS-NeRF. et.al.|[2309.14293](http://arxiv.org/abs/2309.14293)|null|
 |**2023-09-22**|**NeRRF: 3D Reconstruction and View Synthesis for Transparent and Specular Objects with Neural Refractive-Reflective Fields**|神经辐射场（NeRF）已经彻底改变了基于图像的视图合成领域。然而，NeRF使用直线光线，无法处理由折射和反射引起的复杂光路变化。这阻碍了NeRF成功合成透明或镜面物体，而这些物体在现实世界的机器人和A/VR应用中无处不在。本文介绍了折射反射场。以物体轮廓为输入，我们首先利用渐进编码的行进四面体来重建非朗伯物体的几何结构，然后使用菲涅耳项在统一的框架中对物体的折射和反射效应进行建模。同时，为了实现高效、有效的抗混叠，我们提出了一种虚拟锥超采样技术。我们在真实世界和合成数据集的不同形状、背景和菲涅耳项上对我们的方法进行了基准测试。我们还对各种编辑应用程序的渲染结果进行了定性和定量的基准测试，包括材质编辑、对象替换/插入和环境照明估计。代码和数据可在https://github.com/dawning77/NeRRF. et.al.|[2309.13039](http://arxiv.org/abs/2309.13039)|**[link](https://github.com/dawning77/nerrf)**|
 
-<p align=right>(<a href=#updated-on-20231004>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231005>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-09-26**|**PHRIT: Parametric Hand Representation with Implicit Template**|我们提出了PHRIT，这是一种使用隐式模板进行参数化手网格建模的新方法，它结合了参数化网格和隐式表示的优点。我们的方法使用带符号距离场（SDF）和基于零件的形状先验来表示可变形的手部形状，利用变形场来执行变形。该模型通过以无限分辨率变形规范模板来提供高效的高保真手部重建。此外，它是完全可微的，并且可以很容易地用于手建模，因为它可以由骨架和形状潜在代码驱动。我们在多个下游任务上对PHRIT进行了评估，包括骨骼驱动的手部重建、点云形状和单视图3D重建，证明了我们的方法以最先进的性能实现了逼真和身临其境的手部建模。 et.al.|[2309.14916](http://arxiv.org/abs/2309.14916)|null|
 |**2023-09-26**|**Unsupervised Reconstruction of 3D Human Pose Interactions From 2D Poses Alone**|由于单目图像中的视角模糊性，当前的无监督2D-3D人体姿态估计（HPE）方法在多人场景中不起作用。因此，我们提出了第一项研究，仅从2D姿势研究无监督多人2D-3D HPE的可行性，重点是重建人类互动。为了解决视角模糊的问题，我们通过预测摄像机相对于受试者骨盆的仰角来扩展先前的工作。这使我们能够将预测的姿势旋转到与地平面齐平的位置，同时获得个体之间3D垂直偏移的估计值。我们的方法包括独立地将每个受试者的2D姿势提升到3D，然后将它们组合到共享的3D坐标系中。然后，在缩放之前，将姿势旋转并偏移预测的仰角。这本身就使我们能够检索到他们姿势的精确3D重建。我们在CHI3D数据集上展示了我们的结果，介绍了它在无监督2D-3D姿态估计中的应用，以及三种新的定量指标，并为未来的研究建立了基准。 et.al.|[2309.14865](http://arxiv.org/abs/2309.14865)|null|
 
-<p align=right>(<a href=#updated-on-20231004>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231005>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-10-03**|**Spectral operator learning for parametric PDEs without data reliance**|在本文中，我们介绍了通过算子网络的谱系数学习（SCLON），这是一种新的基于算子学习的方法，用于求解参数偏微分方程（PDE），而不需要数据处理。我们方法的基石是谱方法，该方法使用正交函数（如傅立叶级数和勒让德多项式）进行展开，从而实现具有较少网格点的精确PDE解决方案。通过将谱方法的优点（包括高精度、高效、泛化和精确满足边界条件）与深度神经网络的能力相结合，SCLON提供了一种变革策略。我们的方法不仅消除了对成对输入输出训练数据的需求，这通常需要大量的数值计算，而且还有效地学习和预测了复杂参数偏微分方程的解，从奇摄动对流扩散方程到Navier-Stokes方程。与现有的科学机器学习技术相比，所提出的框架表现出了优越的性能，在不利用数据的情况下为参数偏微分方程的多个实例提供了解决方案。该数学框架稳健可靠，具有从弱公式推导出的完善的损失函数，确保了解的精确逼近，同时完全满足边界条件。该方法的有效性通过其准确预测复杂自然行为（如Kolmogorov流和边界层）的能力得到了进一步的证明。本质上，我们的工作为参数PDE解决方案开辟了一条引人注目的途径，成为科学计算领域传统数值方法和尖端机器学习技术之间的桥梁。 et.al.|[2310.02013](http://arxiv.org/abs/2310.02013)|null|
 |**2023-10-03**|**Optimizing microlens arrays for incoherent HiLo microscopy**|HiLo显微镜是一种功能强大、低成本且易于配置的技术，用于获取高对比度的光学切片图像。然而，传统的HiLo显微镜是基于具有漫射玻璃板的相干光源或具有数字镜器件（DMD）和空间光调制器（SLM）的非相干光源，这更昂贵。在这里，我们提出了一种新的低成本HiLo显微镜技术，使用MLA和非相干LED光源。我们模拟了基于菲涅耳衍射和非相干成像的结构照明（SI）模式和HiLo图像生成。为了观察MLA如何影响HiLo图像，我们使用了三种具有特定微透镜间距和数值孔径（NA）的常见MLA来生成周期性照明图案。根据我们的模拟，与传统的宽场荧光显微镜相比，使用MLA和非相干光源可以增强图像对比度。我们发现MLA NA不会显著影响HiLo图像。较大的透镜间距可以带来更高的图像对比度。然而，有一个优化的镜头间距。如果透镜间距过高，则在HiLo图像中会观察到伪影。据我们所知，这是第一次对基于MLA的HiLo显微镜进行数值研究。这项研究可以使使用MLA和非相干光源配置低成本HiLo显微镜的研究人员受益。 et.al.|[2310.01939](http://arxiv.org/abs/2310.01939)|null|
 
-<p align=right>(<a href=#updated-on-20231004>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231005>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-09-13**|**Generalizable Neural Fields as Partially Observed Neural Processes**|神经场将信号表示为由神经网络参数化的函数，是传统离散矢量或基于网格的表示的一种很有前途的替代方案。与离散表示相比，神经表示既能很好地扩展分辨率，又是连续的，并且可以是多次可微的。然而，给定我们想要表示的信号数据集，必须为每个信号优化单独的神经场是低效的，并且不能利用信号之间的共享信息或结构。现有的泛化方法将其视为元学习问题，并采用基于梯度的元学习来学习初始化，然后通过测试时间优化对初始化进行微调，或者学习超网络来产生神经场的权重。相反，我们提出了一种新的范式，将神经表征的大规模训练视为部分观察到的神经过程框架的一部分，并利用神经过程算法来解决这一任务。我们证明，这种方法优于最先进的基于梯度的元学习方法和超网络方法。 et.al.|[2309.06660](http://arxiv.org/abs/2309.06660)|null|
 |**2023-09-08**|**Single View Refractive Index Tomography with Neural Fields**|折射率层析成像是一个反问题，我们试图从2D投影图像测量中重建场景的3D折射场。折射场本身是不可见的，而是影响光线在空间中传播时路径的连续弯曲。折射场出现在各种各样的科学应用中，从显微镜中的半透明细胞样本到弯曲来自遥远星系的光的暗物质场。这个问题带来了一个独特的挑战，因为折射场直接影响光的路径，使其恢复成为一个非线性问题。此外，与传统的层析成像相比，我们试图通过利用散射在整个介质中的光源的知识，仅从单个视点使用投影图像来恢复折射场。在这项工作中，我们介绍了一种使用基于坐标的神经网络对场景中潜在的连续折射场进行建模的方法。然后，我们使用射线三维空间曲率的显式建模来优化该网络的参数，通过综合分析方法重建折射场。通过在模拟中恢复折射场，并分析光源分布对恢复的影响，证明了我们方法的有效性。然后，我们在模拟暗物质映射问题上测试了我们的方法，在该问题中，我们恢复了真实模拟暗物质分布下的折射场。 et.al.|[2309.04437](http://arxiv.org/abs/2309.04437)|null|
 
-<p align=right>(<a href=#updated-on-20231004>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231005>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
