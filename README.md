@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.11.01
+## Updated on 2023.11.02
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-10-24**|**iNVS: Repurposing Diffusion Inpainters for Novel View Synthesis**|我们提出了一种从单一源图像生成一致新颖视图的方法。我们的方法侧重于最大限度地重用源图像中的可见像素。为了实现这一点，我们使用单目深度估计器，将可见像素从源视图转移到目标视图。从预先训练的2D修复扩散模型开始，我们在大规模Ob厌恶数据集上训练我们的方法来学习3D对象先验。在训练时，我们使用了一种基于核线的新型掩蔽机制来进一步提高我们的方法的质量。这使得我们的框架能够对各种对象执行零样本新颖的视图合成。我们在三个具有挑战性的数据集上评估了我们框架的零样本能力：谷歌扫描对象、光线跟踪多视图和3D中的常见对象。查看我们的网页了解更多详细信息：https://yashkant.github.io/invs/ et.al.|[2310.16167](http://arxiv.org/abs/2310.16167)|null|
 |**2023-10-23**|**Relit-NeuLF: Efficient Relighting and Novel View Synthesis via Neural 4D Light Field**|在本文中，我们解决了在光源数量有限的情况下，从多视图图像中同时重新照明和合成复杂场景的新视图的问题。我们提出了一种称为Relit NeuLF的分析综合方法。继最近的神经4D光场网络（NeuLF）之后，Relit NeuLF首先利用两平面光场表示来参数化4D坐标系中的每条光线，从而实现高效的学习和推理。然后，我们以自监督的方式恢复三维场景的空间变化双向反射率分布函数（SVBRDF）。DecomposeNet学习将每条光线映射到其SVBRDF组件：反照率、法线和粗糙度。基于分解的BRDF分量和条件光方向，RenderNet学习合成光线的颜色。为了自我监督SVBRDF分解，我们鼓励使用微平面模型使预测的光线颜色接近基于物理的渲染结果。综合实验表明，该方法在合成数据和真实人脸数据上都是有效的，并且优于最先进的结果。我们在GitHub上公开发布了我们的代码。你可以在这里找到它：https://github.com/oppo-us-research/RelitNeuLF et.al.|[2310.14642](http://arxiv.org/abs/2310.14642)|**[link](https://github.com/oppo-us-research/relitneulf)**|
 
-<p align=right>(<a href=#updated-on-20231101>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231102>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-10-22**|**A Quantitative Evaluation of Dense 3D Reconstruction of Sinus Anatomy from Monocular Endoscopic Video**|根据内窥镜视频生成准确的3D重建是对鼻窦解剖结构和手术结果进行纵向无辐射分析的一种很有前途的途径。已经提出了几种单目重建方法，通过从运动类型算法中检索具有结构的相对相机姿态并融合单目深度估计，产生视觉上令人愉快的3D解剖结构。然而，由于底层算法和内窥镜场景的复杂特性，重建管道可能表现不佳或意外失败。此外，获取医疗数据带来了额外的挑战，在定量基准测试这些模型、了解故障案例和确定有助于其准确性的关键组件方面存在困难。在这项工作中，我们对一种自监督的鼻窦重建方法进行了定量分析，该方法使用内窥镜序列与从9个离体标本中采集的光学跟踪和高分辨率计算机断层扫描相结合。我们的结果表明，生成的重建与解剖结构高度一致，在重建和CT分割之间产生0.91mm的平均点到网格误差。然而，在与内窥镜跟踪和导航相关的点对点匹配场景中，我们发现平均目标配准误差为6.58 mm。我们发现，姿态和深度估计的不准确度对该误差的贡献相同，轨迹较短的局部一致序列会产生更准确的重建。这些结果表明，实现相对相机姿态和估计深度与解剖结构之间的全局一致性至关重要。通过这样做，我们可以确保管道的所有组成部分之间的适当协同作用，以改进重建，从而促进这项创新技术的临床应用。 et.al.|[2310.14364](http://arxiv.org/abs/2310.14364)|null|
 |**2023-10-20**|**Longer-range Contextualized Masked Autoencoder**|掩模图像建模（MIM）已成为一种很有前途的自监督学习（SSL）策略。MIM预训练通过随机掩蔽一些输入像素并从剩余的像素重建掩蔽的像素，有助于使用编码器-解码器框架来学习强大的表示。然而，由于编码器是用部分像素训练的，MIM预训练可能存在理解长程依赖性的能力低的问题。这种限制可能会阻碍其完全理解多个范围依赖性的能力，导致注意力图中突出显示的区域狭窄，从而可能导致准确性下降。为了减轻这种限制，我们提出了一个自监督学习框架，称为长距离上下文化屏蔽自动编码器（LC-MAE）。LC-MAE有效地利用了对视觉表示的全局上下文理解，同时减少了输入的空间冗余。我们的方法引导编码器从多个视图中的整个像素学习，同时也从稀疏像素学习局部表示。因此，LC-MAE学习了更多的判别表示，导致性能提高，在ImageNet-1K上使用ViT-B以0.6%p的增益实现84.2%的前1级精度。我们将成功归因于增强的预训练方法，奇异值谱和注意力分析证明了这一点。最后，LC-MAE在下游语义分割和细粒度视觉分类任务中实现了显著的性能提升；以及不同的稳健评估指标。我们的代码将公开。 et.al.|[2310.13593](http://arxiv.org/abs/2310.13593)|null|
 
-<p align=right>(<a href=#updated-on-20231101>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231102>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-10-31**|**Truncated stochastically switching processes**|存在着各种各样的混合随机系统，它们将连续过程与某种形式的随机切换机制耦合在一起。在许多情况下，系统根据有限状态马尔可夫链在不同的离散内部状态之间切换，并且连续的动力学取决于当前的内部状态。由此产生的混合随机微分方程（hSDE）可以描述神经元膜电位的演变、基因网络合成的蛋白质浓度或活性粒子的位置。另一类主要的切换系统是具有随机重置的搜索过程，其中扩散或活性粒子的位置以随机的时间序列重置到固定位置。在这种情况下，系统在搜索阶段和重置阶段之间切换，其中重置阶段可以是瞬时的。在本文中，我们研究了当给定时间间隔内切换（或重置）事件的最大数量固定时，随机切换系统的行为是如何修改的。这是因为每次系统切换都会产生额外的能源成本。我们首先证明，在hSDE的情况下，限制切换事件的数量相当于截断粒子传播子的Volterra级数展开。这样的截断显著地修改了由此产生的重整化传播子的矩。然后，我们研究了限制重置事件的数量如何影响对吸收目标的扩散搜索。特别是，截断生存概率的Volterra级数展开，我们分别计算粒子被目标吸收或超过给定重置次数的分裂概率和条件MFPT。 et.al.|[2310.20502](http://arxiv.org/abs/2310.20502)|null|
 |**2023-10-31**|**On the Long-time Dynamics and Ergodicity of the Stochastic Nernst-Planck-Navier-Stokes System**|我们考虑了一个电扩散模型，该模型描述了多个离子物种与二维、不可压缩、粘性流体在随机加性噪声下的复杂相互作用。该系统包括离子物质的非局部非线性漂移扩散Nernst-Planck方程和流体在电和时间无关力影响下运动的随机Navier-Stokes方程。在浓度的选择性边界条件下，我们在光滑有界域上建立了该系统全局路径解的存在性和唯一性。我们的研究还研究了长时间离子浓度动力学，并探索了关联马尔可夫半群的Feller性质。在等扩散物种的背景下，在适当的条件下，我们证明了在 $H^2$上支持的不变遍历测度的存在性。然后，我们增强了周期tori上的遍历性结果，并在浓度的初始空间平均值的约束下获得了光滑不变的测度。当噪声迫使足够的模，并且物种的扩散率大时，进一步建立了周期盒和光滑有界域上不变测度的唯一性。最后，在扩散率和价分别为$1$和$1$ 的两个离子物种的情况下，我们研究了马尔可夫转移核到不变测度的收敛速度，并获得了该模型的无条件、唯一的指数遍历性。 et.al.|[2310.20484](http://arxiv.org/abs/2310.20484)|null|
 
-<p align=right>(<a href=#updated-on-20231101>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231102>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-09-27**|**Neural Acoustic Context Field: Rendering Realistic Room Impulse Response With Neural Fields**|房间脉冲响应（RIR）测量声音在环境中的传播，对于合成给定环境下的高保真音频至关重要。一些先前的工作已经提出将RIR表示为声音发射器和接收器位置的神经场函数。然而，这些方法没有充分考虑音频场景的声学特性，导致性能不令人满意。这封信提出了一种新的神经声学上下文场方法，称为NACF，通过利用多个声学上下文（如几何结构、材料特性和空间信息）来参数化音频场景。在RIR的独特性质，即时间不光滑性和单调能量衰减的驱动下，我们设计了一个时间相关模块和多尺度能量衰减准则。实验结果表明，NACF的性能显著优于现有的基于字段的方法。请访问我们的项目页面了解更多定性结果。 et.al.|[2309.15977](http://arxiv.org/abs/2309.15977)|null|
 |**2023-09-27**|**SHACIRA: Scalable HAsh-grid Compression for Implicit Neural Representations**|隐式神经表示（INR）或神经场已成为编码多媒体信号（如图像和辐射场）同时保持高质量的流行框架。最近，Instant NGP提出的可学习特征网格通过用特征向量的多分辨率查找表和更小的神经网络取代大型神经网络，在训练和INR采样方面实现了显著的加速。然而，这些功能网格是以大量内存消耗为代价的，这可能是存储和流应用程序的瓶颈。在这项工作中，我们提出了SHACIRA，这是一个简单而有效的任务无关框架，用于压缩这种特征网格，而不需要额外的事后修剪/量化阶段。我们用量化的潜在权重对特征网格进行重新参数化，并在潜在空间中应用熵正则化，以在各个领域实现高水平的压缩。在由图像、视频和辐射场组成的不同数据集上的定量和定性结果表明，我们的方法优于现有的INR方法，而不需要任何大型数据集或特定领域的启发式方法。我们的项目页面可在http://shacira.github.io。 et.al.|[2309.15848](http://arxiv.org/abs/2309.15848)|null|
 
-<p align=right>(<a href=#updated-on-20231101>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231102>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
