@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.11.13
+## Updated on 2023.11.14
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-11-08**|**UP-NeRF: Unconstrained Pose-Prior-Free Neural Radiance Fields**|神经辐射场（NeRF）实现了具有高保真度的给定图像和相机姿态的新颖视图合成。随后的工作甚至通过联合优化NeRF和相机姿态，成功地消除了姿态先验的必要性。然而，这些作品仅限于相对简单的设置，例如光度一致和无遮挡的图像集合或视频中的图像序列。因此，他们很难处理具有不同照明和瞬态遮挡的无约束图像。在本文中，我们提出了 $\textbf｛UP NeRF｝$（$\textbf｛U｝$不受约束的$\textbf｛P｝$ose先验自由$\textbf｛Ne｝$ural$\textbf｛R｝$adiance$\textFf｝$ields），以在没有相机姿态先验的情况下优化具有无约束图像集合的NeRF。我们通过优化颜色不敏感特征场的代理任务和用于瞬态遮挡器的单独模块来解决这些挑战，以阻止它们对姿态估计的影响。此外，我们引入了一个候选头部，以实现更稳健的姿态估计和瞬态感知深度监督，从而最大限度地减少不正确先验的影响。在具有挑战性的互联网照片集$\textit｛Phototourism｝$ 数据集中，与包括BARF及其变体在内的基线相比，我们的实验验证了我们的方法的优越性能。 et.al.|[2311.03784](http://arxiv.org/abs/2311.03784)|**[link](https://github.com/mlvlab/upnerf)**|
 |**2023-11-05**|**MuSHRoom: Multi-Sensor Hybrid Room Dataset for Joint 3D Reconstruction and Novel View Synthesis**|元宇宙技术要求在消费级硬件上对非人类感知（如无人机/机器人/自动汽车导航）和AR/VR等沉浸式技术进行准确、实时和沉浸式建模，同时要求结构准确性和逼真度。然而，在如何在统一的框架中应用几何重建和真实感建模（新颖的视图合成）方面存在知识差距。为了解决这一差距，并促进消费级设备的稳健和沉浸式建模和渲染的发展，首先，我们提出了一个真实世界的多传感器混合房间数据集（MuSHRoom）。我们的数据集提出了令人兴奋的挑战，需要最先进的方法具有成本效益，对噪声数据和设备具有鲁棒性，并且可以联合学习3D重建和新颖的视图合成，而不是将它们视为单独的任务，使其成为现实世界应用的理想选择。其次，我们在数据集上对几个著名的管道进行了基准测试，用于联合三维网格重建和新颖的视图合成。最后，为了进一步提高整体性能，我们提出了一种新的方法，在两个任务之间实现了良好的权衡。我们的数据集和基准测试在促进以稳健且计算高效的端到端方式融合3D重建和高质量渲染的改进方面显示出巨大潜力。 et.al.|[2311.02778](http://arxiv.org/abs/2311.02778)|null|
 
-<p align=right>(<a href=#updated-on-20231113>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231114>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-11-05**|**IPVNet: Learning Implicit Point-Voxel Features for Open-Surface 3D Reconstruction**|三维开放表面（例如非水密网格）的重建是计算机视觉中一个未被充分探索的领域。最近基于学习的内隐技术通过实现任意分辨率的重建，消除了以前的障碍。然而，这种方法通常依赖于区分表面的内部和外部，以便在重建目标时提取零水平集。在开放表面的情况下，这种区别通常会导致人为的表面间隙闭合。然而，真实世界的数据可能包含由显著的表面间隙定义的复杂细节。回归无符号距离场的隐函数在重建这种开放曲面方面显示出了前景。尽管如此，当前的无符号隐式方法依赖于原始数据的离散表示。这不仅将学习过程限制在表示的分辨率上，而且在重建中引入了异常值。为了在不引入异常值的情况下准确重建开放曲面，我们提出了一种基于学习的隐式点体素模型（IPVNet）。IPVNet通过利用原始点云数据及其离散体素对应物来预测三维空间中曲面和查询点之间的无符号距离。在合成和真实世界的公共数据集上进行的实验表明，IPVNet的性能优于现有技术，同时在最终的重建中产生的异常值要少得多。 et.al.|[2311.02552](http://arxiv.org/abs/2311.02552)|**[link](https://github.com/robotic-vision-lab/implicit-point-voxel-features-network)**|
 |**2023-11-02**|**CADSim: Robust and Scalable in-the-wild 3D Reconstruction for Controllable Sensor Simulation**|逼真的模拟是实现%自动驾驶汽车安全和可扩展开发的关键。一个核心组件是模拟传感器，以便可以在模拟中测试整个自主系统。传感器模拟包括对具有高质量外观和铰接几何结构的交通参与者（如车辆）进行建模，并实时渲染。自动驾驶行业通常雇佣艺术家来构建这些资产。然而，这是昂贵的，缓慢的，并且可能不能反映现实。相反，根据野外收集的传感器数据自动重建资产将为生成具有良好真实世界覆盖率的多样化大型集合提供更好的途径。然而，由于传感器数据的稀疏性和噪声，目前的重建方法在野外传感器数据中举步维艰。为了解决这些问题，我们提出了CADSim，它通过一小组CAD模型将零件感知对象类先验与可微分渲染相结合，以自动重建具有高质量外观的车辆几何结构，包括铰接车轮。我们的实验表明，与现有方法相比，我们的方法从稀疏数据中恢复了更准确的形状。重要的是，它还能有效地训练和渲染。我们在几个应用中展示了我们重建的车辆，包括对自主感知系统的精确测试。 et.al.|[2311.01447](http://arxiv.org/abs/2311.01447)|null|
 
-<p align=right>(<a href=#updated-on-20231113>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231114>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-11-10**|**Turbulence Scaling from Deep Learning Diffusion Generative Models**|复杂的空间和时间结构是湍流的固有特征，理解它们是一个重大挑战。这种压缩需要理解湍流流体流动配置的空间。我们使用基于扩散的生成模型来学习湍流涡度剖面的分布，并生成不可压缩Navier-Stokes方程的湍流解的快照。我们在两个空间维度上考虑反向级联，并生成不同于训练数据集中的不同湍流解。我们分析了新湍流剖面的统计标度特性，计算了它们的结构函数、能量功率谱、速度概率分布函数和局部能量耗散矩。所有学习的标度指数都与预期的Kolmogorov标度一致，并且具有比训练的更低的误差。这种与既定湍流特征的一致性有力地证明了该模型能够捕捉真实世界湍流的基本特征。 et.al.|[2311.06112](http://arxiv.org/abs/2311.06112)|null|
 |**2023-11-10**|**The calculations of Nucleon Electric Dipole Moment using background field on Lattice QCD**|核子和原子核电偶极矩（EDM）的测量在探测CP破坏和探索标准模型之外的物理方面发挥着重要作用。我们通过测量背景场存在下核子两点相关函数的能量偏移来提取中子EDM。拓扑电荷密度算子的紫外发散通过梯度流来减轻，并且由梯度流过程引起的扩散效应被包括在拟合模拟中。我们的计算是在两个2+1 DWF费米子岩崎规范场系综上进行的，这两个系综是由RBC/UKQCD合作产生的，具有1.73 GeV的反晶格间距和大约340和420 MeV的π介子质量。 et.al.|[2311.06106](http://arxiv.org/abs/2311.06106)|null|
 
-<p align=right>(<a href=#updated-on-20231113>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231114>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-10-30**|**Generative Neural Fields by Mixtures of Neural Implicit Functions**|我们提出了一种新的方法来学习由隐式基网络的线性组合表示的生成神经场。我们的算法通过进行元学习或采用自动解码范式，在潜在空间中以隐式神经表示的形式学习基网络及其系数。所提出的方法通过增加基网络的数量来容易地扩大生成神经场的容量，同时通过加权模型平均来保持推理网络的大小较小。因此，使用该模型对实例进行采样在延迟和内存占用方面是有效的。此外，我们为目标任务定制了去噪扩散概率模型，以对潜在的混合系数进行采样，这使我们的最终模型能够有效地生成看不见的数据。实验表明，我们的方法在图像、体素数据和NeRF场景的不同基准上实现了有竞争力的生成性能，而无需对特定模态和域进行复杂的设计。 et.al.|[2310.19464](http://arxiv.org/abs/2310.19464)|null|
 |**2023-10-24**|**LiCROM: Linear-Subspace Continuous Reduced Order Modeling with Neural Fields**|线性降阶建模（ROM）通过使用简化的运动学表示来近似系统的行为，从而简化了复杂的模拟。通常，ROM在使用特定空间离散化创建的输入模拟上进行训练，然后用于使用相同的离散化加速模拟。这种离散化依赖性是有限制的。独立于特定的离散化将提供在训练数据中混合和匹配网格分辨率、连通性和类型（四面体、六面体）的灵活性；以在训练过程中看不到的新颖离散化来加速模拟；以及加速在时间上或参数化地改变离散化的自适应模拟。我们提出了一种灵活的、独立于离散化的降阶建模方法。与传统ROM一样，我们将配置表示为位移场的线性组合。与传统的ROM不同，我们的位移场是从参考域上的每个点到相应位移矢量的连续映射；这些映射被表示为隐式神经场。使用线性连续ROM（LiCROM），我们的训练集可以包括经历多个加载条件的多个几何体，与它们的离散化无关。这为降阶建模的新应用打开了大门。我们现在可以加速在运行时修改几何体的模拟，例如通过切割、打孔，甚至交换整个网格。我们还可以加速对训练中看不见的几何形状的模拟。我们演示了一次性泛化，在单个几何体上进行训练，然后模拟各种看不见的几何体。 et.al.|[2310.15907](http://arxiv.org/abs/2310.15907)|null|
 
-<p align=right>(<a href=#updated-on-20231113>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231114>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
