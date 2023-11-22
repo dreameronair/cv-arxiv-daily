@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.11.21
+## Updated on 2023.11.22
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-11-09**|**BakedAvatar: Baking Neural Fields for Real-Time Head Avatar Synthesis**|从视频中合成逼真的4D人头头像对于VR/AR、远程呈现和视频游戏应用至关重要。尽管现有的基于神经辐射场（NeRF）的方法实现了高保真度的结果，但计算费用限制了它们在实时应用中的使用。为了克服这一限制，我们引入了BakedAvatar，这是一种用于实时神经头部化身合成的新表示，可部署在标准多边形光栅化管道中。我们的方法从学习的头部等值面中提取可变形的多层网格，并计算与表情、姿势和视图相关的外观，这些外观可以烘焙到静态纹理中，以实现高效的光栅化。因此，我们提出了一种用于神经头化身合成的三阶段流水线，包括学习连续变形、流形和辐射场，提取分层网格和纹理，以及使用差分光栅化微调纹理细节。实验结果表明，我们的表示生成的合成结果质量与其他最先进的方法相当，同时显著减少了所需的推理时间。我们进一步展示了单眼视频中的各种头部化身合成结果，包括视图合成、面部再现、表情编辑和姿势编辑，所有这些都是以交互式帧率进行的。 et.al.|[2311.05521](http://arxiv.org/abs/2311.05521)|null|
 |**2023-11-09**|**VoxNeRF: Bridging Voxel Representation and Neural Radiance Fields for Enhanced Indoor View Synthesis**|创建高质量的视图合成对于沉浸式应用程序至关重要，但仍然存在问题，尤其是在室内环境和实时部署中。当前的技术经常需要大量的计算时间来进行训练和渲染，并且由于不充分的几何结构，经常产生不太理想的3D表示。为了克服这一点，我们引入了VoxNeRF，这是一种利用体积表示来提高室内视图合成质量和效率的新方法。首先，VoxNeRF构建结构化的场景几何体，并将其转换为基于体素的表示。我们使用多分辨率哈希网格自适应地捕捉空间特征，有效地管理室内场景的遮挡和复杂几何结构。其次，我们提出了一种独特的体素引导的高效采样技术。这一创新有选择地将计算资源集中在射线段的最相关部分，大大减少了优化时间。我们针对三个公共室内数据集验证了我们的方法，并证明VoxNeRF优于最先进的方法。值得注意的是，它在减少训练和渲染时间的同时实现了这些收益，速度甚至超过了Instant NGP，使技术更接近实时。 et.al.|[2311.05289](http://arxiv.org/abs/2311.05289)|null|
 
-<p align=right>(<a href=#updated-on-20231121>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231122>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-11-16**|**On the Overconfidence Problem in Semantic 3D Mapping**|语义3D映射是一个最近感兴趣的话题，它融合了多个视图之间的深度和图像分割信息，以实时构建用对象类注释的3D地图。本文强调了融合过度自信问题，在该问题中，传统的映射方法即使在不正确的情况下也会为整个映射分配高置信度，从而导致输出校准错误。提出了几种改进聚变管道不同阶段不确定度校准的方法，并在ScanNet数据集上进行了比较。我们表明，使用最广泛的贝叶斯融合策略是校准最差的策略之一，并提出了一种结合融合和校准的学习管道GLFS，它在保持实时能力的同时实现了更高的精度和3D地图校准。我们进一步说明了地图校准对下游任务的重要性，表明在模块化ObjectNav代理上结合适当的语义融合可以提高其成功率。我们的代码将在Github上提供，以便在接受后进行再现。 et.al.|[2311.10018](http://arxiv.org/abs/2311.10018)|null|
 |**2023-11-16**|**DSR-Diff: Depth Map Super-Resolution with Diffusion Model**|彩色引导深度图超分辨率（CDSR）通过相应的高质量彩色图提高了低质量深度图的空间分辨率，有利于3D重建、虚拟现实和增强现实等各种应用。虽然传统的CDSR方法通常依赖于卷积神经网络或变换器，但扩散模型（DM）在高级视觉任务中表现出了显著的有效性。在这项工作中，我们提出了一种新的CDSR范式，该范式利用潜在空间内的扩散模型来生成深度图超分辨率的指导。所提出的方法包括制导生成网络（GGN）、深度图超分辨率网络（DSRN）和制导恢复网络（GRN）。GGN专门设计用于生成指南，同时管理其紧凑性。此外，我们将一个简单但有效的特征融合模块和转换器式特征提取模块集成到DSRN中，使其能够在多模型图像的提取、融合和重建中利用引导先验。考虑到准确性和效率，与最先进的方法相比，我们提出的方法在大量实验中显示出优越的性能。我们的代码将在https://github.com/shiyuan7/DSR-Diff. et.al.|[2311.09919](http://arxiv.org/abs/2311.09919)|null|
 
-<p align=right>(<a href=#updated-on-20231121>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231122>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-11-20**|**Nanoswimmers in a ratchet potential: Effects of a transverse rocking force**|我们研究了化学纳米游泳运动员在棘轮电势中的动力学，该电势在横向方向上周期性地振荡。作为机械化学耦合的结果，自推进速度变得与力相关，并且粒子轨迹在棘轮调制的方向上被校正。纳米wimmer平均速度的大小和方向取决于摇摆幅度和频率。值得注意的是，对于大于旋转扩散逆相关时间的频率，速度表现出振荡行为，作为振幅和频率的函数，符号多次反转。这些发现表明，机械化学耦合可以用于控制纳米级化学活性颗粒的运动。 et.al.|[2311.11735](http://arxiv.org/abs/2311.11735)|null|
 |**2023-11-20**|**Hidden asymptotics for the weak solutions of the strongly stratified Boussinesq system without rotation**|当弗劳德数为零时，强分层Boussinesq系统的渐近性已经过研究，但令人惊讶的是，所得到的极限系统并不取决于热扩散率 $\nu$'。在本文中，我们获得了更丰富的渐近性（取决于$\nu$'），并且我们对初始数据的假设更少。对于旋转流体系统，达到这些极限的唯一方法是考虑非传统的初始数据：对于经典地依赖于全空间变量的函数，我们只根据垂直坐标添加第二个。由于对极限系统结构的精细研究和调整的Strichartz估计，我们在弱Leray型解的情况下获得了收敛性，尽可能提供显式收敛速度。在更简单的情况$\nu$=$\nu$ ’中，我们能够改进Strichartz估计和收敛率。 et.al.|[2311.11731](http://arxiv.org/abs/2311.11731)|null|
 
-<p align=right>(<a href=#updated-on-20231121>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231122>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-11-06**|**Dynamic Neural Fields for Learning Atlases of 4D Fetal MRI Time-series**|我们提出了一种使用神经场快速构建生物医学图像图谱的方法。图谱是生物医学图像分析任务的关键，但传统的深度网络估计方法仍然耗时。在这项初步工作中，我们将特定主题的图谱构建框定为学习可变形时空观测的神经场。我们将我们的方法应用于学习子宫内胎儿动态BOLD MRI时间序列的受试者特异性图谱和运动稳定性。我们的方法产生了胎儿BOLD时间序列的高质量图谱，与现有工作相比，收敛速度更快。虽然我们的方法在解剖重叠方面稍逊于调整良好的基线，但它估计模板的速度要快得多，从而能够快速处理和稳定4D动态MRI采集的大型数据库。代码可在https://github.com/Kidrauh/neural-atlasing et.al.|[2311.02874](http://arxiv.org/abs/2311.02874)|**[link](https://github.com/kidrauh/neural-atlasing)**|
 |**2023-11-04**|**LISNeRF Mapping: LiDAR-based Implicit Mapping via Semantic Neural Fields for Large-Scale 3D Scenes**|大规模语义映射对于户外自主代理完成规划和导航等高级任务至关重要。本文提出了一种通过单独的激光雷达测量的隐式表示进行大规模三维语义重建的新方法。我们首先利用基于八叉树的分层结构来存储隐式特征，然后通过浅层多层感知器（MLP）将这些隐式特征解码为语义信息和有符号距离值。我们采用现成的算法来预测点云的语义标签和实例ID。然后，我们使用点云几何的自监督范式和语义和全景标签的伪监督范式来联合优化隐含特征和MLP参数。随后，利用Marching Cubes算法对推理阶段的场景进行细分和可视化。对于内存受限的场景，还开发了一种地图拼接策略，将子地图合并为一个完整的地图。据我们所知，我们的方法是第一个从仅激光雷达的输入中重建语义隐含场景的工作。在SemanticKITTI、SemanticPOSS和nuScenes三个真实世界数据集上的实验证明了与当前最先进的3D映射方法相比，我们的框架的有效性和效率。 et.al.|[2311.02313](http://arxiv.org/abs/2311.02313)|null|
 
-<p align=right>(<a href=#updated-on-20231121>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231122>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
