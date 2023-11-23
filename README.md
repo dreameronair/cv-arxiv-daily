@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.11.22
+## Updated on 2023.11.23
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-11-09**|**Reconstructing Objects in-the-wild for Realistic Sensor Simulation**|从真实世界的数据中重建物体并以新颖的视图渲染它们，对于为机器人训练和测试的模拟带来真实性、多样性和规模至关重要。在这项工作中，我们提出了NeuSim，这是一种新的方法，可以根据在距离和有限视点捕获的稀疏野外数据来估计精确的几何结构和逼真的外观。为了实现这一目标，我们将物体表面表示为神经符号距离函数，并利用激光雷达和相机传感器数据来重建平滑准确的几何体和法线。我们用一种稳健的、受物理启发的反射率表示法对物体外观进行建模，该表示法对野外数据有效。我们的实验表明，NeuSim在具有稀疏训练视图的具有挑战性的场景中具有强大的视图合成性能。此外，我们展示了将NeuSim资产组合到虚拟世界中，并生成用于评估自动驾驶感知模型的真实多传感器数据。 et.al.|[2311.05602](http://arxiv.org/abs/2311.05602)|null|
 |**2023-11-09**|**BakedAvatar: Baking Neural Fields for Real-Time Head Avatar Synthesis**|从视频中合成逼真的4D人头头像对于VR/AR、远程呈现和视频游戏应用至关重要。尽管现有的基于神经辐射场（NeRF）的方法实现了高保真度的结果，但计算费用限制了它们在实时应用中的使用。为了克服这一限制，我们引入了BakedAvatar，这是一种用于实时神经头部化身合成的新表示，可部署在标准多边形光栅化管道中。我们的方法从学习的头部等值面中提取可变形的多层网格，并计算与表情、姿势和视图相关的外观，这些外观可以烘焙到静态纹理中，以实现高效的光栅化。因此，我们提出了一种用于神经头化身合成的三阶段流水线，包括学习连续变形、流形和辐射场，提取分层网格和纹理，以及使用差分光栅化微调纹理细节。实验结果表明，我们的表示生成的合成结果质量与其他最先进的方法相当，同时显著减少了所需的推理时间。我们进一步展示了单眼视频中的各种头部化身合成结果，包括视图合成、面部再现、表情编辑和姿势编辑，所有这些都是以交互式帧率进行的。 et.al.|[2311.05521](http://arxiv.org/abs/2311.05521)|null|
 
-<p align=right>(<a href=#updated-on-20231122>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231123>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-11-18**|**Structure-Aware Sparse-View X-ray 3D Reconstruction**|X射线以其揭示物体内部结构的能力而闻名，有望为3D重建提供比可见光更丰富的信息。然而，现有的神经辐射场（NeRF）算法忽略了X射线的这一重要性质，导致它们在捕捉成像对象的结构内容方面存在局限性。在本文中，我们提出了一个用于稀疏视图X射线三维重建的框架，即结构感知X射线神经辐射密度场（SAX-NeRF）。首先，我们设计了一个基于线段的转换器（Lineformer）作为SAX NeRF的主干。Linefomer通过对X射线的每个线段内的相关性进行建模，捕捉三维空间中对象的内部结构。其次，我们提出了一种掩模局部全局（MLG）射线采样策略来提取二维投影中的上下文和几何信息。此外，我们还收集了一个更大规模的数据集X3D，涵盖了更广泛的X射线应用。在X3D上的实验表明，SAX-NeRF在新的视图合成和CT重建方面分别比以前的基于NeRF的方法高出12.56和2.49dB。代码、模型和数据将在https://github.com/caiyuanhao1998/SAX-NeRF et.al.|[2311.10959](http://arxiv.org/abs/2311.10959)|**[link](https://github.com/caiyuanhao1998/sax-nerf)**|
 |**2023-11-17**|**Labeling Indoor Scenes with Fusion of Out-of-the-Box Perception Models**|图像注释阶段是训练和评估对象检测和语义分割模型所需的关键且通常是最耗时的部分。在新环境中部署现有模型通常需要检测训练数据中不存在的新语义类。此外，室内场景包含显著的视点变化，需要通过训练的感知模型来正确处理。我们建议利用最先进的自下而上分割（SAM）、对象检测（Detic）和语义分割（MaskFormer）模型的最新进展，所有这些都是在大规模数据集上训练的。我们的目标是开发一种具有成本效益的标记方法，以获得用于室内环境中的语义分割和对象实例检测的伪标签，最终目标是促进各种下游任务的轻量级模型的训练。我们还提出了一个多视图标记融合阶段，该阶段考虑了场景的多个视图可用的设置，并可用于识别和纠正单个视图的不一致性。我们在主动视觉数据集和ADE20K数据集上证明了所提出的方法的有效性。我们通过将标记过程与人工注释进行比较来评估标记过程的质量。此外，我们还证明了所获得的标签在下游任务（如目标导航和零件发现）中的有效性。在对象目标导航的背景下，与使用大型单片视觉语言预训练模型的零样本基线相比，我们描述了使用这种融合方法增强的性能。 et.al.|[2311.10883](http://arxiv.org/abs/2311.10883)|null|
 
-<p align=right>(<a href=#updated-on-20231122>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231123>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-11-21**|**LoCo: Locally Constrained Training-Free Layout-to-Image Synthesis**|最近的文本到图像扩散模型在生成高质量图像方面达到了前所未有的水平。然而，他们对文本提示的完全依赖往往无法准确传达细粒度的空间组成。在本文中，我们提出了LoCo，这是一种无需训练的布局到图像合成方法，擅长生成与文本提示和空间布局对齐的高质量图像。我们的方法引入了局部注意力约束来细化单个对象的交叉注意力，确保它们在指定区域的精确放置。我们进一步提出了一种填充令牌约束，以利用先前被忽略的填充令牌中嵌入的语义信息，从而防止合成对象的不期望的融合。LoCo无缝集成到现有的文本到图像和布局到图像模型中，显著提高了它们的性能，并有效地解决了在现有方法中观察到的语义故障。通过广泛的实验，我们展示了我们方法的优越性，在多个基准测试中，我们在质量和数量上都超过了现有的最先进的无训练布局图像方法。 et.al.|[2311.12342](http://arxiv.org/abs/2311.12342)|null|
 |**2023-11-21**|**Overcoming Pathology Image Data Deficiency: Generating Images from Pathological Transformation Process**|组织病理学是医学诊断的金标准，但由于医疗资源短缺，其应用受到限制。利用深度学习，计算机辅助诊断有可能缓解病理学家的短缺，并提供及时的临床分析。然而，开发一个可靠的模型通常需要大量的数据来进行训练，这在病理学领域是具有挑战性的。作为回应，我们提出了一种用于图像数据生成的自适应深度控制双向扩散（ADBD）网络。域偏移方法可以在小训练集下工作，并通过源信息引导克服扩散过拟合。具体而言，我们制定了一种混合注意力策略，将全球和地方的注意力重点融合在一起，引导双向扩散，确保移民成功。此外，我们开发了自适应深度控制策略来模拟生理变换，能够产生具有相应软标签的无限跨域中间图像。ADBD有效地克服了病理学图像数据的不足，为进一步的病理学相关研究提供了支持。 et.al.|[2311.12316](http://arxiv.org/abs/2311.12316)|**[link](https://github.com/rowerliu/adbd)**|
 
-<p align=right>(<a href=#updated-on-20231122>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231123>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-11-06**|**Dynamic Neural Fields for Learning Atlases of 4D Fetal MRI Time-series**|我们提出了一种使用神经场快速构建生物医学图像图谱的方法。图谱是生物医学图像分析任务的关键，但传统的深度网络估计方法仍然耗时。在这项初步工作中，我们将特定主题的图谱构建框定为学习可变形时空观测的神经场。我们将我们的方法应用于学习子宫内胎儿动态BOLD MRI时间序列的受试者特异性图谱和运动稳定性。我们的方法产生了胎儿BOLD时间序列的高质量图谱，与现有工作相比，收敛速度更快。虽然我们的方法在解剖重叠方面稍逊于调整良好的基线，但它估计模板的速度要快得多，从而能够快速处理和稳定4D动态MRI采集的大型数据库。代码可在https://github.com/Kidrauh/neural-atlasing et.al.|[2311.02874](http://arxiv.org/abs/2311.02874)|**[link](https://github.com/kidrauh/neural-atlasing)**|
 |**2023-11-04**|**LISNeRF Mapping: LiDAR-based Implicit Mapping via Semantic Neural Fields for Large-Scale 3D Scenes**|大规模语义映射对于户外自主代理完成规划和导航等高级任务至关重要。本文提出了一种通过单独的激光雷达测量的隐式表示进行大规模三维语义重建的新方法。我们首先利用基于八叉树的分层结构来存储隐式特征，然后通过浅层多层感知器（MLP）将这些隐式特征解码为语义信息和有符号距离值。我们采用现成的算法来预测点云的语义标签和实例ID。然后，我们使用点云几何的自监督范式和语义和全景标签的伪监督范式来联合优化隐含特征和MLP参数。随后，利用Marching Cubes算法对推理阶段的场景进行细分和可视化。对于内存受限的场景，还开发了一种地图拼接策略，将子地图合并为一个完整的地图。据我们所知，我们的方法是第一个从仅激光雷达的输入中重建语义隐含场景的工作。在SemanticKITTI、SemanticPOSS和nuScenes三个真实世界数据集上的实验证明了与当前最先进的3D映射方法相比，我们的框架的有效性和效率。 et.al.|[2311.02313](http://arxiv.org/abs/2311.02313)|null|
 
-<p align=right>(<a href=#updated-on-20231122>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231123>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
