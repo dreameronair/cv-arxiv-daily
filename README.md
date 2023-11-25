@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.11.24
+## Updated on 2023.11.25
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-11-10**|**Improved Positional Encoding for Implicit Neural Representation based Compact Data Representation**|采用位置编码来捕获隐式神经表示（INR）中编码信号的高频信息。在本文中，我们提出了一种新的位置编码方法，该方法提高了INR的重建质量。所提出的嵌入方法对于紧凑的数据表示更有利，因为它比现有方法具有更多的频率基。我们的实验表明，该方法在压缩任务中没有引入任何额外的复杂性，并且在新的视图合成中具有更高的重建质量，从而在率失真性能上获得了显著的增益。 et.al.|[2311.06059](http://arxiv.org/abs/2311.06059)|null|
 |**2023-11-09**|**Real-Time Neural Rasterization for Large Scenes**|提出了一种新的大场景真实感实时新视图合成方法。现有的神经渲染方法可以生成逼真的结果，但主要适用于小规模场景（<50平方米），在大规模场景（>10000平方米）中存在困难。传统的基于图形的光栅化渲染对于大型场景来说速度很快，但缺乏真实感，并且需要昂贵的手动创建资源。我们的方法结合了两全其美，将中等质量的脚手架网格作为输入，学习神经纹理场和着色器来建模与视图相关的效果，以增强真实感，同时仍然使用标准图形管道进行实时渲染。我们的方法优于现有的神经渲染方法，为大型自动驾驶和无人机场景提供了至少30倍的渲染速度和相当或更好的真实感。我们的工作是第一个实现大型真实世界场景的实时渲染。 et.al.|[2311.05607](http://arxiv.org/abs/2311.05607)|null|
 
-<p align=right>(<a href=#updated-on-20231124>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231125>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-11-18**|**LOSTU: Fast, Scalable, and Uncertainty-Aware Triangulation**|三角测量算法通常旨在最小化重投影（ $L_2$）误差，但这仅在相机参数或相机姿态没有误差时提供最大似然估计。尽管最近的进步已经产生了估计相机参数的技术，考虑到3D点的不确定性，但大多数运动结构（SfM）管道仍然使用旧的三角测量算法。这项工作利用最近的发现，提供了一种快速、可扩展和统计优化的三角测量方法，称为LOSTU。结果表明，与传统的$L_2$ 三角测量方法相比，LOSTU始终产生较低的三维重建误差——通常允许LOSTU成功地三角测量更多的点。此外，除了提供更好的3D重建外，LOSTU可以比Levenberg-Marquardt（或类似）优化方案快得多。 et.al.|[2311.11171](http://arxiv.org/abs/2311.11171)|null|
 |**2023-11-18**|**Invariant-based Mapping of Space During General Motion of an Observer**|本文探索了基于视觉运动的不变量，产生了一个新的瞬时域，其中：a）即使2D图像由于相机运动而发生连续变化，静止环境也被感知为不变，b）可以在特定的子空间中检测并潜在地避免障碍物，c）可以潜在地检测运动对象。为了实现这一点，我们使用了从可测量光流导出的非线性函数，这些函数与几何三维不变量相关联。我们展示的模拟涉及一台相对于3D对象平移和旋转的相机，捕捉相机投影图像的快照。我们表明，随着时间的推移，对象在新域中看起来没有变化。我们处理来自KITTI数据集的真实数据，并演示如何分割空间以识别自由导航区域并检测预定子空间内的障碍物。此外，我们还介绍了基于KITTI数据集的运动物体识别和分割以及形状恒定性可视化的初步结果。这种表示是直接的，依赖于用于光流的简单去旋转的函数。这种表示只需要一个相机，它是基于像素的，适合并行处理，并且它消除了3D重建技术的必要性。 et.al.|[2311.11130](http://arxiv.org/abs/2311.11130)|null|
 
-<p align=right>(<a href=#updated-on-20231124>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231125>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-11-22**|**Simultaneous uniqueness and numerical inversion for an inverse problem in the time-domain diffuse optical tomography with fluorescence**|在这项工作中，研究了由荧光时域扩散光学层析成像（DOT-FDOT）产生的多个系数的确定的反问题。通过时间相关边界测量，我们同时恢复了生物组织中背景吸收系数、光子扩散系数以及荧光吸收的分布。我们建立了这个多系数同时反问题的唯一性定理。然后，考虑了数值反演。我们介绍了一种加速Landweber迭代算法，并给出了几个数值例子来说明所提出的反演方案的性能。 et.al.|[2311.13391](http://arxiv.org/abs/2311.13391)|null|
 |**2023-11-22**|**LucidDreamer: Domain-free Generation of 3D Gaussian Splatting Scenes**|随着VR设备和内容的广泛使用，对3D场景生成技术的需求变得越来越普遍。然而，现有的3D场景生成模型将目标场景限制在特定领域，主要是因为它们使用的3D扫描数据集的训练策略与现实世界相去甚远。为了解决这种局限性，我们提出了LucidDreamer，这是一种通过充分利用现有的基于大规模扩散的生成模型的力量而实现的无领域场景生成管道。我们的LucidDreamer有两个可选步骤：Dreaming和Alignment。首先，为了根据输入生成多视图一致的图像，我们将点云设置为每次图像生成的几何准则。具体来说，我们将点云的一部分投影到所需的视图，并提供投影作为使用生成模型进行修复的指导。修复后的图像被提升到具有估计深度图的3D空间，构成新的点。其次，为了将新的点聚合到3D场景中，我们提出了一种对齐算法，该算法和谐地集成了新生成的3D场景的部分。最终获得的3D场景用作优化高斯飞溅的初始点。LucidDreamer生成的高斯飞溅与以前的3D场景生成方法相比非常详细，对目标场景的域没有限制。 et.al.|[2311.13384](http://arxiv.org/abs/2311.13384)|null|
 
-<p align=right>(<a href=#updated-on-20231124>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231125>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-11-08**|**Learning Robust Multi-Scale Representation for Neural Radiance Fields from Unposed Images**|我们介绍了一种改进的计算机视觉中基于神经图像的绘制问题的解决方案。给定一组在火车时刻从自由移动的相机拍摄的图像，所提出的方法可以在测试时刻从一个新颖的视角合成真实的场景图像。本文提出的关键思想是：（i）在神经新视图合成问题中，通过稳健的管道从未处理的日常图像中恢复准确的相机参数同样至关重要；（ii）以不同的分辨率对对象的内容进行建模更为实用，因为在日常的未渲染图像中，相机的剧烈运动极有可能发生。为了结合这些关键思想，我们利用了场景刚性、多尺度神经场景表示和单图像深度预测的基本原理。具体地说，所提出的方法使相机参数在基于神经场的建模框架中是可学习的。通过假设每个视图的深度预测是按比例进行的，我们限制了连续帧之间的相对姿态。根据相对姿态，通过多尺度神经场网络内的基于图神经网络的多运动平均来建模绝对相机姿态估计，从而产生单个损失函数。优化引入的损失函数提供了相机内在的、外在的以及从未聚焦的图像渲染的图像。我们通过例子证明，对于从日常获取的未聚焦多视图图像中精确建模多尺度神经场景表示的统一框架，在场景表示框架内进行精确的相机姿态估计同样重要。如果不考虑相机姿态估计管道中的鲁棒性措施，对多尺度混叠伪影进行建模可能会适得其反。我们在几个基准数据集上进行了大量实验，以证明我们的方法的适用性。 et.al.|[2311.04521](http://arxiv.org/abs/2311.04521)|null|
 |**2023-11-06**|**Dynamic Neural Fields for Learning Atlases of 4D Fetal MRI Time-series**|我们提出了一种使用神经场快速构建生物医学图像图谱的方法。图谱是生物医学图像分析任务的关键，但传统的深度网络估计方法仍然耗时。在这项初步工作中，我们将特定主题的图谱构建框定为学习可变形时空观测的神经场。我们将我们的方法应用于学习子宫内胎儿动态BOLD MRI时间序列的受试者特异性图谱和运动稳定性。我们的方法产生了胎儿BOLD时间序列的高质量图谱，与现有工作相比，收敛速度更快。虽然我们的方法在解剖重叠方面稍逊于调整良好的基线，但它估计模板的速度要快得多，从而能够快速处理和稳定4D动态MRI采集的大型数据库。代码可在https://github.com/Kidrauh/neural-atlasing et.al.|[2311.02874](http://arxiv.org/abs/2311.02874)|**[link](https://github.com/kidrauh/neural-atlasing)**|
 
-<p align=right>(<a href=#updated-on-20231124>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231125>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
