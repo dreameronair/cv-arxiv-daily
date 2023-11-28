@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.11.27
+## Updated on 2023.11.28
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-11-10**|**Improved Positional Encoding for Implicit Neural Representation based Compact Data Representation**|采用位置编码来捕获隐式神经表示（INR）中编码信号的高频信息。在本文中，我们提出了一种新的位置编码方法，该方法提高了INR的重建质量。所提出的嵌入方法对于紧凑的数据表示更有利，因为它比现有方法具有更多的频率基。我们的实验表明，该方法在压缩任务中没有引入任何额外的复杂性，并且在新的视图合成中具有更高的重建质量，从而在率失真性能上获得了显著的增益。 et.al.|[2311.06059](http://arxiv.org/abs/2311.06059)|null|
 |**2023-11-09**|**Real-Time Neural Rasterization for Large Scenes**|提出了一种新的大场景真实感实时新视图合成方法。现有的神经渲染方法可以生成逼真的结果，但主要适用于小规模场景（<50平方米），在大规模场景（>10000平方米）中存在困难。传统的基于图形的光栅化渲染对于大型场景来说速度很快，但缺乏真实感，并且需要昂贵的手动创建资源。我们的方法结合了两全其美，将中等质量的脚手架网格作为输入，学习神经纹理场和着色器来建模与视图相关的效果，以增强真实感，同时仍然使用标准图形管道进行实时渲染。我们的方法优于现有的神经渲染方法，为大型自动驾驶和无人机场景提供了至少30倍的渲染速度和相当或更好的真实感。我们的工作是第一个实现大型真实世界场景的实时渲染。 et.al.|[2311.05607](http://arxiv.org/abs/2311.05607)|null|
 
-<p align=right>(<a href=#updated-on-20231127>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231128>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-11-20**|**Mixing-Denoising Generalizable Occupancy Networks**|虽然目前最先进的可推广隐式神经形状模型依赖于卷积的归纳偏差，但仍不完全清楚从这种偏差中产生的特性如何与从点云进行3D重建的任务兼容。在这种情况下，我们探索了一种可推广性的替代方法。我们放松了固有的模型偏差（即，使用MLP来编码局部特征，而不是卷积），并用与重建任务相关的辅助正则化来约束假设空间，即去噪。所得到的模型是第一个基于点云网络的具有快速前馈推理的唯一MLP局部条件隐式形状重建。点云承载的特征和去噪偏移是在单次前向通过中从完全MLP制造的网络中预测的。解码器通过在去噪相对位置编码的指导下，从点云顺序不变地汇集附近的特征来预测空间中任何地方的查询的占用概率。我们在使用一半数量的模型参数的同时，优于最先进的卷积方法。 et.al.|[2311.12125](http://arxiv.org/abs/2311.12125)|null|
 |**2023-11-23**|**PF-LRM: Pose-Free Large Reconstruction Model for Joint Pose and Shape Prediction**|我们提出了一种无姿态大型重建模型（PF-LRM），用于从一些未经处理的图像重建3D对象，即使视觉重叠很小，同时在单个A100 GPU上估计1.3秒内的相对相机姿态。PF-LRM是一种高度可扩展的方法，利用自关注块在3D对象令牌和2D图像令牌之间交换信息；我们为每个视图预测一个粗略的点云，然后使用可微分透视n-point（PnP）解算器来获得相机姿势。当在约1M个对象的大量多视图姿态数据上训练时，PF-LRM表现出强大的跨数据集泛化能力，并且在各种看不见的评估数据集上，在姿态预测精度和3D重建质量方面大大优于基线方法。我们还通过快速前馈推理证明了我们的模型在下游文本/图像到3D任务中的适用性。我们的项目网站位于：https://totoro97.github.io/pf-lrm。 et.al.|[2311.12024](http://arxiv.org/abs/2311.12024)|null|
 
-<p align=right>(<a href=#updated-on-20231127>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231128>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-11-24**|**Joint Diffusion: Mutual Consistency-Driven Diffusion Model for PET-MRI Co-Reconstruction**|正电子发射断层扫描和磁共振成像（PET-MRI）系统可以获得功能和解剖扫描。PET的信噪比较低。同时，MRI中的k空间数据采集过程非常耗时。该研究旨在加速MRI和提高PET图像质量。传统的方法涉及对PET-MRI系统内的每个模态进行单独的重建。然而，多模态图像之间存在互补信息。互补信息可以有助于图像重建。在本研究中，我们提出了一种新的PET-MRI联合重建模型，该模型采用相互一致性驱动的扩散模式，即MC扩散。MC Diffusion学习PET和MRI的联合概率分布，以利用互补信息。我们利用ADNI数据集对LPLS、Joint ISAT net和MC Diffusion进行了一系列对比实验。结果强调了MC Diffusion在质量和数量上的改进，超过了最先进的方法。 et.al.|[2311.14473](http://arxiv.org/abs/2311.14473)|null|
 |**2023-11-24**|**Incomplete resection of the icEEG seizure onset zone is not associated with post-surgical outcomes**|从脑电图中确定癫痫发作区域对于有效的外科检查非常重要。然而，尚不清楚是否需要对其进行完全切除以避免癫痫发作，或者换言之，术后癫痫复发是否是由于癫痫发作区域的不完全切除所致。对63名受试者（735次癫痫发作）的icEEG记录进行回顾性分析，通过视觉检查和算法描绘确定了癫痫发作区域。我们分析了发病区域的切除，并将其与术后癫痫控制联系起来。大多数受试者切除了超过一半的发病区域（视觉和算法方法分别为70.7%和60.5%的受试者）。在研究发作或切除的空间范围以及弥漫性发作的存在时，我们没有发现与术后癫痫发作控制相关的实质性证据（所有AUC<0.7，p>0.05）。癫痫发作区域往往至少部分切除，但不太完全的切除与术后更差的结果无关。我们得出的结论是，癫痫手术后癫痫复发不一定是icEEG定义的未能完全切除癫痫发作区的结果。必须涉及其他网络机制，这些机制不仅限于癫痫发作地区。 et.al.|[2311.14434](http://arxiv.org/abs/2311.14434)|null|
 
-<p align=right>(<a href=#updated-on-20231127>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231128>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-11-09**|**BakedAvatar: Baking Neural Fields for Real-Time Head Avatar Synthesis**|从视频中合成逼真的4D人头头像对于VR/AR、远程呈现和视频游戏应用至关重要。尽管现有的基于神经辐射场（NeRF）的方法实现了高保真度的结果，但计算费用限制了它们在实时应用中的使用。为了克服这一限制，我们引入了BakedAvatar，这是一种用于实时神经头部化身合成的新表示，可部署在标准多边形光栅化管道中。我们的方法从学习的头部等值面中提取可变形的多层网格，并计算与表情、姿势和视图相关的外观，这些外观可以烘焙到静态纹理中，以实现高效的光栅化。因此，我们提出了一种用于神经头化身合成的三阶段流水线，包括学习连续变形、流形和辐射场，提取分层网格和纹理，以及使用差分光栅化微调纹理细节。实验结果表明，我们的表示生成的合成结果质量与其他最先进的方法相当，同时显著减少了所需的推理时间。我们进一步展示了单眼视频中的各种头部化身合成结果，包括视图合成、面部再现、表情编辑和姿势编辑，所有这些都是以交互式帧率进行的。 et.al.|[2311.05521](http://arxiv.org/abs/2311.05521)|null|
 |**2023-11-08**|**Learning Robust Multi-Scale Representation for Neural Radiance Fields from Unposed Images**|我们介绍了一种改进的计算机视觉中基于神经图像的绘制问题的解决方案。给定一组在火车时刻从自由移动的相机拍摄的图像，所提出的方法可以在测试时刻从一个新颖的视角合成真实的场景图像。本文提出的关键思想是：（i）在神经新视图合成问题中，通过稳健的管道从未处理的日常图像中恢复准确的相机参数同样至关重要；（ii）以不同的分辨率对对象的内容进行建模更为实用，因为在日常的未渲染图像中，相机的剧烈运动极有可能发生。为了结合这些关键思想，我们利用了场景刚性、多尺度神经场景表示和单图像深度预测的基本原理。具体地说，所提出的方法使相机参数在基于神经场的建模框架中是可学习的。通过假设每个视图的深度预测是按比例进行的，我们限制了连续帧之间的相对姿态。根据相对姿态，通过多尺度神经场网络内的基于图神经网络的多运动平均来建模绝对相机姿态估计，从而产生单个损失函数。优化引入的损失函数提供了相机内在的、外在的以及从未聚焦的图像渲染的图像。我们通过例子证明，对于从日常获取的未聚焦多视图图像中精确建模多尺度神经场景表示的统一框架，在场景表示框架内进行精确的相机姿态估计同样重要。如果不考虑相机姿态估计管道中的鲁棒性措施，对多尺度混叠伪影进行建模可能会适得其反。我们在几个基准数据集上进行了大量实验，以证明我们的方法的适用性。 et.al.|[2311.04521](http://arxiv.org/abs/2311.04521)|null|
 
-<p align=right>(<a href=#updated-on-20231127>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231128>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
