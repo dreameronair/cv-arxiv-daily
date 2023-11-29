@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.11.28
+## Updated on 2023.11.29
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-11-20**|**Holistic Inverse Rendering of Complex Facade via Aerial 3D Scanning**|在这项工作中，我们使用多视图航空图像，使用神经符号距离场（SDF）重建立面的几何结构、照明和材料。在不需要复杂设备的情况下，我们的方法只将无人机捕捉到的简单RGB图像作为输入，以实现基于物理和照片真实感的新颖视图渲染、重新照明和编辑。然而，现实世界中的立面通常具有复杂的外观，从具有细微细节的漫射岩石到具有镜面反射的大面积玻璃窗，这使得很难处理所有事情。因此，以前的方法可以保留几何细节，但无法重建光滑的玻璃窗或虎钳。为了应对这一挑战，我们引入了三种空间和语义自适应优化策略，包括基于零样本分割技术的语义正则化方法以提高材料一致性，频率软件几何正则化方法来平衡不同表面中的表面平滑度和细节，以及基于可见性探针的方案，以实现对大规模户外环境中的局部照明的有效建模。此外，我们还捕捉了真实世界的立面航空3D扫描图像集和相应的点云，用于训练和基准测试。实验证明，与最先进的基线相比，我们的方法在立面整体逆绘制、新颖的视图合成和场景编辑方面具有卓越的质量。 et.al.|[2311.11825](http://arxiv.org/abs/2311.11825)|null|
 |**2023-11-18**|**Structure-Aware Sparse-View X-ray 3D Reconstruction**|X射线以其揭示物体内部结构的能力而闻名，有望为3D重建提供比可见光更丰富的信息。然而，现有的神经辐射场（NeRF）算法忽略了X射线的这一重要性质，导致它们在捕捉成像对象的结构内容方面存在局限性。在本文中，我们提出了一个用于稀疏视图X射线三维重建的框架，即结构感知X射线神经辐射密度场（SAX-NeRF）。首先，我们设计了一个基于线段的转换器（Lineformer）作为SAX NeRF的主干。Linefomer通过对X射线的每个线段内的相关性进行建模，捕捉三维空间中对象的内部结构。其次，我们提出了一种掩模局部全局（MLG）射线采样策略来提取二维投影中的上下文和几何信息。此外，我们还收集了一个更大规模的数据集X3D，涵盖了更广泛的X射线应用。在X3D上的实验表明，SAX-NeRF在新的视图合成和CT重建方面分别比以前的基于NeRF的方法高出12.56和2.49dB。代码、模型和数据将在https://github.com/caiyuanhao1998/SAX-NeRF et.al.|[2311.10959](http://arxiv.org/abs/2311.10959)|**[link](https://github.com/caiyuanhao1998/sax-nerf)**|
 
-<p align=right>(<a href=#updated-on-20231128>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231129>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-11-23**|**GigaPose: Fast and Robust Novel Object Pose Estimation via One Correspondence**|我们提出了GigaPose，这是一种快速、稳健和准确的方法，用于基于CAD的RGB图像中的新对象姿态估计。GigaPose首先利用判别模板（CAD模型的渲染图像）来恢复平面外旋转，然后使用补丁对应关系来估计剩余的四个参数。我们的方法只在两个自由度空间中对模板进行采样，而不是通常的三个自由度，并在特征空间中使用快速近邻搜索将输入图像与模板匹配，与现有技术相比，速度提高了38x。此外，GigaPose对分割误差的鲁棒性明显更强。我们对BOP挑战的七个核心数据集的广泛评估表明，它达到了最先进的精度，并且可以与细化方法无缝集成。此外，我们还展示了GigaPose与3D模型的潜力，这些模型是最近从单个图像进行3D重建的工作所预测的，从而放松了对CAD模型的需求，并使6D姿态对象估计更加方便。我们的源代码和经过训练的模型可在https://github.com/nv-nguyen/gigaPose et.al.|[2311.14155](http://arxiv.org/abs/2311.14155)|**[link](https://github.com/nv-nguyen/gigapose)**|
 |**2023-11-23**|**MonoNav: MAV Navigation via Monocular Depth Estimation and Reconstruction**|部署最小的微型飞行器（MAV）平台（<100 g）的一个主要挑战是它们无法携带提供高分辨率测量深度信息的传感器（例如，激光雷达或立体相机）。当前的系统依赖于端到端的学习或启发式方法，这些方法直接将图像映射到控制输入，并且难以在未知环境中快速飞行。在这项工作中，我们提出了以下问题：仅使用单眼相机、光学里程计和非车载计算，我们能否创建精确的地图，以利用更先进的大型机器人系统所采用的强大路径规划和导航方法，在未知环境中实现强大的自主性？我们介绍了MonoNav：一种用于MAV的快速3D重建和导航堆栈，它利用深度预测神经网络的最新进展，从一系列单眼图像和姿势中实现精确的3D场景重建。MonoNav使用现成的预训练单目深度估计和融合技术来构建地图，然后在运动基元上搜索，以规划到达目标的无碰撞轨迹。在广泛的硬件实验中，我们展示了MonoNav如何使Crazyflie（37 g MAV）在杂乱的室内环境中快速导航（0.5 m/s）。我们根据最先进的端到端方法对MonoNav进行了评估，发现导航中的碰撞率显著降低（降低了4倍）。这种安全性的提高是以保守主义为代价的，目标完成率降低了22%。 et.al.|[2311.14100](http://arxiv.org/abs/2311.14100)|null|
 
-<p align=right>(<a href=#updated-on-20231128>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231129>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-11-27**|**Closing the ODE-SDE gap in score-based diffusion models through the Fokker-Planck equation**|基于分数的扩散模型已成为深度生成建模最有前途的框架之一，因为它们在许多生成任务中的最先进性能，同时依赖于随机微分方程（SDE）和常微分方程（ODE）等数学基础。根据经验，已经报道了基于ODE的样本不如基于SDE的样本。在本文中，我们严格描述了在训练基于分数的扩散模型时出现的动力学和近似范围，包括真实的SDE动力学、神经近似、由此产生的各种近似粒子动力学，以及它们相关的福克-普朗克方程和这些福克-普朗克方程式的神经网络近似。我们系统地分析了基于分数的扩散模型的ODE和SDE动力学之间的差异，并将其与相关的福克-普朗克方程联系起来。我们根据Fokker-Planck残差导出了ODE-和SDE诱导分布之间的Wasserstein 2-距离的理论上界。我们还从数值上表明，传统的基于分数的扩散模型可以在ODE和SDE诱导的分布之间表现出显著的差异，我们使用显式比较来证明这一点。此外，我们在数值上表明，通过将福克-普朗克残差作为一个额外的正则化项来减少，可以缩小ODE和SDE诱导分布之间的差距。我们的实验表明，这种正则化可以改善ODE产生的分布，但这可能是以降低SDE样本质量为代价的。 et.al.|[2311.15996](http://arxiv.org/abs/2311.15996)|null|
 |**2023-11-27**|**DiffAnt: Diffusion Models for Action Anticipation**|对未来行动的预期本质上是不确定的。给定一个观察到的包含正在进行的动作的视频片段，可能会出现多个后续动作。在预测遥远的未来时，这种不确定性会变得更大。然而，大多数现有的行动预期模型都坚持确定性方法，忽略了对未来不确定性的考虑。在这项工作中，我们从生成的角度重新思考行动预期，采用扩散模型来捕捉不同可能的未来行动。在这个框架中，未来的动作是从潜在空间中的标准高斯噪声迭代生成的，以观察到的视频为条件，然后转换到动作空间中。在早餐、50份沙拉、EpicKitchens和EGTEA Gaze+四个基准数据集上进行了广泛的实验，所提出的方法取得了优于或可比于最先进方法的结果，表明了生成方法对行动预期的有效性。我们的代码和经过训练的模型将在GitHub上发布。 et.al.|[2311.15991](http://arxiv.org/abs/2311.15991)|null|
 
-<p align=right>(<a href=#updated-on-20231128>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231129>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-11-14**|**Instant3D: Instant Text-to-3D Generation**|文本到三维生成，旨在通过文本提示合成生动的三维对象，引起了计算机视觉界的广泛关注。虽然已有的几项工作在这项任务上取得了令人印象深刻的成果，但它们主要依赖于耗时的优化范式。具体来说，这些方法为每个文本提示从头开始优化神经场，生成一个对象大约需要一个小时或更长时间。这种繁重和重复的培训成本阻碍了他们的实际部署。在本文中，我们提出了一种新的快速文本到三维生成框架，称为Instant3D。一旦经过训练，Instant3D就能够通过一次前馈网络运行，在不到一秒钟的时间内为看不见的文本提示创建一个3D对象。我们通过设计一个新的网络来实现这一惊人的速度，该网络直接从文本提示构建3D三平面。我们的Instant3D的核心创新在于探索将文本条件有效地注入网络的策略。此外，我们提出了一种简单而有效的激活函数，即缩放的sigmoid函数，以取代原始的sigmoid函数，它将训练收敛速度提高了十倍以上。最后，为了解决3D生成中的Janus（多头）问题，我们提出了一种自适应Perp-Neg算法，该算法可以在训练过程中根据Janus问题的严重程度动态调整其概念否定量表，有效地降低了多头效应。在各种基准数据集上进行的大量实验表明，所提出的算法在质量和数量上都优于最先进的方法，同时实现了显著更好的效率。项目页面位于https://ming1993li.github.io/Instant3DProj. et.al.|[2311.08403](http://arxiv.org/abs/2311.08403)|null|
 |**2023-11-13**|**On the mathematical replication of the MacKay effect from redundant stimulation**|在这项研究中，我们研究了视觉感知与初级视觉皮层（V1）神经活动的数学建模之间的复杂联系，重点是复制麦凯效应[MacKay，Nature 1957]。虽然分叉理论一直是解决神经科学问题的一种突出的数学方法，特别是在描述V1中由于参数变化而自发形成的模式时，它在具有局部感觉输入的场景中面临挑战。例如，这一点在麦凯的心理物理学实验中很明显，在该实验中，视觉刺激信息的冗余导致了不规则的形状，使分叉理论和多尺度分析的效果较差。为了解决这个问题，我们遵循了一个基于Amari型神经场模型的输入输出可控性的数学观点。该框架将感觉输入视为一种控制功能，通过视觉刺激的视网膜-皮层图进行皮层表征，捕捉刺激的不同特征，特别是麦凯漏斗模式“麦凯射线”中的中心冗余。从控制理论的角度，讨论了Amari型方程对于线性和非线性响应函数的精确可控性。然后，应用于麦凯效应复制，我们调整了表示神经元内连接的参数，以确保在没有感觉输入的情况下，皮层活动指数稳定到静止状态，我们进行了定量和定性研究，以表明它捕捉到了麦凯报告的诱导后图像的所有基本特征 et.al.|[2311.07338](http://arxiv.org/abs/2311.07338)|null|
 
-<p align=right>(<a href=#updated-on-20231128>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231129>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
