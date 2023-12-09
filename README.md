@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.12.08
+## Updated on 2023.12.09
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-12-05**|**HybridNeRF: Efficient Neural Rendering via Adaptive Volumetric Surfaces**|神经辐射场提供了最先进的视图合成质量，但渲染速度往往较慢。一个原因是它们使用体积渲染，因此在渲染时每条光线需要许多采样（和模型查询）。尽管这种表示方式灵活且易于优化，但大多数真实世界的对象都可以使用曲面而不是体积更有效地建模，因此每条射线所需的采样数要少得多。这一观察结果促使表面表示（如符号距离函数）取得了相当大的进展，但这些方法可能难以对半透明和薄结构进行建模。我们提出了一种名为HybridNeRF的方法，该方法通过将大多数对象渲染为曲面，同时对（通常）一小部分具有挑战性的区域进行体积建模，来利用这两种表示的优势。我们针对具有挑战性的Eyeful Tower数据集以及其他常用的视图合成数据集对HybridNeRF进行了评估。与最先进的基线（包括最近基于光栅化的方法）相比，我们将错误率提高了15-30%，同时实现了虚拟现实分辨率（2Kx2K）的实时帧速率（至少36 FPS）。 et.al.|[2312.03160](http://arxiv.org/abs/2312.03160)|null|
 |**2023-12-05**|**ReconFusion: 3D Reconstruction with Diffusion Priors**|神经辐射场（NeRFs）等3D重建方法擅长于绘制复杂场景的逼真新颖视图。然而，恢复高质量的NeRF通常需要数十到数百个输入图像，这导致了耗时的捕获过程。我们提出ReconFusion，只使用几张照片来重建真实世界的场景。我们的方法利用扩散先验进行新的视图合成，在合成和多视图数据集上训练，使基于NeRF的3D重建管道在输入图像集捕获的新相机姿态之外的新相机姿势下正则化。我们的方法在欠约束区域中合成逼真的几何体和纹理，同时保留观察到的区域的外观。我们在各种真实世界的数据集上进行了广泛的评估，包括前向和360度场景，证明了与以前的少数视图NeRF重建方法相比，性能有了显著提高。 et.al.|[2312.02981](http://arxiv.org/abs/2312.02981)|null|
 
-<p align=right>(<a href=#updated-on-20231208>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231209>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-12-05**|**ReconFusion: 3D Reconstruction with Diffusion Priors**|神经辐射场（NeRFs）等3D重建方法擅长于绘制复杂场景的逼真新颖视图。然而，恢复高质量的NeRF通常需要数十到数百个输入图像，这导致了耗时的捕获过程。我们提出ReconFusion，只使用几张照片来重建真实世界的场景。我们的方法利用扩散先验进行新的视图合成，在合成和多视图数据集上训练，使基于NeRF的3D重建管道在输入图像集捕获的新相机姿态之外的新相机姿势下正则化。我们的方法在欠约束区域中合成逼真的几何体和纹理，同时保留观察到的区域的外观。我们在各种真实世界的数据集上进行了广泛的评估，包括前向和360度场景，证明了与以前的少数视图NeRF重建方法相比，性能有了显著提高。 et.al.|[2312.02981](http://arxiv.org/abs/2312.02981)|null|
 |**2023-12-05**|**R3D-SWIN:Use Shifted Window Attention for Single-View 3D Reconstruction**|最近，视觉转换器在各种计算机视觉任务中表现良好，包括体素3D重建。然而，视觉转换器的窗口不是多尺度的，并且窗口之间没有连接，这限制了体素三维重建的准确性。因此，我们提出了一种移位窗口关注体素三维重建网络。据我们所知，这是第一项将移位窗口注意力应用于体素3D重建的工作。在ShapeNet上的实验结果验证了我们的方法在单视图重建中达到了SOTA的精度。 et.al.|[2312.02725](http://arxiv.org/abs/2312.02725)|null|
 
-<p align=right>(<a href=#updated-on-20231208>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231209>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-12-07**|**Diffusion Reflectance Map: Single-Image Stochastic Inverse Rendering of Illumination and Reflectance**|反射限制了对象外观中照明的频谱。在本文中，我们介绍了第一种随机逆绘制方法，该方法从单个图像中联合恢复照明的全频谱和物体反射率。我们的关键思想是通过学习使用一种新的扩散模型（我们称之为扩散反射图网络（DRMNet））来反转图像形成，从而解决反射图中的这种盲逆问题，反射图是一种对底层几何结构不变的外观表示。给定从单个输入图像转换和完成的观测反射率图，DRMNet生成与完美镜面球体相对应的反射率图，同时联合估计反射率。正向过程可以理解为逐渐过滤具有越来越低的频率反射率和加性高斯噪声的自然照明。DRMNet学会了用两个子网络IllNet和RefNet来反转这一过程，这两个子网络协同工作来实现这一联合估计。该网络在广泛的合成数据集上进行了训练，并被证明可以推广到真实图像，在已建立的数据集上显示出最先进的准确性。 et.al.|[2312.04529](http://arxiv.org/abs/2312.04529)|null|
 |**2023-12-07**|**RAVE: Randomized Noise Shuffling for Fast and Consistent Video Editing with Diffusion Models**|基于扩散的模型的最新进展已经证明在从文本生成图像方面取得了重大成功。然而，视频编辑模型在视觉质量和用户控制方面还没有达到同样的水平。为了解决这一问题，我们引入了RAVE，这是一种零样本视频编辑方法，利用预先训练的文本到图像扩散模型，而无需额外训练。RAVE采用输入视频和文本提示来生成高质量的视频，同时保留原始运动和语义结构。它采用了一种新颖的噪声混洗策略，利用帧之间的时空交互，以比现有方法更快的速度生成时间一致的视频。它在内存需求方面也很高效，可以处理更长的视频。RAVE能够进行广泛的编辑，从局部属性修改到形状转换。为了展示RAVE的多功能性，我们创建了一个全面的视频评估数据集，从以对象为中心的场景到复杂的人类活动，如跳舞和打字，以及以游泳的鱼和船为特色的动态场景。与现有方法相比，我们的定性和定量实验突出了RAVE在不同视频编辑场景中的有效性。我们的代码、数据集和视频可以在中找到https://rave-video.github.io. et.al.|[2312.04524](http://arxiv.org/abs/2312.04524)|**[link](https://github.com/rehg-lab/rave)**|
 
-<p align=right>(<a href=#updated-on-20231208>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231209>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-11-28**|**HumanGaussian: Text-Driven 3D Human Generation with Gaussian Splatting**|根据文本提示生成逼真的三维人体是一项理想但具有挑战性的任务。现有的方法通过分数蒸馏采样（SDS）优化3D表示，如网格或神经场，其存在细节不足或训练时间过长的问题。在本文中，我们提出了一个高效而有效的框架HumanGaussian，它可以生成具有细粒度几何结构和逼真外观的高质量3D人。我们的关键见解是，3D高斯飞溅是一种具有周期性高斯收缩或增长的高效渲染器，其中这种自适应密度控制可以由内在的人体结构自然引导。具体而言，1）我们首先提出了一种结构感知SDS，它可以同时优化人体外观和几何形状。利用RGB和深度空间的多模态得分函数来提取高斯致密化和修剪过程。2） 此外，我们通过将SDS分解为更嘈杂的生成分数和更干净的分类器分数，设计了一种退火的负提示引导，很好地解决了过饱和问题。在仅修剪阶段中，基于高斯大小进一步消除浮动伪影，以增强生成平滑度。大量实验证明了我们的框架具有卓越的效率和竞争力，在不同的场景下呈现了生动的3D人类。项目页面：https://alvinliu0.github.io/projects/humangaussian et.al.|[2311.17061](http://arxiv.org/abs/2311.17061)|null|
 |**2023-11-28**|**SplitNeRF: Split Sum Approximation Neural Field for Joint Geometry, Illumination, and Material Estimation**|我们提出了一种新的方法，通过从一组具有固定照明的姿势图像中估计真实世界物体的几何结构、材料特性和环境照明来数字化它们。我们的方法将分割和近似与基于图像的照明结合到神经辐射场（NeRF）管道中，用于基于物理的实时渲染。我们建议使用单个场景特定的MLP来建模场景的照明，该MLP表示任意分辨率的预集成的基于图像的照明。我们通过开发一种基于有效蒙特卡罗采样的新型正则化子来实现预集成照明的精确建模。此外，我们还提出了一种新的方法，通过利用基于蒙特卡罗采样的类似正则化子来监督自遮挡预测。实验结果证明了我们的方法在估计场景几何、材料特性和照明方面的效率和有效性。我们的方法能够在单个NVIDIA A100 GPU中仅经过 ${\sim}1$ 小时的训练后就获得最先进的重新照明质量。 et.al.|[2311.16671](http://arxiv.org/abs/2311.16671)|null|
 
-<p align=right>(<a href=#updated-on-20231208>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231209>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
