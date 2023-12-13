@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.12.12
+## Updated on 2023.12.13
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-12-07**|**MuRF: Multi-Baseline Radiance Fields**|我们提出了多基线辐射场（MuRF），这是一种通用的前馈方法，用于解决多个不同基线设置（小基线和大基线，以及不同数量的输入视图）下的稀疏视图合成问题。为了渲染目标新视图，我们将3D空间离散为平行于目标图像平面的平面，并相应地构建目标视图截头体。这样的目标体积表示与目标视图在空间上对齐，这有效地聚集了来自输入视图的相关信息以进行高质量渲染。由于其轴对齐性质，它还便于随后使用卷积网络进行辐射场回归。卷积网络建模的3D上下文使我们的方法能够合成比先前工作更清晰的场景结构。我们的MuRF在从简单物体（DTU）到复杂室内外场景（RealEstate10K和LLFF）的多种不同基线设置和不同场景中实现了最先进的性能。我们还在Mip-NeRF 360数据集上展示了有前景的零样本泛化能力，证明了MuRF的普遍适用性。 et.al.|[2312.04565](http://arxiv.org/abs/2312.04565)|**[link](https://github.com/autonomousvision/murf)**|
 |**2023-12-07**|**Free3D: Consistent Novel View Synthesis without 3D Representation**|我们介绍了Free3D，这是一种用于从单个图像进行开集新视图合成（NVS）的简单方法。与Zero-1-to-3类似，我们从预先训练的2D图像生成器开始进行泛化，并对其进行NVS微调。与最近和同时进行的工作相比，我们在不使用显式3D表示的情况下获得了显著的改进，这是缓慢的、消耗内存的或训练额外的3D网络。我们通过新的每像素光线调节归一化（RCN）层对目标相机姿态进行更好的编码来实现这一点。后者通过告诉每个像素其特定的观看方向，在底层2D图像生成器中注入姿势信息。我们还通过轻量级的多视图注意力层和多视图噪声共享来提高多视图一致性。我们在Ob厌恶数据集上训练Free3D，并在包括OminiObject3D和GSO在内的几个新数据集中展示了对各种新类别的出色概括。我们希望我们简单有效的方法将成为一个坚实的基线，并有助于未来以更准确的姿态进行NVS研究。项目页面位于https://chuanxiaz.com/free3d/. et.al.|[2312.04551](http://arxiv.org/abs/2312.04551)|**[link](https://github.com/lyndonzheng/Free3D)**|
 
-<p align=right>(<a href=#updated-on-20231212>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231213>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-12-06**|**DreamComposer: Controllable 3D Object Generation via Multi-View Conditions**|利用预先训练的2D大规模生成模型，最近的工作能够从单个野生图像中生成高质量的新视图。然而，由于缺乏来自多个视角的信息，这些作品在生成可控的小说视角方面遇到了困难。在本文中，我们提出了DreamComposer，这是一个灵活且可扩展的框架，可以通过注入多视图条件来增强现有的视图感知扩散模型。具体而言，DreamComposer首先使用视图感知三维提升模块从多个视图中获得对象的三维表示。然后，利用多视图特征融合模块从三维表示中提取目标视图的潜在特征。最后，将从多视图输入中提取的目标视图特征注入到预先训练的扩散模型中。实验表明，DreamComposer与用于零样本新视图合成的最先进的扩散模型兼容，进一步增强了它们以生成具有多视图条件的高保真度新视图图像，为可控3D对象重建和各种其他应用做好了准备。 et.al.|[2312.03611](http://arxiv.org/abs/2312.03611)|null|
 |**2023-12-06**|**Gaussian-Flow: 4D Reconstruction with Dynamic 3D Gaussian Particle**|我们介绍了高斯流，这是一种新的基于点的方法，用于快速动态场景重建和多视图和单目视频的实时渲染。与因训练和渲染速度缓慢而受到阻碍的流行的基于NeRF的方法相比，我们的方法利用了基于点的3D高斯散射（3DGS）的最新进展。具体而言，提出了一种新的双域变形模型（DDDM）来显式地对每个高斯点的属性变形进行建模，其中通过时域中的多项式拟合和频域中的傅立叶级数拟合来捕获每个属性的时间相关残差。所提出的DDDM能够对长视频镜头中的复杂场景变形进行建模，消除了为每帧训练单独的3DGS的需要，或者引入了额外的隐式神经场来对3D动力学进行建模。此外，离散高斯点的显式变形建模确保了4D场景的超快速训练和渲染，这与为静态3D重建设计的原始3DGS相当。我们提出的方法展示了显著的效率提高，与每帧3DGS建模相比，训练速度快了5倍。此外，定量结果表明，所提出的高斯流在新视图渲染质量方面显著优于以前的主流方法。项目页面：https://nju-3dv.github.io/projects/gaussian-flow et.al.|[2312.03431](http://arxiv.org/abs/2312.03431)|null|
 
-<p align=right>(<a href=#updated-on-20231212>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231213>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-12-11**|**In-situ Synchrotron X-Ray Photoelectron Spectroscopy Study of Medium-Temperature Baking of Niobium for SRF Application**|在本工作中，通过同步辐射X射线光电子能谱（XPS）原位探索了在200-400｛\deg｝C的烘烤下铌表面的化学成分，类似于空腔的“中温烘烤”和“炉烘烤”。我们的发现表明，在 $Nb_2O_5$层的临界厚度以下（约1nm），铌开始与表面杂质（如碳和磷）积极相互作用。通过研究天然氧化物还原的动力学，确定了活化能和速率常数的关系，并用于计算氧浓度深度分布。已经确定，当天然氧化物层代表氧源时，氧的受控扩散是在200-300｛\deg｝C的温度下实现的，而在400｛\ddeg｝C时，五氧化二物被完全还原，掺杂水平由环境氧分压决定。发现缓冲化学抛光后的氟（F与Nb的原子比约为0.2）被掺入XPS探测的表面层（约4.6nm）中，并且其浓度在低温烘焙期间增加（F/Nb在230｛deg｝C下高达0.35）并且在更高的温度下耗尽（F/Nb＝0.11在400｛deg｝C）。因此，必须考虑氟对中T烘烤、温和烘烤（120｛\deg｝C/48 h）和氮掺杂空腔性能的影响。还讨论了氟在室温下和热处理过程中在X射线束的影响下导出的$Nb^｛+5｝$到$Nb^{+4｝$ 反应中的可能作用。铌表面不会被杂质污染的热处理的温度和持续时间参数的范围是为工业应用而确定的。 et.al.|[2312.06529](http://arxiv.org/abs/2312.06529)|null|
 |**2023-12-11**|**On One Dimensional Advection -- Diffusion Equation with Variable Diffusivity**|本文讨论了一个具有狄利克雷齐次边界条件的含时一维线性平流扩散方程。该方程采用变量分离法进行解析求解，并采用有限差分法进行数值求解。计算输出包括解决方案的三维（3D）图，重点关注氨、一氧化碳、二氧化碳和二氧化硫等污染物。浓度及其各自的扩散率通过3D图和实际计算进行分析。为了理解预测污染物在空气中运动的扩散率-浓度关系，该领域分为两半。该研究使用2D和3D图探索了扩散率较高的污染物进入扩散率较低区域的行为，反之亦然。这项任务对于有效的污染控制战略、保护环境和公众健康至关重要。 et.al.|[2312.06493](http://arxiv.org/abs/2312.06493)|null|
 
-<p align=right>(<a href=#updated-on-20231212>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231213>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-12-06**|**RING-NeRF: A Versatile Architecture based on Residual Implicit Neural Grids**|自引入以来，神经场在三维重建和新视图合成方面变得非常流行。最近的研究集中在加速这一过程，以及提高对观测距离和有限监督视点数量变化的鲁棒性。然而，这些方法往往导致无法轻易结合的专门解决方案。为了解决这个问题，我们引入了一种新的简单但高效的架构，称为RING-NeRF，基于残差隐式神经网格，它提供了对场景和潜在空间之间映射函数的细节级别的控制。与距离感知的前向映射机制和连续的从粗到细的重建过程相关联，我们的多功能架构在以下方面展示了快速训练和最先进的性能：（1）抗混叠渲染，（2）从很少监督的视点的重建质量，以及（3）对于基于SDF的NeRF在没有适当的场景特定初始化的情况下的鲁棒性。我们还证明了我们的架构可以动态添加网格来增加重建的细节，为自适应重建开辟了道路。 et.al.|[2312.03357](http://arxiv.org/abs/2312.03357)|null|
 |**2023-12-06**|**Multifractality in critical neural field dynamics**|大脑临界性框架在很大程度上认为大脑动力学是单分形的，尽管实验证据表明大脑表现出显著的多重分形。为了理解多重分形是如何在类临界系统中出现的，我们使用了临界神经振荡的计算模型。我们发现多重分形在同步相变附近出现。这些发现表明，时间动力学的多重分形在神经场的临界点达到峰值，为解释大脑记录中的多重分形提供了一个生成模型。 et.al.|[2312.03219](http://arxiv.org/abs/2312.03219)|null|
 
-<p align=right>(<a href=#updated-on-20231212>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231213>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
