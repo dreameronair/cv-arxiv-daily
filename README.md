@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.12.14
+## Updated on 2023.12.15
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-12-12**|**Unifying Correspondence, Pose and NeRF for Pose-Free Novel View Synthesis from Stereo Pairs**|这项工作深入研究了从立体对合成无姿势的新颖视图的任务，这是3D视觉中一项具有挑战性和开创性的任务。与以往任何框架不同，我们的创新框架无缝集成了2D对应匹配、相机姿态估计和NeRF渲染，促进了这些任务的协同增强。我们通过设计一种利用共享表示的架构来实现这一点，该架构是增强3D几何理解的基础。利用任务之间固有的相互作用，我们的统一框架使用所提出的训练策略进行端到端训练，以提高整体模型的准确性。通过对来自两个真实世界数据集的不同室内和室外场景的广泛评估，我们证明了我们的方法比以前的方法有了实质性的改进，特别是在以极端视角变化和缺乏准确相机姿势为特征的场景中。 et.al.|[2312.07246](http://arxiv.org/abs/2312.07246)|**[link](https://github.com/KU-CVLAB/CoPoNeRF)**|
 |**2023-12-11**|**UpFusion: Novel View Diffusion from Unposed Sparse View Observations**|我们提出了UpFusion，这是一种在没有相应姿态信息的情况下，在给定稀疏参考图像集的情况下可以执行新颖的视图合成并推断对象的3D表示的系统。当前的稀疏视图3D推理方法通常依赖于相机姿态来几何地聚合来自输入视图的信息，但当这种信息不可用/不准确时，这种方法在野外并不稳健。相反，UpFusion通过学习在条件生成模型中隐含地利用可用图像作为上下文来合成新视图，从而避开了这一要求。我们将两种互补的条件反射形式结合到扩散模型中，以利用输入视图：a）通过使用场景级变换器推断与查询视图对齐的特征，b）通过可以直接观察输入图像标记的中间注意力层。我们表明，这种机制允许生成高保真度的新视图，同时在给定额外（未着色）图像的情况下提高合成质量。我们在Co3Dv2和Google Scanned Objects数据集上评估了我们的方法，并展示了与依赖姿势的稀疏视图方法以及无法利用其他视图的单视图方法相比，我们的方法的优势。最后，我们还表明，我们学习的模型可以超越训练类别进行推广，甚至可以从野外通用对象的自捕获图像中进行重建。 et.al.|[2312.06661](http://arxiv.org/abs/2312.06661)|null|
 
-<p align=right>(<a href=#updated-on-20231214>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231215>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-12-11**|**Nuvo: Neural UV Mapping for Unruly 3D Representations**|现有的UV映射算法被设计为在性能良好的网格上操作，而不是由最先进的3D重建和生成技术产生的几何表示。因此，将这些方法应用于由神经辐射场和相关技术（或从这些场三角化的网格）恢复的体积密度会导致纹理图谱过于分散，无法用于视图合成或外观编辑等任务。我们提出了一种UV映射方法，旨在对通过3D重建和生成技术产生的几何体进行操作。我们的方法Nuvo不是计算在网格顶点上定义的映射，而是使用神经场来表示连续的UV映射，并将其优化为仅针对一组可见点（即仅影响场景外观的点）的有效且性能良好的映射。我们展示了我们的模型对不良几何体带来的挑战是稳健的，并且它生成了可以表示详细外观的可编辑UV映射。 et.al.|[2312.05283](http://arxiv.org/abs/2312.05283)|null|
 |**2023-12-08**|**Fine Dense Alignment of Image Bursts through Camera Pose and Depth Estimation**|本文介绍了一种新的方法来对手持相机拍摄的突发图像进行精细对准。与估计帧对之间的二维变换或依赖于离散对应关系的传统技术相比，所提出的算法通过优化每个像素的相机运动和表面深度和方向来建立密集的对应关系。这种方法改进了对齐，特别是在具有视差挑战的场景中。以小基线甚至微小基线为特征的合成爆发的广泛实验表明，在这种情况下，它的性能优于目前可用的最佳光流方法，而不需要任何训练。除了增强对齐之外，我们的方法还为简单图像恢复之外的任务开辟了途径，如深度估计和3D重建，这得到了有希望的初步结果的支持。这将我们的方法定位为用于各种突发图像处理应用的通用工具。 et.al.|[2312.05190](http://arxiv.org/abs/2312.05190)|null|
 
-<p align=right>(<a href=#updated-on-20231214>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231215>back to top</a>)</p>
 
 ## Diffusion
 
@@ -62,10 +62,10 @@
 |**2023-12-13**|**SPD-DDPM: Denoising Diffusion Probabilistic Models in the Symmetric Positive Definite Space**|对称正定矩阵在统计学和机器学习中显示出重要的价值和应用，如FMRI分析和交通预测。先前关于SPD矩阵的工作主要集中在判别模型上，其中直接对 $E（X|y）$进行预测，其中$y$是向量，$X$是SPD矩阵。然而，这些方法在处理大规模数据时具有挑战性，因为它们需要访问和处理整个数据。在本文中，受去噪扩散概率模型~（DDPM）的启发，我们提出了一种新的生成模型，称为SPD-DDPM，通过在SPD空间中引入高斯分布来估计$E（X|y）$。此外，我们的模型能够无条件、灵活地估计$p（X）$，而不需要给出$y$。一方面，该模型有条件地学习$p（X|y）$，并利用样本的平均值来获得$E（X|y）$作为预测。另一方面，模型无条件地学习数据$p（X）$ 的概率分布，并生成符合该分布的样本。此外，我们提出了一种新的SPD网络，它比以前的网络更深，并允许包含条件因素。对玩具数据和真实出租车数据的实验结果表明，我们的模型有效地无条件和无条件地拟合了数据分布，并提供了准确的预测。 et.al.|[2312.08200](http://arxiv.org/abs/2312.08200)|**[link](https://github.com/li-yun-chen/spd-ddpm)**|
 |**2023-12-13**|**Concept-centric Personalization with Large-scale Diffusion Priors**|尽管大规模的扩散模型能够高度生成多样化的开放世界内容，但它们仍然难以与特定概念生成器的真实感和保真度相匹配。在这项工作中，我们提出了为特定概念定制大规模扩散先验的任务，作为以概念为中心的个性化。我们的目标是生成高质量的以概念为中心的图像，同时保持开放世界模型固有的多功能可控性，使其能够应用于各种任务，如以概念为核心的风格化和图像翻译。为了应对这些挑战，我们将从扩散先验中灾难性地忘记引导预测确定为根本问题。因此，我们开发了一个专门为解决这一任务而设计的引导解耦个性化框架。我们提出了广义无分类器制导（GCFG）作为我们框架的基础理论。这种方法扩展了无分类器制导（CFG），以适应来自各种条件和模型的任意数量的制导。采用GCFG使我们能够将条件制导分为两个不同的组成部分：保真度的概念制导和可控性的控制制导。这一划分使得训练概念制导的专门模型变得可行，同时确保控制和无条件制导保持不变。然后，我们提出了一个以空文本概念为中心的扩散模型，作为特定概念的生成器，在不需要文本注释的情况下学习概念指导。代码将在https://github.com/priv-creation/concept-centric-personalization. et.al.|[2312.08195](http://arxiv.org/abs/2312.08195)|**[link](https://github.com/priv-creation/concept-centric-personalization)**|
 |**2023-12-13**|**$ρ$-Diffusion: A diffusion-based density estimation framework for computational physics**|在物理学中，密度$\rho（\cdot）$是一个非常重要的标量函数，因为它描述了控制物理过程的标量场或概率密度函数。然而，建模$\rho（\cdot）$通常与参数空间的比例关系很差，并且很快变得非常困难和计算成本高昂。绕过这一点的一个有希望的途径是利用高保真图像生成中常用的去噪扩散模型的能力，从现有的科学数据中参数化$\rho（\cdot）$，从这些数据中可以轻松地对新样本进行采样。在本文中，我们提出了$\rho$-Diffusion，这是一种用于物理多维密度估计的去噪-扩散概率模型的实现，目前正在积极开发中，从我们的结果来看，它在物理激励的2D和3D密度函数上表现良好。此外，我们提出了一种新的哈希技术，该技术允许$\rho$ -扩散受到任意数量的感兴趣物理参数的约束。 et.al.|[2312.08153](http://arxiv.org/abs/2312.08153)|null|
-|**2023-12-13**|**A cross-diffusion system modelling rivaling gangs: global existence of bounded solutions and FCT stabilization for numerical simulation**|对于帮派领地模型\bbegin｛align*｝\bbegin{cases｝u_t=D_u\Delta u+\chi_u\nabla\cdot（u\nabla w），\\v_t=D_v\Delta v+\chi_v\nabla/cdot（v\nabla z密度分别为 $z$和$w$），并部分远离其他帮派的涂鸦，我们构建了全局的、有界的经典解。通过使用定量全局估计，我们证明了如果$\|u_0\|_{L^\infty（\Omega）}$和$\|v_0\|_{L^\ infty（\ Omega）}$ 足够小，这些解收敛到齐次稳态。此外，我们进行的数值实验表明，对于不同的参数选择，系统可能会变成扩散或对流主导的，其中在前一种情况下，解收敛于恒定稳态，而在后一种情况中，观察到非平凡的渐近行为，如偏析。为了进行这些实验，我们应用了一种保正的非线性有限元通量校正传输方法（FEM-FCT）。然后，我们使用不定点迭代同时处理系统和所提出的非线性方案中的非线性。 et.al.|[2312.08147](http://arxiv.org/abs/2312.08147)|null|
+|**2023-12-13**|**A cross-diffusion system modelling rivaling gangs: global existence of bounded solutions and FCT stabilization for numerical simulation**|对于帮派属地模型\beggin｛align*｝\begon｛cases｝u_t=D_u\Delta u+\chi_u\nabla\cdot（u\nabla w），\\v_t=D_v\Delta v+\chi_v\nabla/cdot（v\nabla z），\\w_t=-w+\frac｛v｝｛1+v｝，\\z_t=-z+\frac｛u｝{1+u｝，\end{cases}\end{align*}其中 $u$和$v$表示两个相互竞争的帮派的密度，这两个帮派喷射涂鸦（密度分别为$z$和$w$）并部分远离另一帮派的涂鸦，我们构建了全局的、有界的经典解。通过使用定量全局估计，我们证明了如果$\|u_0\|_{L^\infty（\Omega）}$和$\|v_0\|_{L^\ infty（\ Omega）}$ 足够小，这些解收敛到齐次稳态。此外，我们进行的数值实验表明，对于不同的参数选择，系统可能会变成扩散或对流主导的，其中在前一种情况下，解收敛于恒定稳态，而在后一种情况中，观察到非平凡的渐近行为，如偏析。为了进行这些实验，我们应用了一种保正的非线性有限元通量校正传输方法（FEM-FCT）。然后，我们使用不定点迭代同时处理系统和所提出的非线性方案中的非线性。 et.al.|[2312.08147](http://arxiv.org/abs/2312.08147)|null|
 |**2023-12-13**|**Clockwork Diffusion: Efficient Generation With Model-Step Distillation**|这项工作旨在提高文本到图像扩散模型的效率。虽然扩散模型在每个生成步骤中都使用计算成本高昂的基于UNet的去噪操作，但我们发现，并非所有操作都与最终输出质量同等相关。特别是，我们观察到，在高分辨率特征图上操作的UNet层对小扰动相对敏感。相反，低分辨率特征图会影响最终图像的语义布局，并且通常会受到干扰，而输出没有明显变化。基于这一观察结果，我们提出了Clockwork Diffusion，这是一种周期性地重复使用先前去噪步骤的计算，以在一个或多个后续步骤中近似低分辨率特征图的方法。对于多个基线，以及文本到图像的生成和图像编辑，我们证明了Clockwork可以显著降低计算复杂度，从而获得可比或改进的感知分数。例如，对于带有8个DPM++步骤的Stable Diffusion v1.5，我们节省了32%的FLOP，而FID和CLIP的变化可以忽略不计。 et.al.|[2312.08128](http://arxiv.org/abs/2312.08128)|null|
 
-<p align=right>(<a href=#updated-on-20231214>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231215>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-12-06**|**Gaussian-Flow: 4D Reconstruction with Dynamic 3D Gaussian Particle**|我们介绍了高斯流，这是一种新的基于点的方法，用于快速动态场景重建和多视图和单目视频的实时渲染。与因训练和渲染速度缓慢而受到阻碍的流行的基于NeRF的方法相比，我们的方法利用了基于点的3D高斯散射（3DGS）的最新进展。具体而言，提出了一种新的双域变形模型（DDDM）来显式地对每个高斯点的属性变形进行建模，其中通过时域中的多项式拟合和频域中的傅立叶级数拟合来捕获每个属性的时间相关残差。所提出的DDDM能够对长视频镜头中的复杂场景变形进行建模，消除了为每帧训练单独的3DGS的需要，或者引入了额外的隐式神经场来对3D动力学进行建模。此外，离散高斯点的显式变形建模确保了4D场景的超快速训练和渲染，这与为静态3D重建设计的原始3DGS相当。我们提出的方法展示了显著的效率提高，与每帧3DGS建模相比，训练速度快了5倍。此外，定量结果表明，所提出的高斯流在新视图渲染质量方面显著优于以前的主流方法。项目页面：https://nju-3dv.github.io/projects/gaussian-flow et.al.|[2312.03431](http://arxiv.org/abs/2312.03431)|null|
 |**2023-12-06**|**Artist-Friendly Relightable and Animatable Neural Heads**|创建照片逼真数字化身的一种越来越常见的方法是通过使用体积神经场。当在一组多视图图像上训练时，原始神经辐射场（NeRF）允许静态头部进行令人印象深刻的新颖视图合成，后续方法表明，这些神经表示可以扩展到动态化身。最近，新的变体也超过了神经表示中烘焙照明的常见缺点，表明静态神经化身可以在任何环境中重新发光。在这项工作中，我们同时解决了运动和照明问题，为可重新照明和可动画化的神经头提出了一种新方法。我们的方法建立在一种已验证的动态化身方法的基础上，该方法基于体积基元的混合，结合最近提出的用于可重新照明神经场的轻量级硬件设置，并包括一种新的架构，该架构允许重新照明动态神经化身在任何环境中执行看不见的表情，即使是在近场照明和视点的情况下。 et.al.|[2312.03420](http://arxiv.org/abs/2312.03420)|null|
 
-<p align=right>(<a href=#updated-on-20231214>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231215>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
