@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2023.12.22
+## Updated on 2023.12.23
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-12-18**|**GauFRe: Gaussian Deformation Fields for Real-time Dynamic Novel View Synthesis**|我们提出了一种使用可变形3D高斯进行动态场景重建的方法，该方法适用于单目视频。在高斯飞溅效率的基础上，我们的方法通过位于规范空间中的可变形高斯集和由多层感知器（MLP）定义的时间相关变形场来扩展表示以适应动态元素。此外，在大多数自然场景都有保持静态的大区域的假设下，我们允许MLP通过额外包括静态高斯点云来集中其代表能力。串联的动态和静态点云形成高斯飞溅光栅化器的输入，从而实现实时渲染。在自监督渲染损失的情况下，对可微管道进行端到端优化。我们的方法获得的结果与最先进的动态神经辐射场方法相当，同时允许更快的优化和渲染。项目网站：https://lynl7130.github.io/gaufre/index.html et.al.|[2312.11458](http://arxiv.org/abs/2312.11458)|null|
 |**2023-12-18**|**SinMPI: Novel View Synthesis from a Single Image with Expanded Multiplane Images**|单图像新视图合成是一个具有挑战性且正在进行的问题，其目的是从单个输入图像生成无限数量的一致视图。尽管已经做出了重大努力来提高生成的新视图的质量，但对底层场景表示的扩展却关注较少，这对生成逼真的新视图图像至关重要。本文提出了SinMPI，这是一种使用扩展多平面图像（MPI）作为3D场景表示的新方法，可以显著扩展MPI的透视范围，并从大的多平面空间生成高质量的新视图。我们的方法的关键思想是使用稳定扩散生成视图外内容，根据单目深度估计器预测的深度将所有场景内容投影到扩展的多平面图像中，然后在深度感知扭曲和修复模块生成的伪多视图数据的监督下优化多平面图像。我们进行了定性和定量实验，以验证我们的方法相对于现有技术的优越性。我们的代码和数据可在https://github.com/trickygo/sinmpi. et.al.|[2312.11037](http://arxiv.org/abs/2312.11037)|**[link](https://github.com/trickygo/sinmpi)**|
 
-<p align=right>(<a href=#updated-on-20231222>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231223>back to top</a>)</p>
 
 ## 3D Reconstruction
 
@@ -48,7 +48,7 @@
 |**2023-12-19**|**EVI-SAM: Robust, Real-time, Tightly-coupled Event-Visual-Inertial State Estimation and 3D Dense Mapping**|事件摄像机是受生物启发的运动激活传感器，在处理具有挑战性的情况（如运动模糊和高动态范围）方面表现出巨大的潜力。在本文中，我们提出了EVI-SAM来解决使用单目事件相机进行6自由度姿态跟踪和三维重建的问题。利用特征匹配的鲁棒性和直接对准的精度，设计了一种新的基于事件的混合跟踪框架来估计姿态。具体来说，我们开发了一种基于事件的2D-2D对齐来构建光度约束，并将其与基于事件的重投影约束紧密集成。映射模块通过基于图像引导的事件映射方法来恢复场景的密集和丰富多彩的深度。随后，可以通过使用截断符号距离函数（TSDF）融合来自多个视点的密集深度图来重建3D场景的外观、纹理和表面网格。据我们所知，这是第一个实现基于事件的密集映射的非学习工作。在公开的和自行收集的数据集上进行了数值评估，定性和定量地证明了我们方法的优越性能。我们的EVI-SAM有效地平衡了准确性和稳健性，同时保持了计算效率，在具有挑战性的场景中展示了卓越的姿态跟踪和密集映射性能。视频演示：https://youtu.be/nn40u4e5si8. et.al.|[2312.11911](http://arxiv.org/abs/2312.11911)|null|
 |**2023-12-17**|**Primitive-based 3D Human-Object Interaction Modelling and Programming**|在三维环境中嵌入人与关节对象交互（HAOI）是深入理解人类活动的一个重要方向。与以往使用参数化和CAD模型来表示人和物体的工作不同，在这项工作中，我们提出了一种新的基于三维几何图元的语言来对人和物体进行编码。在我们的新范式下，人和物体都是原语的组成部分，而不是异构实体。因此，可以在人类的有限3D数据和不同对象类别之间实现相互信息学习。此外，考虑到表达式的简单性和所包含信息的丰富性，我们选择超二次曲面作为原始表示。为了探索机器的HAOI的有效嵌入，我们在由基元及其图像组成的3D HAOI上建立了一个新的基准，并提出了一项任务，要求机器使用图像中的基元恢复三维HAOI。此外，我们提出了基于HAOI的单视图三维重建的基线。我们相信，这种基于原始的3D HAOI表示将为3D HAOI研究铺平道路。我们的代码和数据可在https://mvig-rhos.com/p3haoi. et.al.|[2312.10714](http://arxiv.org/abs/2312.10714)|null|
 
-<p align=right>(<a href=#updated-on-20231222>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231223>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-12-21**|**Carve3D: Improving Multi-view Reconstruction Consistency for Diffusion Models with RL Finetuning**|文本到3D任务的最新进展利用微调的文本到图像扩散模型生成多视图图像，然后进行NeRF重建。然而，现有的监督微调（SFT）扩散模型仍然存在多视图不一致性和由此产生的NeRF伪影。尽管使用SFT进行更长时间的训练可以提高一致性，但它也会导致分布变化，从而减少多样性和逼真的细节。我们认为，多视图扩散模型的SFT类似于LLM对齐流水线的指令微调阶段，并且可以受益于RL微调（RLFT）方法。从本质上讲，RLFT方法通过使用自己的输出来优化超出其SFT数据分布的模型，从而有效地缓解分布偏移。为此，我们引入了Carve3D，这是一种结合多视图重建一致性（MRC）度量的RLFT方法，以提高多视图扩散模型的一致性。为了计算一组多视图图像的MRC，我们将它们与相同视点下重建的NeRF的相应渲染进行比较。我们通过在受控的不一致性水平下进行的大量实验验证了MRC的稳健性。我们增强了基本的RLFT算法，以稳定训练过程，减少分布偏移，并识别缩放规律。通过定性和定量实验，以及用户研究，我们证明了与较长的SFT相比，Carve3D提高了多视图一致性，从而获得了卓越的NeRF重建质量和最小的分布偏移。项目网页：https://desaixie.github.io/carve-3d. et.al.|[2312.13980](http://arxiv.org/abs/2312.13980)|null|
 |**2023-12-21**|**Controllable 3D Face Generation with Conditional Style Code Diffusion**|根据给定条件生成照片级真实感三维人脸是一项具有挑战性的任务。现有的方法通常依赖于耗时的一个接一个的优化方法，这些方法对于对相同的分发内容（例如人脸）进行建模是无效的。此外，理想的可控3D人脸生成模型应该同时考虑人脸属性和表情。因此，我们提出了一种称为TEx-Face（TExt&Expression to Face）的新方法，该方法通过将任务分为三个部分来解决这些挑战，即3D GAN反转、条件风格代码扩散和3D人脸解码。对于三维GAN反演，我们介绍了两种方法，旨在增强样式代码的表示并减轻三维不一致性。此外，我们设计了一个风格代码去噪器，将多个条件合并到风格代码中，并提出了一种数据扩充策略，以解决配对视觉语言数据不足的问题。在FFHQ、CelebA-HQ和CelebA-Dialog上进行的大量实验证明了我们的TEx Face在实现高效可控的真实感3D人脸生成方面的良好性能。代码将在https://github.com/sxl142/tex-face. et.al.|[2312.13941](http://arxiv.org/abs/2312.13941)|**[link](https://github.com/sxl142/tex-face)**|
 
-<p align=right>(<a href=#updated-on-20231222>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231223>back to top</a>)</p>
 
 ## NeRF
 
@@ -82,7 +82,7 @@
 |**2023-12-10**|**Accurate Differential Operators for Hybrid Neural Fields**|神经场已广泛应用于从形状表示到神经渲染以及求解偏微分方程（PDE）的各个领域。随着混合神经场表示的出现，如利用小MLP和显式表示的即时NGP，这些模型训练迅速，可以适应大型场景。然而，在渲染和模拟等许多应用中，混合神经场可能会导致明显且不合理的伪影。这是因为它们不能产生这些下游应用所需的精确的空间导数。在这项工作中，我们提出了两种规避这些挑战的方法。我们的第一种方法是一种事后算子，它使用局部多项式拟合从预先训练的混合神经场中获得更准确的导数。此外，我们还提出了一种自监督微调方法，该方法在保留初始信号的同时，对神经场进行细化，以直接产生准确的导数。我们展示了我们的方法在渲染、碰撞模拟和求解偏微分方程中的应用。我们观察到，使用我们的方法可以产生更准确的导数，减少伪影，并在下游应用中实现更准确的模拟。 et.al.|[2312.05984](http://arxiv.org/abs/2312.05984)|null|
 |**2023-12-11**|**Nuvo: Neural UV Mapping for Unruly 3D Representations**|现有的UV映射算法被设计为在性能良好的网格上操作，而不是由最先进的3D重建和生成技术产生的几何表示。因此，将这些方法应用于由神经辐射场和相关技术（或从这些场三角化的网格）恢复的体积密度会导致纹理图谱过于分散，无法用于视图合成或外观编辑等任务。我们提出了一种UV映射方法，旨在对通过3D重建和生成技术产生的几何体进行操作。我们的方法Nuvo不是计算在网格顶点上定义的映射，而是使用神经场来表示连续的UV映射，并将其优化为仅针对一组可见点（即仅影响场景外观的点）的有效且性能良好的映射。我们展示了我们的模型对不良几何体带来的挑战是稳健的，并且它生成了可以表示详细外观的可编辑UV映射。 et.al.|[2312.05283](http://arxiv.org/abs/2312.05283)|null|
 
-<p align=right>(<a href=#updated-on-20231222>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20231223>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
