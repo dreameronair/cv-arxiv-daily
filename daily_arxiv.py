@@ -99,7 +99,7 @@ def get_daily_papers(topic,query="slam", max_results=2):
         max_results = max_results,
         sort_by = arxiv.SortCriterion.SubmittedDate
     )
-    logging.info(f"search_engine = search_engine.results().length()")
+    logging.info(f"search_engine = {search_engine.results().length()}")
     for result in search_engine.results():
 
         paper_id            = result.get_short_id()
