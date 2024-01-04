@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.01.03
+## Updated on 2024.01.04
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2023-12-25**|**Sparse-view CT Reconstruction with 3D Gaussian Volumetric Representation**|稀疏视图CT是减少传统CT扫描辐射剂量的一种很有前途的策略，但从不完整和有噪声的数据中重建高质量图像是一项挑战。最近，3D高斯已被应用于复杂自然场景的建模，与隐式神经表示（INRs）相比，它表现出快速收敛和更好的新颖视图渲染。我们从3D高斯在自然场景建模和新视图合成中的成功应用中获得灵感，研究了它们在稀疏视图CT重建中的潜力。我们利用来自滤波后的反投影重建图像的先验信息来初始化高斯；并且通过比较投影空间中的差异来更新它们的参数。自适应密度控制进一步提高了性能。与INRs相比，3D高斯从先验信息中受益更多，可以明确绕过空白空间中的学习，并有效地分配容量，加速收敛。3D高斯还可以有效地学习高频细节。3D高斯以自我监督的方式进行训练，避免了对大规模配对数据的需要。我们在AAPM-Mayo数据集上的实验表明，与基于INR的方法相比，3D高斯可以提供优越的性能。这项工作正在进行中，代码将公开。 et.al.|[2312.15676](http://arxiv.org/abs/2312.15676)|null|
 |**2023-12-22**|**Deformable 3D Gaussian Splatting for Animatable Human Avatars**|神经辐射场的最新进展使得能够在动态设置中对照片真实感图像进行新颖的视图合成，这可以应用于具有人类动画的场景。然而，通常使用的隐式主干来建立准确的模型，需要许多输入视图和额外的注释，如人体遮罩、UV贴图和深度贴图。在这项工作中，我们提出了ParDy Human（参数化动态人类化身），这是一种完全明确的方法，可以从一个单一的单目序列中构建数字化身。ParDy Human在3D高斯飞溅中引入了参数驱动的动力学，其中通过人体姿势模型使3D高斯变形以使化身动画化。我们的方法由两个部分组成：第一个模块根据SMPL顶点使标准3D高斯变形，第二个模块进一步采用其设计的联合编码并预测每高斯变形，以处理SMPL顶点变形之外的动力学。然后通过光栅化器合成图像。ParDy Human构成了逼真动态人类化身的显式模型，其需要显著更少的训练视图和图像。我们的化身学习不需要额外的注释，如掩码，并且可以在可变背景下进行训练，同时即使在消费硬件上也能高效地推断出全分辨率图像。我们提供的实验证据表明，在ZJU MoCap和THUman4.0数据集上，ParDy-Human在数量和视觉上都优于最先进的方法。 et.al.|[2312.15059](http://arxiv.org/abs/2312.15059)|null|
 
-<p align=right>(<a href=#updated-on-20240103>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240104>back to top</a>)</p>
 
 ## MLLM
 
@@ -48,7 +48,7 @@
 |**2023-12-30**|**Group Multi-View Transformer for 3D Shape Analysis with Spatial Encoding**|近年来，基于视图的三维形状识别方法的结果已经饱和，并且具有优异性能的模型由于其庞大的参数大小而无法部署在内存有限的设备上。为了解决这个问题，我们为该领域引入了一种基于知识蒸馏的压缩方法，该方法在尽可能保持模型性能的同时，大大减少了参数的数量。具体来说，为了增强较小模型的功能，我们设计了一个高性能的大型模型，称为Group Multi-view Vision Transformer（GMViT）。在GMViT中，视图级ViT首先建立视图级特征之间的关系。此外，为了捕捉更深层次的特征，我们使用分组模块将视图级特征增强为组级特征。最后，组级ViT将组级特征聚合为完整的、良好形成的3D形状描述符。值得注意的是，在这两个ViT中，我们都引入了相机坐标的空间编码作为创新的位置嵌入。此外，我们提出了两个基于GMViT的压缩版本，即GMViT simple和GMViT mini。为了提高小模型的训练有效性，我们在整个GMViT过程中引入了一种知识提取方法，其中每个GMViT组件的关键输出作为提取目标。大量实验证明了该方法的有效性。大模型GMViT在基准数据集ModelNet、ShapeNetCore55和MCB上实现了出色的3D分类和检索结果。较小的模型GMViT simple和GMViT mini分别将参数大小减少了8倍和17.6倍，形状识别速度平均提高了1.5倍，同时保持了至少90%的分类和检索性能。 et.al.|[2312.16477](http://arxiv.org/abs/2312.16477)|null|
 |**2023-12-26**|**Black-Box Tuning of Vision-Language Models with Effective Gradient Approximation**|参数有效微调（PEFT）方法为使大型视觉语言模型适应特定任务或场景提供了一种有效的方法。通常，他们在白盒公式中为预先训练的模型学习非常小范围的参数，该公式假设模型架构是已知的，参数是可访问的。然而，出于防止滥用或商业因素的考虑，大型模型往往不是开源的，因此对白盒PEFT方法的部署构成了障碍。为了减轻对模型可访问性的依赖，我们引入了协作黑盒调优（CBBT），用于黑盒模型的文本提示优化和输出特征自适应。具体来说，考虑到反向传播梯度被阻塞，我们通过分析具有扰动提示的预测来近似文本提示的梯度。其次，在不可访问模型的输出特性上部署了一个轻量级适配器，进一步方便了模型的自适应过程。有了这些设计，我们的CBBT在11个下游基准上进行了广泛评估，与现有的黑盒VL自适应方法相比，取得了显著的改进。代码发布于https://github.com/guozix/cbbt. et.al.|[2312.15901](http://arxiv.org/abs/2312.15901)|**[link](https://github.com/guozix/cbbt)**|
 
-<p align=right>(<a href=#updated-on-20240103>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240104>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2023-12-30**|**GAN-GA: A Generative Model based on Genetic Algorithm for Medical Image Generation**|医学影像学是诊断和治疗疾病的重要工具。然而，缺乏医学图像可能导致诊断不准确和治疗无效。生成模型为解决医学图像短缺问题提供了一个很有前途的解决方案，因为它们能够从现有数据集生成新数据并检测这些数据中的异常。使用缩放、裁剪、翻转、填充、旋转和平移等位置增强方法进行数据增强，可能会在数据较少的领域（如医学图像数据）中导致更多的过拟合。本文提出了通过嵌入遗传算法优化的生成模型GAN-GA。所提出的模型提高了图像的保真度和多样性，同时保留了独特的特征。所提出的医学图像合成方法提高了医学图像的质量和保真度，这是图像解释的一个重要方面。为了评估合成图像：使用Frechet Inception Distance（FID）。通过生成急性淋巴细胞白血病（ALL）医学图像（图像数据集）来测试所提出的GAN-GA模型，这是首次用于生成模型。我们的结果与作为基线模型的InfoGAN的结果进行了比较。实验结果表明，所提出的优化GAN-GA将FID分数提高了约6.8%，尤其是在早期训练时期。源代码和数据集将在以下位置提供：https://github.com/Mustafa-AbdulRazek/InfoGAN-GA. et.al.|[2401.00314](http://arxiv.org/abs/2401.00314)|null|
 |**2023-12-30**|**CamPro: Camera-based Anti-Facial Recognition**|从数百万台相机拍摄的图像的激增和面部识别（FR）技术的进步使FR的滥用成为严重的隐私威胁。现有的工作通常依靠模糊处理、合成或对抗性示例来修改图像中的人脸，以实现反人脸识别（AFR）。然而，包含敏感个人身份信息（PII）的相机模块捕获的未经修改的图像仍可能被泄露。在本文中，我们提出了一种新的方法，CamPro，来捕捉天生的AFR图像。CamPro使包装良好的商品相机模块能够生成包含很少PII但仍包含足够信息的图像，以支持其他非敏感视觉应用，如人脸检测。具体而言，CamPro调整相机图像信号处理器（ISP）内部的配置设置，即颜色校正矩阵和伽马校正，以实现AFR，并设计图像增强器，为可能的人类观众保持图像质量。我们在概念验证相机上实现并验证了CamPro，我们的实验在十个最先进的黑匣子FR模型上证明了它的有效性。结果表明，CamPro图像可以将人脸识别精度显著降低到0.3%，而对目标非敏感视觉应用的影响很小。此外，我们发现CamPro对使用CamPro生成的图像重新训练其FR模型的自适应攻击者具有弹性，即使他们完全了解保护隐私的ISP参数。 et.al.|[2401.00151](http://arxiv.org/abs/2401.00151)|**[link](https://github.com/forget2save/campro)**|
 
-<p align=right>(<a href=#updated-on-20240103>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240104>back to top</a>)</p>
 
 ## avatar
 
@@ -82,7 +82,7 @@
 |**2023-12-18**|**VectorTalker: SVG Talking Face Generation with Progressive Vectorisation**|高保真度和高效的音频驱动谈话头生成一直是计算机图形学和计算机视觉领域的一个关键研究课题。在这项工作中，我们研究了基于矢量图像的音频驱动的谈话头生成。与现有作品中使用最广泛的光栅图像直接动画相比，矢量图像具有良好的可扩展性，可用于多种应用。基于矢量图像的会说话的头生成面临两个主要挑战：高质量的矢量图像重建（相对于源肖像图像）和生动的动画（相对于音频信号）。为了解决这些问题，我们提出了一种新的可扩展矢量图形重建和动画方法，称为VectorTalker。具体而言，对于高保真度重建，VectorTalker以从粗到细的方式分层重建矢量图像。对于生动的音频驱动的面部动画，我们建议使用面部标志作为中间运动表示，并提出一个有效的标志驱动的矢量图像变形模块。我们的方法可以在一个统一的框架内处理各种风格的肖像图像，包括日本漫画、卡通和照片真实感图像。我们进行了广泛的定量和定性评估，实验结果证明了VectorTalker在矢量图形重建和音频驱动动画方面的优势。 et.al.|[2312.11568](http://arxiv.org/abs/2312.11568)|null|
 |**2023-12-18**|**AE-NeRF: Audio Enhanced Neural Radiance Field for Few Shot Talking Head Synthesis**|音频驱动的会说话的头部合成是一个很有前途的课题，在数字人、电影制作和虚拟现实等领域有着广泛的应用。与之前的研究相比，最近基于NeRF的方法在质量和保真度方面显示出优势。然而，当涉及到少镜头会说话的头部生成时，在一个身份只有几秒钟会说话的视频的实际场景中，出现了两个限制：1）它们要么没有基本模型，作为快速收敛的面部先验，要么在构建先验时忽略了音频的重要性；2） 它们大多忽略了不同面部区域与音频之间的相关性，例如，嘴与音频相关，而耳朵与音频无关。在本文中，我们提出了音频增强神经辐射场（AE NeRF）来解决上述问题，它可以用最少的镜头数据集生成新扬声器的逼真肖像。具体来说，我们在参考方案的特征融合阶段引入了音频感知聚合模块，其中权重由参考图像和目标图像之间音频的相似性决定。然后，提出了一种基于双NeRF框架的音频对齐人脸生成策略，分别对音频相关区域和音频无关区域进行建模。大量实验表明，即使在有限的训练集或训练迭代中，AE NeRF在图像保真度、音频嘴唇同步和泛化能力方面也超过了最先进的技术。 et.al.|[2312.10921](http://arxiv.org/abs/2312.10921)|null|
 
-<p align=right>(<a href=#updated-on-20240103>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240104>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
