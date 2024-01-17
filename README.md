@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.01.16
+## Updated on 2024.01.17
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2024-01-02**|**GD^2-NeRF: Generative Detail Compensation via GAN and Diffusion for One-shot Generalizable Neural Radiance Fields**|在本文中，我们专注于单镜头新颖视图合成（O-NVS）任务，该任务的目标是在每个场景只有一个参考图像的情况下合成照片逼真的新颖视图。先前的一次性可泛化神经辐射场（OG-NeRF）方法以无推理时间微调的方式解决了这一任务，但由于仅编码器的架构高度依赖于有限的参考图像，因此存在模糊问题。另一方面，最近的基于扩散的图像到3d方法通过将预先训练的2D扩散模型提取到3d表示中显示出生动可信的结果，但需要繁琐的逐场景优化。针对这些问题，我们提出了GD $^2$-NeRF，这是一个通过GAN和Diffusion的生成细节补偿框架，既不需要推理时间微调，又具有生动可信的细节。详细地说，遵循从粗到细的策略，GD$^2$-NeRF主要由一级并行流水线（OPP）和3D一致细节增强器（Diff3DE）组成。在粗略阶段，OPP首先将GAN模型有效地插入到现有的OG-NeRF管道中，以主要缓解从训练数据集中捕获的分布内先验的模糊问题，实现清晰度（LPIPS、FID）和保真度（PSNR、SSIM）之间的良好平衡。然后，在精细阶段，Diff3DE进一步利用预先训练的图像扩散模型来补充丰富的分布细节，同时保持良好的3D一致性。在合成数据集和真实世界数据集上进行的大量实验表明，GD$^2$ -NeRF在没有每场景微调的情况下显著改善了细节。 et.al.|[2401.00616](http://arxiv.org/abs/2401.00616)|null|
 |**2023-12-28**|**iFusion: Inverting Diffusion for Pose-Free Reconstruction from Sparse Views**|我们提出了iFusion，这是一种新颖的3D对象重建框架，只需要两个具有未知相机姿态的视图。虽然单视图重建会产生视觉上吸引人的结果，但它可能会与实际对象有很大的偏差，尤其是在看不见的一侧。附加视图提高了重建保真度，但需要已知的摄影机姿势。然而，假设姿态的可用性可能是不现实的，并且现有的姿态估计器在稀疏视图场景中失败。为了解决这一问题，我们利用了一个预先训练的新颖视图合成扩散模型，该模型嵌入了关于不同对象的几何形状和外观的隐含知识。我们的策略分为三个步骤：（1）我们反转用于相机姿态估计的扩散模型，而不是合成新的视图。（2） 使用提供的视图和估计的姿态对扩散模型进行微调，使其成为为目标对象量身定制的新型视图合成器。（3） 利用配准的视图和微调的扩散模型，我们重建了3D对象。实验表明，在姿态估计和新视图合成方面都有很强的性能。此外，iFusion与各种重建方法无缝集成，并对其进行了增强。 et.al.|[2312.17250](http://arxiv.org/abs/2312.17250)|**[link](https://github.com/chinhsuanwu/ifusion)**|
 
-<p align=right>(<a href=#updated-on-20240116>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240117>back to top</a>)</p>
 
 ## MLLM
 
@@ -48,7 +48,7 @@
 |**2024-01-05**|**LMaaS: Exploring Pricing Strategy of Large Model as a Service for Communication**|下一代通信被设想为智能通信，它可以取代传统的符号通信，在符号通信中，考虑到源和信道的高度浓缩的语义信息将被高效提取和传输。最近流行的GPT4等大型模型和助推学习技术为智能通信奠定了坚实的基础，并促使其在不久的将来得到实际部署。鉴于这些多模式大型语言模型“一次性培训并广泛使用”的特点，我们认为现收现付服务模式将适合这种情况，称为大型服务模型（LMaaS）。然而，交易和定价问题非常复杂，具有异构和动态的客户环境，这使得定价优化问题在寻求现有解决方案方面具有挑战性。在本文中，我们旨在填补这一空白，并将LMaaS市场交易公式化为两步的Stackelberg对策。在第一步中，我们优化了卖家的定价决策，并提出了一种迭代模型定价（IMP）算法，该算法通过推理客户未来的租赁决策来迭代优化大型模型的价格，从而能够实现接近最优的定价解决方案。在第二步中，我们通过设计一个稳健的选择和租赁（RSR）算法来优化客户的选择决策，该算法在严格的理论证明下保证是最优的。大量实验证实了我们算法的有效性和稳健性。 et.al.|[2401.02675](http://arxiv.org/abs/2401.02675)|null|
 |**2024-01-05**|**CoCoT: Contrastive Chain-of-Thought Prompting for Large Multimodal Models with Multiple Image Inputs**|在探索通用人工智能（AGI）的发展时，这些模型的关键任务包括解释和处理来自多个图像输入的信息。然而，大型多模式模型（LMM）在这种情况下遇到了两个问题：（1）缺乏细粒度感知，以及（2）倾向于在多个图像中混合信息。我们首先广泛研究了LMM在处理多个输入图像时感知细粒度视觉细节的能力。研究主要集中在两个方面：第一，图像到图像匹配（评估LMM是否能有效地推理和配对相关图像），第二，多图像到文本匹配（评估LM是否能准确地捕捉和总结详细的图像信息）。我们对一系列开源和闭源大型模型进行了评估，包括GPT-4V、Gemini、OpenFlamingo和MMICL。为了提高模型性能，我们进一步开发了一种基于多输入多模式模型的对比思维链（CoCoT）提示方法。该方法要求LMM比较多个图像输入之间的相似性和差异性，然后根据识别出的相似性与差异性引导模型回答有关多个图像输出的详细问题。我们的实验结果展示了CoCoT在增强大型多模式模型的多图像理解能力方面的熟练程度。 et.al.|[2401.02582](http://arxiv.org/abs/2401.02582)|null|
 
-<p align=right>(<a href=#updated-on-20240116>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240117>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2024-01-10**|**From Pampas to Pixels: Fine-Tuning Diffusion Models for Gaúcho Heritage**|世代人工智能已经在社会中普及，见证了各个领域的重大进步。特别是在文本到图像（TTI）模型领域，潜在扩散模型（LDM）展示了基于文本提示生成视觉内容的卓越能力。本文探讨LDM在代表当地文化概念、历史人物和濒危物种方面的潜力。在本研究中，我们以巴西南里奥格兰德州的文化遗产为例。我们的目标是帮助更广泛地理解生成模型如何有助于捕捉和保存地区的文化和历史特征。论文概述了方法，包括主题选择、数据集创建和微调过程。结果展示了生成的图像，以及每个概念的挑战和可行性。总之，这项工作展示了这些模型在代表和保护不同地区和社区的独特方面的力量。 et.al.|[2401.05520](http://arxiv.org/abs/2401.05520)|null|
 |**2024-01-10**|**PIXART-δ: Fast and Controllable Image Generation with Latent Consistency Models**|本技术报告介绍了PIXART-｛\delta｝，这是一种文本到图像合成框架，将潜在一致性模型（LCM）和ControlNet集成到高级PIXART-｛\alpha｝模型中。PIXART-｛\alpha｝因其通过非常有效的训练过程生成1024px分辨率的高质量图像的能力而受到认可。在PIXART-｛\delta｝中集成LCM显著加快了推理速度，仅需2-4步即可生成高质量图像。值得注意的是，PIXART-｛\delta｝在生成1024x1024像素图像方面实现了0.5秒的突破，这标志着比PIXART-｛\alpha｝提高了7倍。此外，PIXART-｛\delta｝被设计为可在一天内在32GB V100 GPU上有效训练。凭借其8位推理能力（von Platen et al.，2023），PIXART-｛\delta｝可以在8GB GPU内存限制内合成1024px的图像，大大提高了其可用性和可访问性。此外，结合类似ControlNet的模块可以实现对文本到图像扩散模型的细粒度控制。我们引入了一种新颖的ControlNet Transformer架构，专门为变压器量身定制，在生成高质量图像的同时实现了明确的可控性。作为一种最先进的开源图像生成模型，PIXART-｛\delta｝为稳定扩散模型家族提供了一种很有前途的替代方案，对文本到图像的合成做出了重大贡献。 et.al.|[2401.05252](http://arxiv.org/abs/2401.05252)|**[link](https://github.com/PixArt-alpha/PixArt-alpha)**|
 
-<p align=right>(<a href=#updated-on-20240116>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240117>back to top</a>)</p>
 
 ## avatar
 
@@ -82,7 +82,7 @@
 |**2023-12-21**|**From Past to Future: Digital Methods Towards Artefact Analysis**|在过去的二十年里，数字人文改变了人文和社会科学的格局，实现了对广泛数据集的高级计算分析和解释。值得注意的是，东南亚，特别是新加坡最近的举措侧重于对历史数据进行分类和归档，如艺术品、文学作品，尤其是考古文物。这项研究通过在两个不同的人工制品数据集上应用统计方法，展示了数字人文的巨大潜力。具体而言，我们展示了对公元1千年中期东南亚大陆“旭日”铸币的自动模具研究结果，随后对从新加坡中部殖民前圣安德鲁大教堂遗址挖掘的13-14世纪陶器的2D图像使用了无监督统计方法。这项研究提供了一个比较评估，展示了基于统计的方法对不同考古材料的解释和分析以及数字人文整体的变革影响。 et.al.|[2312.13790](http://arxiv.org/abs/2312.13790)|null|
 |**2023-12-18**|**Relightable Neural Actor with Intrinsic Decomposition and Pose Control**|在视觉和图形学中，创建一个可欣赏、可驾驶和逼真的数字人类化身是一个具有挑战性的重要问题。人类是高度立体化的，会产生依赖姿势的外观效果，如自我阴影和皱纹，皮肤和衣服需要复杂且空间变化的BRDF模型。虽然最近的人类重新照明方法可以从多视图视频中恢复看似合理的材料光分解，但它们不能推广到新颖的姿势，并且仍然存在视觉伪影。为了解决这一问题，我们提出了Relightable Neural Actor，这是第一种基于视频的方法，用于学习照片真实感的神经人体模型，该模型可以重新照明，允许外观编辑，并可以由任意骨骼姿势控制。重要的是，为了学习我们的人类化身，我们只需要在已知但静态的照明条件下对人类进行多视图记录。为了实现这一点，我们用可驱动的密度场来表示演员的几何体，该密度场对姿势相关的服装变形进行建模，并提供3D和UV空间之间的映射，其中对法线、可见性和材质进行编码。为了在现实世界场景中评估我们的方法，我们收集了一个新的数据集，其中包括在室内和室外不同光照条件下记录的四个参与者，为人类重新照明提供了第一个此类基准，并展示了最先进的新人类姿势的重新照明结果。 et.al.|[2312.11587](http://arxiv.org/abs/2312.11587)|null|
 
-<p align=right>(<a href=#updated-on-20240116>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240117>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
