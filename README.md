@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.01.29
+## Updated on 2024.01.30
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -31,7 +31,7 @@
 |**2024-01-17**|**ICON: Incremental CONfidence for Joint Pose and Radiance Field Optimization**|在给定一组2D图像的情况下，神经辐射场（NeRF）在新视图合成（NVS）中表现出显著的性能。然而，NeRF训练需要每个输入视图的精确相机姿势，通常通过运动结构（SfM）管道获得。最近的作品试图放松这种限制，但它们仍然经常依赖于可以改进的体面的初始姿势。在这里，我们旨在消除姿势初始化的要求。我们提出了增量置信（ICON），这是一种从2D视频帧中训练NeRF的优化过程。ICON仅假设相机运动平滑，以估计姿势的初始猜测。此外，ICON引入了“置信度”：一种用于动态重加权梯度的模型质量自适应度量。ICON依赖于高置信度姿势来学习NeRF，并依赖于高置信度3D结构（由NeRF编码）来学习姿势。我们表明，与使用SfM姿势的方法相比，ICON在没有预先初始化姿势的情况下，在CO3D和HO3D中都实现了卓越的性能。 et.al.|[2401.08937](http://arxiv.org/abs/2401.08937)|null|
 |**2024-01-16**|**Fast Dynamic 3D Object Generation from a Single-view Video**|由于缺乏4D标记的数据，从单视图视频生成动态三维（3D）对象是具有挑战性的。现有方法通过传输现成的图像生成模型（如分数蒸馏采样）来扩展文本到3D管道，但由于需要通过大型预训练模型反向传播信息有限的监督信号，这些方法的扩展速度慢且成本高（例如，每个对象150分钟）。为了解决这一限制，我们提出了一种高效的视频到4D对象生成框架，称为Efficient4D。它在不同的相机视图下生成高质量的时空一致图像，然后将其用作标记数据，直接训练具有显式点云几何结构的新型4D高斯飞溅模型，实现在连续相机轨迹下的实时渲染。对合成视频和真实视频的广泛实验表明，与现有技术的替代方案相比，Efficient4D的速度显著提高了10倍，同时保持了相同水平的创新视图合成质量。例如，Efficient4D只需14分钟即可对动态对象进行建模。 et.al.|[2401.08742](http://arxiv.org/abs/2401.08742)|null|
 
-<p align=right>(<a href=#updated-on-20240129>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240130>back to top</a>)</p>
 
 ## MLLM
 
@@ -48,7 +48,7 @@
 |**2024-01-17**|**Generative Denoise Distillation: Simple Stochastic Noises Induce Efficient Knowledge Transfer for Dense Prediction**|知识提炼是将知识从更强大的大模型（教师）转移到更简单的模型（学生）的过程。目前的许多方法都涉及学生直接模仿老师的知识。然而，通过这些流行的方法，在学习的表示中仍然存在冗余，这些方法倾向于不加区别地学习每个空间位置的特征。为了从教师那里获得更紧凑的表示（概念特征），受人类认知的启发，我们提出了一种创新的方法，称为生成去噪蒸馏（GDD），其中将随机噪声添加到学生的概念特征中，以将其嵌入浅层网络生成的实例特征中。然后，将生成的实例特征与来自老师的实例知识对齐。我们对对象检测、实例分割和语义分割进行了广泛的实验，以证明我们的方法的通用性和有效性。值得注意的是，GDD在上述任务中实现了最先进的性能。我们通过增强基于ResNet-18的PspNet和DeepLabV3，在语义分割方面取得了实质性的改进，mIoU得分分别为74.67和77.69，超过了他们之前在20个类别的Cityscapes数据集上的69.85和73.20分。源代码位于https://github.com/ZhgLiu/GDD. et.al.|[2401.08332](http://arxiv.org/abs/2401.08332)|null|
 |**2024-01-16**|**Multitask Learning in Minimally Invasive Surgical Vision: A Review**|微创手术（MIS）已经彻底改变了许多程序，并减少了患者的恢复时间和受伤风险。然而，MIS给外科团队带来了额外的复杂性和负担。数据驱动的手术视觉算法被认为是开发具有改进自主性的未来MIS系统的关键构建块。机器学习和计算机视觉的最新进展已成功应用于分析从MIS获得的视频，有望缓解MIS视频中的挑战。手术场景和动作理解包括多个相关任务，当单独解决时，这些任务可能会占用大量记忆，效率低下，并且无法捕捉任务关系。多任务学习（MTL）是一种利用来自多个相关任务的信息来提高性能和帮助泛化的学习范式，非常适合对MIS数据进行细粒度和高级理解。这篇综述概述了当前最先进的MTL系统，这些系统利用了从MIS获得的视频。除了列出已发表的方法外，我们还讨论了这些MTL系统的优点和局限性。此外，本文还分析了MTL在MIS中各个应用领域的文献，包括那些具有大型模型的文献，强调了显著的趋势、新的研究方向和发展。 et.al.|[2401.08256](http://arxiv.org/abs/2401.08256)|null|
 
-<p align=right>(<a href=#updated-on-20240129>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240130>back to top</a>)</p>
 
 ## Diffusion
 
@@ -65,7 +65,7 @@
 |**2024-01-25**|**BootPIG: Bootstrapping Zero-shot Personalized Image Generation Capabilities in Pretrained Diffusion Models**|最近的文本到图像生成模型在生成忠实遵循输入提示的图像方面取得了令人难以置信的成功。然而，使用词语来描述期望的概念的要求提供了对生成的概念的外观的有限控制。在这项工作中，我们通过提出一种在现有的文本到图像扩散模型中实现个性化功能的方法来解决这一缺点。我们提出了一种新的架构（BootPIG），该架构允许用户提供对象的参考图像，以引导概念在生成的图像中的出现。所提出的BootPIG架构对预训练的文本到图像扩散模型进行了最小的修改，并利用单独的UNet模型来引导几代人朝着期望的外观发展。我们引入了一个训练过程，使我们能够使用从预训练的文本到图像模型、LLM聊天代理和图像分割模型生成的数据，在BootPIG架构中引导个性化功能。与需要几天预训练的现有方法相比，BootPIG架构可以在大约1小时内进行训练。DreamBooth数据集的实验表明，BootPIG优于现有的零样本方法，同时与测试时微调方法相当。通过用户研究，我们验证了BootPIG生成在保持对参考对象外观的逼真度和与文本提示保持一致方面优于现有方法。 et.al.|[2401.13974](http://arxiv.org/abs/2401.13974)|null|
 |**2024-01-25**|**A New Image Quality Database for Multiple Industrial Processes**|近年来，图像处理技术在多个工业过程中得到了更广泛的应用，如烟雾检测、安全监控和工件检测。在图像的采集、压缩、传输、存储和显示过程中，必须将不同类型的失真类型和级别引入图像中，这可能会严重降低图像质量，从而大大降低最终的显示效果和清晰度。为了验证现有图像质量评估方法的可靠性，我们建立了一个新的工业过程图像数据库（IPID），该数据库包含3000幅失真图像，这些图像是通过对50幅源图像中的每幅应用不同级别的失真类型而生成的。我们对上述3000张图像进行主观测试，以在非常适合的实验室环境中收集它们的主观质量评级。最后，我们在IPID数据库上进行了比较实验，研究了一些客观图像质量评估算法的性能。实验结果表明，最先进的图像质量评估方法难以预测包含多种失真类型的图像的质量。 et.al.|[2401.13956](http://arxiv.org/abs/2401.13956)|null|
 
-<p align=right>(<a href=#updated-on-20240129>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240130>back to top</a>)</p>
 
 ## avatar
 
@@ -82,7 +82,7 @@
 |**2023-12-21**|**From Past to Future: Digital Methods Towards Artefact Analysis**|在过去的二十年里，数字人文改变了人文和社会科学的格局，实现了对广泛数据集的高级计算分析和解释。值得注意的是，东南亚，特别是新加坡最近的举措侧重于对历史数据进行分类和归档，如艺术品、文学作品，尤其是考古文物。这项研究通过在两个不同的人工制品数据集上应用统计方法，展示了数字人文的巨大潜力。具体而言，我们展示了对公元1千年中期东南亚大陆“旭日”铸币的自动模具研究结果，随后对从新加坡中部殖民前圣安德鲁大教堂遗址挖掘的13-14世纪陶器的2D图像使用了无监督统计方法。这项研究提供了一个比较评估，展示了基于统计的方法对不同考古材料的解释和分析以及数字人文整体的变革影响。 et.al.|[2312.13790](http://arxiv.org/abs/2312.13790)|null|
 |**2023-12-18**|**Relightable Neural Actor with Intrinsic Decomposition and Pose Control**|在视觉和图形学中，创建一个可欣赏、可驾驶和逼真的数字人类化身是一个具有挑战性的重要问题。人类是高度立体化的，会产生依赖姿势的外观效果，如自我阴影和皱纹，皮肤和衣服需要复杂且空间变化的BRDF模型。虽然最近的人类重新照明方法可以从多视图视频中恢复看似合理的材料光分解，但它们不能推广到新颖的姿势，并且仍然存在视觉伪影。为了解决这一问题，我们提出了Relightable Neural Actor，这是第一种基于视频的方法，用于学习照片真实感的神经人体模型，该模型可以重新照明，允许外观编辑，并可以由任意骨骼姿势控制。重要的是，为了学习我们的人类化身，我们只需要在已知但静态的照明条件下对人类进行多视图记录。为了实现这一点，我们用可驱动的密度场来表示演员的几何体，该密度场对姿势相关的服装变形进行建模，并提供3D和UV空间之间的映射，其中对法线、可见性和材质进行编码。为了在现实世界场景中评估我们的方法，我们收集了一个新的数据集，其中包括在室内和室外不同光照条件下记录的四个参与者，为人类重新照明提供了第一个此类基准，并展示了最先进的新人类姿势的重新照明结果。 et.al.|[2312.11587](http://arxiv.org/abs/2312.11587)|null|
 
-<p align=right>(<a href=#updated-on-20240129>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240130>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
