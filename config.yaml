@@ -5,7 +5,7 @@ repo_name: "cv-arxiv-daily"
 show_authors: True
 show_links: True
 show_badge: True
-max_results: 10
+max_results: 20
 
 publish_readme: True
 publish_gitpage: True
@@ -22,14 +22,13 @@ md_wechat_path: './docs/wechat.md'
 
 # keywords to search
 keywords:
-    #"3D": 
-     #   filters: ["3D", "Mesh", "Rendering", "SDF", "NVS", "View Synthesis", "voxel", "triplane"]
-    #"MLLM": 
-     #   filters: ["multimodal", "large model", "vision", "transformer", "GPT", "visual"]
-    #"Diffusion": 
-     #   filters: ["Diffusion", "video generation", "image generation", "control", "Synthesis"]
+    "3D": 
+        filters: ["3D", "Mesh", "Rendering", "SDF", "NVS", "View Synthesis", "voxel", "triplane"]
+    "MLLM": 
+        filters: ["multimodal", "large model", "vision", "transformer", "GPT", "visual"]
+    "Diffusion": 
+        filters: ["Diffusion", "video generation", "image generation", "control", "Synthesis"]
     "avatar":
-        filters: ["avatar"]
-        #filters: ["talking head", "animate", "motion", "body", "generation", "digital human", "charactor", "Animatable Human"]
-    #"gaussian splatting":
-     #   filters: ["3D", "reconstruction", "render", "generation"]
+        filters: ["talking head", "animate", "motion", "avatar", "generation", "digital human", "charactor", "Animatable Human"]
+    "gaussian splatting":
+        filters: ["3D", "reconstruction", "render", "generation"]
