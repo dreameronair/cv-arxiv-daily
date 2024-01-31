@@ -29,6 +29,7 @@ keywords:
     "Diffusion": 
         filters: ["Diffusion", "video generation", "image generation", "control", "Synthesis"]
     "avatar":
-        filters: ["talking head", "animate", "motion", "body", "generation", "digital human", "charactor", "Animatable Human"]
+        filters: ["avatar"]
+        #filters: ["talking head", "animate", "motion", "body", "generation", "digital human", "charactor", "Animatable Human"]
     "gaussian splatting":
         filters: ["3D", "reconstruction", "render", "generation"]
