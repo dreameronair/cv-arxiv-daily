@@ -30,6 +30,6 @@ keywords:
      #   filters: ["Diffusion", "video generation", "image generation", "control", "Synthesis"]
     "avatar":
         # filters: ["avatar"]
-         filters: ["talking head", "animate", "motion", "avatar", "digital human", "charactor", "Animatable Human"]
+         filters: [talking head, animate, motion, avatar, digital human, charactor, Animatable Human]
    # "gaussian splatting":
      #   filters: ["3D", "reconstruction", "render", "generation"]
