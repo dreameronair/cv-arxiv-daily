@@ -32,10 +32,10 @@ def load_config(config_file:str) -> dict:
             ret = ''
             for idx in range(0,len(filters)):
                 filter = filters[idx]
-                if len(filter.split()) > 1:
-                    ret += (EXCAPE + filter + EXCAPE)  
-                else:
-                    ret += (QUOTA + filter + QUOTA)   
+               # if len(filter.split()) > 1:
+                #    ret += (EXCAPE + filter + EXCAPE)  
+               # else:
+                ret += (QUOTA + filter + QUOTA)   
                 if idx != len(filters) - 1:
                     ret += OR
             return ret
