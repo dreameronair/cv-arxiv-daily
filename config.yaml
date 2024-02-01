@@ -29,7 +29,7 @@ keywords:
     #"Diffusion": 
      #   filters: ["Diffusion", "video generation", "image generation", "control", "Synthesis"]
     "avatar":
-         filters: ["avatar"]
+         filters: [ti:avatar]
         # filters: [avatar,talking head, animate, motion,  digital human, charactor, Animatable Human]
    # "gaussian splatting":
      #   filters: ["3D", "reconstruction", "render", "generation"]
