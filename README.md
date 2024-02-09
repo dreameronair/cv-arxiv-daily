@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.02.08
+## Updated on 2024.02.09
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-04-01**|**TalkCLIP: Talking Head Generation with Text-Guided Expressive Speaking Styles**|为了生成特定于面部表情的会说话的头部视频，以前的音频驱动的单镜头会说话的头方法需要使用具有匹配说话风格的参考视频（即面部表情）。然而，找到具有所需风格的视频可能并不容易，这可能会限制其应用。在这项工作中，我们提出了一种表情可控的一次性谈话头方法，称为TalkCLIP，其中语音中的表情由自然语言指定。这将大大减轻搜索具有所需说话风格的视频的难度。在这里，我们首先构建了一个文本视频配对会说话的头部数据集，其中每个视频都有类似提示的替代描述。具体而言，我们的描述涉及粗略级别的情绪注释和基于面部动作单元（AU）的细粒度注释。然后，我们介绍了一种基于CLIP的风格编码器，该编码器首先将自然语言描述投影到CLIP文本嵌入空间，然后将文本嵌入与说话风格的表示对齐。由于CLIP已经对广泛的文本知识进行了编码，我们的方法甚至可以泛化以推断出在训练中没有看到描述的说话风格。大量实验表明，我们的方法实现了在文本描述的指导下生成具有生动面部表情的照片逼真的谈话头的先进能力。 et.al.|[2304.00334](http://arxiv.org/abs/2304.00334)|null|
 |**2023-03-31**|**FONT: Flow-guided One-shot Talking Head Generation with Natural Head Motions**|近年来，一次性会说话的头部生成越来越受到关注，具有各种创造性和实际应用。一个理想的自然和生动生成的会说话的头部视频应该包含自然的头部姿势变化。然而，从驾驶音频映射头部姿势序列是具有挑战性的，因为视听模式之间存在天然的差距。在这项工作中，我们提出了一种流引导的一次性模型，该模型可以在生成的会说话的头部上实现NaTural头部运动（FONT）。具体地，头部姿势预测模块被设计为从源面部和驾驶音频生成头部姿势序列。我们添加了随机采样操作和结构相似性约束，以对视听模态之间的一对多映射中的多样性进行建模，从而预测自然的头部姿势。然后，我们开发了一个关键点预测器，该预测器从源人脸产生无监督的关键点，驱动音频和姿势序列来描述人脸结构信息。最后，采用流引导遮挡感知生成器从估计的关键点和源面部生成逼真的会说话的头部视频。大量实验结果证明，FONT生成的会说话的头具有自然的头部姿势和同步的口型，优于其他比较方法。 et.al.|[2303.17789](http://arxiv.org/abs/2303.17789)|null|
 
-<p align=right>(<a href=#updated-on-20240208>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240209>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
