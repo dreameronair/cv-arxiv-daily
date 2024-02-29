@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.02.28
+## Updated on 2024.02.29
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-04-11**|**One-Shot High-Fidelity Talking-Head Synthesis with Deformable Neural Radiance Field**|会说话的头部生成旨在生成保持源图像的身份信息并模仿驾驶图像的运动的面部。大多数开创性的方法主要依赖于2D表示，因此当遇到大的头部旋转时，将不可避免地遭受面部失真。最近的工作转而采用显式3D结构表示或隐式神经渲染来提高在大姿态变化下的性能。然而，身份和表达的保真度并不那么理想，尤其是对于新颖的观点合成来说。在本文中，我们提出了HiDe NeRF，它实现了高保真度和自由视角的谈话头合成。根据最近提出的可变形神经辐射场，HiDe NeRF将3D动态场景表示为规范外观场和隐式变形场，其中前者包括规范源面，而后者对驾驶姿势和表情进行建模。特别是，我们从两个方面提高了保真度：（i）为了增强身份表现力，我们设计了一个通用外观模块，该模块利用多尺度体积特征来保留面部形状和细节；（ii）为了提高表达的准确性，我们提出了一个轻量级的变形模块，该模块显式地解耦姿态和表达，以实现精确的表达建模。大量实验表明，我们提出的方法可以产生比以前更好的结果。项目页面：https://www.waytron.net/hidenerf/ et.al.|[2304.05097](http://arxiv.org/abs/2304.05097)|null|
 |**2023-04-01**|**TalkCLIP: Talking Head Generation with Text-Guided Expressive Speaking Styles**|为了生成特定于面部表情的会说话的头部视频，以前的音频驱动的单镜头会说话的头方法需要使用具有匹配说话风格的参考视频（即面部表情）。然而，找到具有所需风格的视频可能并不容易，这可能会限制其应用。在这项工作中，我们提出了一种表情可控的一次性谈话头方法，称为TalkCLIP，其中语音中的表情由自然语言指定。这将大大减轻搜索具有所需说话风格的视频的难度。在这里，我们首先构建了一个文本视频配对会说话的头部数据集，其中每个视频都有类似提示的替代描述。具体而言，我们的描述涉及粗略级别的情绪注释和基于面部动作单元（AU）的细粒度注释。然后，我们介绍了一种基于CLIP的风格编码器，该编码器首先将自然语言描述投影到CLIP文本嵌入空间，然后将文本嵌入与说话风格的表示对齐。由于CLIP已经对广泛的文本知识进行了编码，我们的方法甚至可以泛化以推断出在训练中没有看到描述的说话风格。大量实验表明，我们的方法实现了在文本描述的指导下生成具有生动面部表情的照片逼真的谈话头的先进能力。 et.al.|[2304.00334](http://arxiv.org/abs/2304.00334)|null|
 
-<p align=right>(<a href=#updated-on-20240228>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240229>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
