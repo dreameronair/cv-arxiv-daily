@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.03.18
+## Updated on 2024.03.19
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-04-25**|**AudioGPT: Understanding and Generating Speech, Music, Sound, and Talking Head**|大型语言模型（LLM）在各种领域和任务中表现出了非凡的能力，挑战了我们对学习和认知的理解。尽管最近取得了成功，但目前的LLM无法处理复杂的音频信息或进行口语对话（如Siri或Alexa）。在这项工作中，我们提出了一个名为AudioGPT的多模式人工智能系统，它用1）基础模型来补充LLM（即ChatGPT），以处理复杂的音频信息并解决大量的理解和生成任务；以及2）支持口语对话的输入/输出接口（ASR、TTS）。随着对评估人类意图理解和与基础模型合作的多模式LLM的需求不断增加，我们概述了原理和过程，并测试了AudioGPT的一致性、能力和稳健性。实验结果证明了AudioGPT在多轮对话中通过语音、音乐、声音和会说话的头部理解和生成来解决人工智能任务的能力，这使人类能够以前所未有的轻松创建丰富多样的音频内容。我们的系统可在\url上公开获取{https://github.com/AIGC-Audio/AudioGPT}. et.al.|[2304.12995](http://arxiv.org/abs/2304.12995)|**[link](https://github.com/aigc-audio/audiogpt)**|
 |**2023-11-02**|**High-Fidelity and Freely Controllable Talking Head Video Generation**|会说话的头部生成是基于给定的源身份和目标运动来生成视频。然而，当前的方法面临着一些挑战，这些挑战限制了所生成视频的质量和可控性。首先，生成的面通常会出现意外变形和严重扭曲。其次，驾驶图像没有明确地分解运动相关信息，如姿势和表情，这限制了在生成过程中对不同属性的操作。第三，由于相邻帧之间提取的地标的不一致性，生成的视频往往具有闪烁的伪影。在本文中，我们提出了一种新的模型，该模型可以生成高保真的会说话的头部视频，并可以自由控制头部姿势和表情。我们的方法利用自监督学习的地标和基于3D人脸模型的地标来对运动进行建模。我们还引入了一种新的运动感知多尺度特征对齐模块，以在没有人脸失真的情况下有效地传递运动。此外，我们还通过特征上下文自适应和传播模块来增强合成的头部视频的平滑度。我们在具有挑战性的数据集上评估我们的模型，并展示其最先进的性能。 et.al.|[2304.10168](http://arxiv.org/abs/2304.10168)|null|
 
-<p align=right>(<a href=#updated-on-20240318>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240319>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
