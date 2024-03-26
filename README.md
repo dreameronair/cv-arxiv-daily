@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.03.25
+## Updated on 2024.03.26
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-12-10**|**DaGAN++: Depth-Aware Generative Adversarial Network for Talking Head Video Generation**|在会说话的头部生成方面的主要技术在很大程度上取决于2D信息，包括来自输入面部图像的面部外观和运动。然而，密集的3D面部几何结构，如逐像素深度，在构建准确的3D面部结构和抑制复杂的背景噪声以进行生成方面发挥着关键作用。然而，面部视频的密集3D注释的获取成本高得令人望而却步。在这项工作中，首先，我们提出了一种新的自监督方法，用于从人脸视频中学习密集的3D人脸几何（即深度），而不需要在训练中使用相机参数和3D几何注释。我们进一步提出了一种学习像素级不确定性的策略，以感知用于几何学习的更可靠的刚性运动像素。其次，我们设计了一个有效的几何引导的面部关键点估计模块，为生成运动场提供了准确的关键点。最后，我们开发了一种3D感知的跨模态（即外观和深度）注意力机制，该机制可以应用于每个生成层，以从粗到细的方式捕捉面部几何形状。在三个具有挑战性的基准（即VoxCeleb1、VoxCeleb2和HDTF）上进行了广泛的实验。结果表明，我们提出的框架可以生成看起来高度逼真的重演谈话视频，并在这些基准上建立新的最先进的性能。代码和经过训练的模型可在GitHub项目页面上公开获取，网址为https://github.com/harlanhong/CVPR2022-DaGAN et.al.|[2305.06225](http://arxiv.org/abs/2305.06225)|**[link](https://github.com/harlanhong/cvpr2022-dagan)**|
 |**2023-09-12**|**Avatar Fingerprinting for Authorized Use of Synthetic Talking-Head Videos**|现代生成器以令人印象深刻的真实感渲染会说话的头部视频，在带宽预算有限的情况下带来新的用户体验，如视频会议。然而，它们的安全采用需要一种机制来验证渲染的视频是否可信。例如，对于视频会议，我们必须确定合成视频肖像未经个人同意使用其外观的情况。我们将此任务称为“化身指纹”。具体来说，我们学习了一种嵌入，其中一个身份的运动特征被分组在一起，并被推离其他身份的运动签名。这使我们能够将合成视频与驱动视频中表情的身份联系起来，而不管所显示的面部外观如何。随着会说话的头部生成器变得越来越普遍，而且还没有大规模的数据集来完成这项新任务，头像指纹识别算法将是至关重要的。因此，我们贡献了一个庞大的数据集，由人们提供脚本化和即兴创作的短独白，并配以合成视频，在合成视频中，我们使用另一个人的面部表情来渲染一个人的视频。项目页面：https://research.nvidia.com/labs/nxp/avatar-fingerprinting/. et.al.|[2305.03713](http://arxiv.org/abs/2305.03713)|null|
 
-<p align=right>(<a href=#updated-on-20240325>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240326>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
