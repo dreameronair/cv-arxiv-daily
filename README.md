@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.03.26
+## Updated on 2024.03.27
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-05-17**|**LPMM: Intuitive Pose Control for Neural Talking-Head Model via Landmark-Parameter Morphable Model**|虽然目前的会说话的头部模型能够生成逼真的会说话视频，但它们提供的姿势可控性有限。大多数方法都需要特定的视频序列，这些视频序列应该准确地包含所需的头部姿势，而不是用户友好的姿势控制。三维可变形模型（3DMM）提供语义姿势控制，但无法捕捉某些表情。我们提出了一种新的方法，该方法在预先训练的神经会说话的头部模型上利用头部方向和面部表情的参数控制。为了实现这一点，我们引入了一个地标参数可变形模型（LPMM），该模型通过一组语义参数提供对面部地标域的控制。使用LPMM，可以调整特定的头部姿势因素，而不会扭曲其他面部属性。结果表明，我们的方法对神经会说话的头部模型提供了直观的钻机式控制，允许基于参数和图像的输入。 et.al.|[2305.10456](http://arxiv.org/abs/2305.10456)|null|
 |**2023-12-10**|**DaGAN++: Depth-Aware Generative Adversarial Network for Talking Head Video Generation**|在会说话的头部生成方面的主要技术在很大程度上取决于2D信息，包括来自输入面部图像的面部外观和运动。然而，密集的3D面部几何结构，如逐像素深度，在构建准确的3D面部结构和抑制复杂的背景噪声以进行生成方面发挥着关键作用。然而，面部视频的密集3D注释的获取成本高得令人望而却步。在这项工作中，首先，我们提出了一种新的自监督方法，用于从人脸视频中学习密集的3D人脸几何（即深度），而不需要在训练中使用相机参数和3D几何注释。我们进一步提出了一种学习像素级不确定性的策略，以感知用于几何学习的更可靠的刚性运动像素。其次，我们设计了一个有效的几何引导的面部关键点估计模块，为生成运动场提供了准确的关键点。最后，我们开发了一种3D感知的跨模态（即外观和深度）注意力机制，该机制可以应用于每个生成层，以从粗到细的方式捕捉面部几何形状。在三个具有挑战性的基准（即VoxCeleb1、VoxCeleb2和HDTF）上进行了广泛的实验。结果表明，我们提出的框架可以生成看起来高度逼真的重演谈话视频，并在这些基准上建立新的最先进的性能。代码和经过训练的模型可在GitHub项目页面上公开获取，网址为https://github.com/harlanhong/CVPR2022-DaGAN et.al.|[2305.06225](http://arxiv.org/abs/2305.06225)|**[link](https://github.com/harlanhong/cvpr2022-dagan)**|
 
-<p align=right>(<a href=#updated-on-20240326>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240327>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
