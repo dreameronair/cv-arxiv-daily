@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.03.29
+## Updated on 2024.03.30
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-07-26**|**Learning Landmarks Motion from Speech for Speaker-Agnostic 3D Talking Heads Generation**|本文提出了一种从原始音频输入生成3D谈话头的新方法。我们的方法基于这样一种想法，即语音相关的运动可以通过位于面部可移动部分（即地标）上的几个控制点的运动来全面有效地描述。下面的肌肉骨骼结构使我们能够了解它们的运动如何影响整个面部的几何变形。为此，所提出的方法采用了两个不同的模型：第一个模型学习从给定的音频中生成稀疏的地标集的运动。第二个模型将这样的地标运动扩展到密集运动场，该密集运动场用于在中性状态下对给定的3D网格进行动画制作。此外，我们引入了一种新的损失函数，称为余弦损失，它使生成的运动矢量和地面实况矢量之间的角度最小化。在3D谈话头生成中使用地标提供了各种优势，如一致性、可靠性和无需手动注释。我们的方法是不受身份限制的，为任何用户提供高质量的面部动画，而无需额外的数据或培训。 et.al.|[2306.01415](http://arxiv.org/abs/2306.01415)|**[link](https://github.com/fedenoce/s2l-s2d)**|
 |**2023-05-17**|**LPMM: Intuitive Pose Control for Neural Talking-Head Model via Landmark-Parameter Morphable Model**|虽然目前的会说话的头部模型能够生成逼真的会说话视频，但它们提供的姿势可控性有限。大多数方法都需要特定的视频序列，这些视频序列应该准确地包含所需的头部姿势，而不是用户友好的姿势控制。三维可变形模型（3DMM）提供语义姿势控制，但无法捕捉某些表情。我们提出了一种新的方法，该方法在预先训练的神经会说话的头部模型上利用头部方向和面部表情的参数控制。为了实现这一点，我们引入了一个地标参数可变形模型（LPMM），该模型通过一组语义参数提供对面部地标域的控制。使用LPMM，可以调整特定的头部姿势因素，而不会扭曲其他面部属性。结果表明，我们的方法对神经会说话的头部模型提供了直观的钻机式控制，允许基于参数和图像的输入。 et.al.|[2305.10456](http://arxiv.org/abs/2305.10456)|null|
 
-<p align=right>(<a href=#updated-on-20240329>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240330>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
