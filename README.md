@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.04.09
+## Updated on 2024.04.10
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-07-04**|**A Comprehensive Multi-scale Approach for Speech and Dynamics Synchrony in Talking Head Generation**|使用语音输入信号用深度生成模型对静止人脸图像进行动画制作是一个活跃的研究课题，并且最近取得了重要进展。然而，大部分精力都放在了假唱和渲染质量上，而自然头部运动的产生，更不用说头部运动和语音之间的视听相关性了，却经常被忽视。在这项工作中，我们提出了多尺度视听同步损失和多尺度自回归GAN，以更好地处理语音与头部和嘴唇动态之间的短期和长期相关性。特别是，我们在多模式输入金字塔上训练一堆同步器模型，并在多尺度生成器网络中使用这些模型作为指导，以产生在不同时间尺度上展开的音频对齐运动。我们的生成器在面部标志域中运行，这是一种标准的低维头部表示。实验表明，在标志域和图像域中，头部运动动力学质量和多尺度视听同步性都比现有技术有了显著改进。 et.al.|[2307.03270](http://arxiv.org/abs/2307.03270)|**[link](https://github.com/louisbearing/hmo-audio)**|
 |**2023-06-06**|**Emotional Talking Head Generation based on Memory-Sharing and Attention-Augmented Networks**|给定音频片段和参考人脸图像，会说话的头部生成的目标是生成高保真度的会说话的头视频。尽管一些音频驱动的头部视频生成方法在过去已经取得了一些成就，但它们大多只关注嘴唇和音频同步，缺乏再现目标人物面部表情的能力。为此，我们提出了一种由记忆共享情感特征提取器（MSEF）和基于U-net的注意力增强翻译器（AATU）组成的谈话头生成模型。首先，MSEF可以从音频中提取隐含的情感辅助特征，以估计更准确的情感人脸标志~其次，AATU充当估计的地标和照片逼真视频帧之间的翻译器。大量的定性和定量实验表明，该方法优于以往的工作。代码将公开。 et.al.|[2306.03594](http://arxiv.org/abs/2306.03594)|null|
 
-<p align=right>(<a href=#updated-on-20240409>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240410>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
