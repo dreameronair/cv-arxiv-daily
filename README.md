@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.04.20
+## Updated on 2024.04.21
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-08-18**|**Implicit Identity Representation Conditioned Memory Compensation Network for Talking Head video Generation**|Talking head视频生成旨在使用从目标驾驶视频中获得的运动信息，在静止图像中以动态姿势和表情对人脸进行动画化，同时在源图像中保持人的身份。然而，驾驶视频中剧烈而复杂的运动会导致模糊的生成，因为静止源图像无法为遮挡区域或微妙的表情变化提供足够的外观信息，这会产生严重的伪影并显著降低生成质量。为了解决这个问题，我们建议学习一个全局面部表示空间，并设计一个新的隐式身份表示条件记忆补偿网络，称为MCNet，用于高保真谈话头部生成~具体来说，我们设计了一个网络模块，从所有训练样本中学习统一的空间面部元记忆库，该模块可以提供丰富的面部结构和外观先验，以补偿生成时扭曲的源面部特征。此外，我们提出了一种基于从源图像的离散关键点学习的隐式身份表示的有效查询机制。它可以极大地促进从存储器库中检索更多相关信息以进行补偿。大量实验表明，MCNet可以学习具有代表性和互补性的面部记忆，并且在VoxCeleb1和CelebV数据集上明显优于以前最先进的会说话的头部生成方法。请查看我们的\href{https://github.com/harlanhong/ICCV2023-MCNET项目 et.al.|[2307.09906](http://arxiv.org/abs/2307.09906)|**[link](https://github.com/harlanhong/iccv2023-mcnet)**|
 |**2023-07-04**|**A Comprehensive Multi-scale Approach for Speech and Dynamics Synchrony in Talking Head Generation**|使用语音输入信号用深度生成模型对静止人脸图像进行动画制作是一个活跃的研究课题，并且最近取得了重要进展。然而，大部分精力都放在了假唱和渲染质量上，而自然头部运动的产生，更不用说头部运动和语音之间的视听相关性了，却经常被忽视。在这项工作中，我们提出了多尺度视听同步损失和多尺度自回归GAN，以更好地处理语音与头部和嘴唇动态之间的短期和长期相关性。特别是，我们在多模式输入金字塔上训练一堆同步器模型，并在多尺度生成器网络中使用这些模型作为指导，以产生在不同时间尺度上展开的音频对齐运动。我们的生成器在面部标志域中运行，这是一种标准的低维头部表示。实验表明，在标志域和图像域中，头部运动动力学质量和多尺度视听同步性都比现有技术有了显著改进。 et.al.|[2307.03270](http://arxiv.org/abs/2307.03270)|**[link](https://github.com/louisbearing/hmo-audio)**|
 
-<p align=right>(<a href=#updated-on-20240420>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240421>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
