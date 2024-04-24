@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.04.23
+## Updated on 2024.04.24
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-09-20**|**Context-Aware Talking-Head Video Editing**|Talking head视频编辑旨在通过文本转录编辑器有效地插入、删除和替换预先录制的视频中的单词。这项任务的关键挑战是获得一种编辑模型，该模型生成新的会说话的头部视频片段，该视频片段同时具有精确的嘴唇同步和运动平滑度。以前的方法，包括基于3DMM的（3D变形模型）方法和基于NeRF的（神经辐射场）方法，都是次优的，因为它们要么需要几分钟的源视频和几天的训练时间，要么缺乏对视频剪辑插入的语言（如嘴唇运动）和非语言（如头部姿势和表情）表示的复杂控制。在这项工作中，我们充分利用视频上下文来设计一种新的谈话式头部视频编辑框架，该框架实现了效率、解纠缠的运动控制和顺序平滑。具体来说，我们将该框架分解为运动预测和运动条件渲染：（1）我们首先设计了一个动画预测模块，该模块可以有效地获得基于驱动语音的平滑和唇同步运动序列。该模块采用非自回归网络来获取上下文先验，提高预测效率，并从多身份视频数据集中学习具有更好泛化能力的语音动画映射先验。（2） 然后，在给定预测的运动序列的情况下，我们引入了一个神经渲染模块来合成照片逼真度和全头视频帧。该模块采用预先训练的头部拓扑，仅使用少量帧进行有效微调，以获得特定于个人的渲染模型。大量实验表明，与以前的方法相比，我们的方法使用更少的数据，以更高的图像质量和嘴唇精度有效地实现了更平滑的编辑结果。 et.al.|[2308.00462](http://arxiv.org/abs/2308.00462)|null|
 |**2023-08-18**|**Implicit Identity Representation Conditioned Memory Compensation Network for Talking Head video Generation**|Talking head视频生成旨在使用从目标驾驶视频中获得的运动信息，在静止图像中以动态姿势和表情对人脸进行动画化，同时在源图像中保持人的身份。然而，驾驶视频中剧烈而复杂的运动会导致模糊的生成，因为静止源图像无法为遮挡区域或微妙的表情变化提供足够的外观信息，这会产生严重的伪影并显著降低生成质量。为了解决这个问题，我们建议学习一个全局面部表示空间，并设计一个新的隐式身份表示条件记忆补偿网络，称为MCNet，用于高保真谈话头部生成~具体来说，我们设计了一个网络模块，从所有训练样本中学习统一的空间面部元记忆库，该模块可以提供丰富的面部结构和外观先验，以补偿生成时扭曲的源面部特征。此外，我们提出了一种基于从源图像的离散关键点学习的隐式身份表示的有效查询机制。它可以极大地促进从存储器库中检索更多相关信息以进行补偿。大量实验表明，MCNet可以学习具有代表性和互补性的面部记忆，并且在VoxCeleb1和CelebV数据集上明显优于以前最先进的会说话的头部生成方法。请查看我们的\href{https://github.com/harlanhong/ICCV2023-MCNET项目 et.al.|[2307.09906](http://arxiv.org/abs/2307.09906)|**[link](https://github.com/harlanhong/iccv2023-mcnet)**|
 
-<p align=right>(<a href=#updated-on-20240423>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240424>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
