@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.04.25
+## Updated on 2024.04.26
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-08-12**|**Text-to-Video: a Two-stage Framework for Zero-shot Identity-agnostic Talking-head Generation**|ChatGPT的出现引入了信息收集和分析的创新方法。然而，ChatGPT提供的信息仅限于文本，这些信息的可视化仍然受到限制。先前的研究探索了将文本转换为视频的零样本文本到视频（TTV）方法。然而，这些方法缺乏对生成音频的身份的控制，即不是身份不可知的，阻碍了它们的有效性。为了解决这一限制，我们提出了一个新的两阶段框架，用于不可知人的视频克隆，特别关注TTV的生成。在第一阶段，我们利用预先训练的零样本模型来实现文本到速度（TTS）的转换。在第二阶段中，采用音频驱动的谈话头生成方法来生成具有第一阶段中生成的音频特权的引人注目的视频。本文对不同的TTS和音频驱动的谈话头生成方法进行了比较分析，确定了未来最有前途的研究和开发方法。可以在以下链接中找到一些音频和视频示例：https://github.com/ZhichaoWang970201/Text-to-Video/tree/main. et.al.|[2308.06457](http://arxiv.org/abs/2308.06457)|**[link](https://github.com/zhichaowang970201/text-to-video)**|
 |**2023-09-20**|**Context-Aware Talking-Head Video Editing**|Talking head视频编辑旨在通过文本转录编辑器有效地插入、删除和替换预先录制的视频中的单词。这项任务的关键挑战是获得一种编辑模型，该模型生成新的会说话的头部视频片段，该视频片段同时具有精确的嘴唇同步和运动平滑度。以前的方法，包括基于3DMM的（3D变形模型）方法和基于NeRF的（神经辐射场）方法，都是次优的，因为它们要么需要几分钟的源视频和几天的训练时间，要么缺乏对视频剪辑插入的语言（如嘴唇运动）和非语言（如头部姿势和表情）表示的复杂控制。在这项工作中，我们充分利用视频上下文来设计一种新的谈话式头部视频编辑框架，该框架实现了效率、解纠缠的运动控制和顺序平滑。具体来说，我们将该框架分解为运动预测和运动条件渲染：（1）我们首先设计了一个动画预测模块，该模块可以有效地获得基于驱动语音的平滑和唇同步运动序列。该模块采用非自回归网络来获取上下文先验，提高预测效率，并从多身份视频数据集中学习具有更好泛化能力的语音动画映射先验。（2） 然后，在给定预测的运动序列的情况下，我们引入了一个神经渲染模块来合成照片逼真度和全头视频帧。该模块采用预先训练的头部拓扑，仅使用少量帧进行有效微调，以获得特定于个人的渲染模型。大量实验表明，与以前的方法相比，我们的方法使用更少的数据，以更高的图像质量和嘴唇精度有效地实现了更平滑的编辑结果。 et.al.|[2308.00462](http://arxiv.org/abs/2308.00462)|null|
 
-<p align=right>(<a href=#updated-on-20240425>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240426>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
