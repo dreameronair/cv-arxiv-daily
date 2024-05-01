@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.04.30
+## Updated on 2024.05.01
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-08-30**|**From Pixels to Portraits: A Comprehensive Survey of Talking Head Generation Techniques and Applications**|深度学习和计算机视觉的最新进展导致了人们对生成逼真的会说话的大脑的兴趣激增。本文对最先进的谈话头生成方法进行了全面的综述。我们系统地将其分为四种主要方法：图像驱动、音频驱动、视频驱动和其他方法（包括神经辐射场（NeRF）和基于3D的方法）。我们对每种方法进行了深入分析，强调了它们的独特贡献、优势和局限性。此外，我们彻底比较了公开可用的模型，并在关键方面对其进行了评估，如推理时间和生成输出的人工评分质量。我们的目标是对当前谈话型头部生成的前景进行清晰简洁的概述，阐明不同方法之间的关系，并为未来的研究确定有希望的方向。这项调查将为对这一快速发展的领域感兴趣的研究人员和从业者提供宝贵的参考。 et.al.|[2308.16041](http://arxiv.org/abs/2308.16041)|null|
 |**2023-08-12**|**Text-to-Video: a Two-stage Framework for Zero-shot Identity-agnostic Talking-head Generation**|ChatGPT的出现引入了信息收集和分析的创新方法。然而，ChatGPT提供的信息仅限于文本，这些信息的可视化仍然受到限制。先前的研究探索了将文本转换为视频的零样本文本到视频（TTV）方法。然而，这些方法缺乏对生成音频的身份的控制，即不是身份不可知的，阻碍了它们的有效性。为了解决这一限制，我们提出了一个新的两阶段框架，用于不可知人的视频克隆，特别关注TTV的生成。在第一阶段，我们利用预先训练的零样本模型来实现文本到速度（TTS）的转换。在第二阶段中，采用音频驱动的谈话头生成方法来生成具有第一阶段中生成的音频特权的引人注目的视频。本文对不同的TTS和音频驱动的谈话头生成方法进行了比较分析，确定了未来最有前途的研究和开发方法。可以在以下链接中找到一些音频和视频示例：https://github.com/ZhichaoWang970201/Text-to-Video/tree/main. et.al.|[2308.06457](http://arxiv.org/abs/2308.06457)|**[link](https://github.com/zhichaowang970201/text-to-video)**|
 
-<p align=right>(<a href=#updated-on-20240430>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240501>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
