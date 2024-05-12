@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.05.11
+## Updated on 2024.05.12
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-10-12**|**Efficient Emotional Adaptation for Audio-Driven Talking-Head Generation**|音频驱动的会说话的头部合成是虚拟人相关应用的热门研究课题。然而，现有方法的灵活性和低效性是显著的局限性，需要昂贵的端到端训练来将情绪从指导视频转移到会说话的头部预测。在这项工作中，我们提出了音频驱动的谈话头部的情绪自适应（EAT）方法，该方法通过参数有效自适应，以经济高效的方式将情绪不可知的谈话头部模型转换为情绪可控的模型。我们的方法利用了一个预先训练的与情绪无关的谈话头部转换器，并从不同的角度引入了三种轻量级的适应（深度情绪提示、情绪变形网络和情绪适应模块），以实现精确而现实的情绪控制。我们的实验表明，我们的方法在广泛使用的基准测试上实现了最先进的性能，包括LRW和MEAD。此外，即使在情感训练视频稀少或不存在的情况下，我们的参数有效自适应也表现出显著的泛化能力。项目网站：https://yuangan.github.io/eat/ et.al.|[2309.04946](http://arxiv.org/abs/2309.04946)|**[link](https://github.com/yuangan/eat_code)**|
 |**2023-08-30**|**From Pixels to Portraits: A Comprehensive Survey of Talking Head Generation Techniques and Applications**|深度学习和计算机视觉的最新进展导致了人们对生成逼真的会说话的大脑的兴趣激增。本文对最先进的谈话头生成方法进行了全面的综述。我们系统地将其分为四种主要方法：图像驱动、音频驱动、视频驱动和其他方法（包括神经辐射场（NeRF）和基于3D的方法）。我们对每种方法进行了深入分析，强调了它们的独特贡献、优势和局限性。此外，我们彻底比较了公开可用的模型，并在关键方面对其进行了评估，如推理时间和生成输出的人工评分质量。我们的目标是对当前谈话型头部生成的前景进行清晰简洁的概述，阐明不同方法之间的关系，并为未来的研究确定有希望的方向。这项调查将为对这一快速发展的领域感兴趣的研究人员和从业者提供宝贵的参考。 et.al.|[2308.16041](http://arxiv.org/abs/2308.16041)|null|
 
-<p align=right>(<a href=#updated-on-20240511>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240512>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
