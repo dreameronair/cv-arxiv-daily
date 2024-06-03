@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.06.02
+## Updated on 2024.06.03
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-09-28**|**OSM-Net: One-to-Many One-shot Talking Head Generation with Spontaneous Head Motions**|一次性会说话的头部生成没有明确的头部运动参考，因此很难生成具有头部运动的会说话的头。现有的一些作品只对嘴部区域进行编辑，生成静止的会说话的头，导致会说话的头部表现不真实。其他作品在音频信号和头部运动序列之间构建了一对一的映射，将模糊对应引入到映射中，因为当人们说出相同的内容时，头部运动中的行为可能不同。这种不合理的映射形式无法对多样性进行建模，并产生几乎静态甚至夸张的头部运动，这是不自然和奇怪的。因此，一次性会说话的头部生成任务实际上是一个一对多的不适定问题，人们在说话时会出现不同的头部运动。基于上述观察，我们提出了OSM-Net，这是一个具有自然头部运动的一对多的一次性谈话头部生成网络。OSM-Net构建了一个包含丰富多样的剪辑级头部运动特征的运动空间。空间的每个基础都代表了剪辑中有意义的头部运动的特征，而不仅仅是一帧，从而在说话的头部中提供了更连贯、更自然的运动变化。将驾驶音频映射到运动空间中，可以在合理的范围内对运动空间周围的各种运动特征进行采样，以实现一对多映射。此外，地标约束和时间窗口特征输入提高了表情特征提取和视频生成的准确性。大量实验表明，与其他方法相比，OSM-Net在合理的一对多映射范式下生成了更自然、逼真的头部运动。 et.al.|[2309.16148](http://arxiv.org/abs/2309.16148)|null|
 |**2023-10-12**|**Efficient Emotional Adaptation for Audio-Driven Talking-Head Generation**|音频驱动的会说话的头部合成是虚拟人相关应用的热门研究课题。然而，现有方法的灵活性和低效性是显著的局限性，需要昂贵的端到端训练来将情绪从指导视频转移到会说话的头部预测。在这项工作中，我们提出了音频驱动的谈话头部的情绪自适应（EAT）方法，该方法通过参数有效自适应，以经济高效的方式将情绪不可知的谈话头部模型转换为情绪可控的模型。我们的方法利用了一个预先训练的与情绪无关的谈话头部转换器，并从不同的角度引入了三种轻量级的适应（深度情绪提示、情绪变形网络和情绪适应模块），以实现精确而现实的情绪控制。我们的实验表明，我们的方法在广泛使用的基准测试上实现了最先进的性能，包括LRW和MEAD。此外，即使在情感训练视频稀少或不存在的情况下，我们的参数有效自适应也表现出显著的泛化能力。项目网站：https://yuangan.github.io/eat/ et.al.|[2309.04946](http://arxiv.org/abs/2309.04946)|**[link](https://github.com/yuangan/eat_code)**|
 
-<p align=right>(<a href=#updated-on-20240602>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240603>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
