@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.06.19
+## Updated on 2024.06.20
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-11-05**|**3D-Aware Talking-Head Video Motion Transfer**|会说话的头部视频的运动转移涉及生成具有主题视频的外观和驾驶视频的运动模式的新视频。当前的方法主要依赖于有限数量的主题图像和2D表示，从而忽略了充分利用主题视频中固有的多视图外观特征。在本文中，我们提出了一种新的3D感知会说话的头部视频运动传输网络Head3D，该网络通过递归网络从2D主题帧中生成可视觉解释的3D规范头部，从而充分利用主题外观信息。该方法的一个关键组成部分是自监督的3D头部几何学习模块，用于从2D主题视频帧中预测头部姿态和深度图。该模块便于在规范空间中估计3D头部，然后可以对其进行变换以与驱动视频帧对准。此外，我们使用基于注意力的融合网络将主题帧的背景和其他细节与3D主题头部相结合，以产生合成目标视频。我们在两个公开演讲的头部视频数据集上进行的广泛实验表明，Head3D在实际的交叉身份设置中优于2D和3D现有技术，有证据表明它可以很容易地适应姿势可控的新型视图合成任务。 et.al.|[2311.02549](http://arxiv.org/abs/2311.02549)|null|
 |**2023-11-02**|**LaughTalk: Expressive 3D Talking Head Generation with Laughter**|笑是一种独特的表达方式，对人类积极的社会互动至关重要。尽管目前的3D会说话的头部生成方法产生了令人信服的语言表达，但它们往往无法捕捉到笑声和微笑的活力和微妙之处，尽管它们在社会环境中很重要。在本文中，我们介绍了一项新任务，即生成既能清晰表达语音又能真实大笑的3D会说话的头。我们新策划的数据集包括2D大笑视频，以及伪注释和人工验证的3D FLAME参数和顶点。给定我们提出的数据集，我们提出了一个具有两阶段训练方案的强基线：模型首先学习说话，然后获得表达笑声的能力。大量实验表明，与现有方法相比，我们的方法在说话头部生成和表达笑声信号方面都表现良好。在我们提出的装配逼真化身的方法的基础上，我们进一步探索了潜在的应用。 et.al.|[2311.00994](http://arxiv.org/abs/2311.00994)|null|
 
-<p align=right>(<a href=#updated-on-20240619>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240620>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
