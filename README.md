@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.06.29
+## Updated on 2024.06.30
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-11-28**|**THInImg: Cross-modal Steganography for Presenting Talking Heads in Images**|跨模态隐写术是在公开可用的覆盖信号（不同于秘密信号的模态）中不引人注目地隐藏秘密信号的实践。虽然以前的方法主要集中在隐藏相对少量的信息，但我们提出了THInImg，它通过利用人脸的特性，成功地将冗长的音频数据隐藏在身份图像中（并随后解码会说话的头部视频），可以有效地用于秘密通信、传输和版权保护。THInImg由两部分组成：编码器和解码器。在编码器-解码器流水线内部，我们引入了一种新的架构，该架构大大提高了在图像中隐藏音频的能力。此外，我们的框架可以扩展到迭代地将多个音频片段隐藏到身份图像中，从而提供对权限的多级控制。我们进行了广泛的实验来证明我们的方法的有效性，证明THInImg可以在160x160分辨率的身份图像中呈现长达80秒的高质量谈话头部视频（包括音频）。 et.al.|[2311.17177](http://arxiv.org/abs/2311.17177)|null|
 |**2023-11-05**|**3D-Aware Talking-Head Video Motion Transfer**|会说话的头部视频的运动转移涉及生成具有主题视频的外观和驾驶视频的运动模式的新视频。当前的方法主要依赖于有限数量的主题图像和2D表示，从而忽略了充分利用主题视频中固有的多视图外观特征。在本文中，我们提出了一种新的3D感知会说话的头部视频运动传输网络Head3D，该网络通过递归网络从2D主题帧中生成可视觉解释的3D规范头部，从而充分利用主题外观信息。该方法的一个关键组成部分是自监督的3D头部几何学习模块，用于从2D主题视频帧中预测头部姿态和深度图。该模块便于在规范空间中估计3D头部，然后可以对其进行变换以与驱动视频帧对准。此外，我们使用基于注意力的融合网络将主题帧的背景和其他细节与3D主题头部相结合，以产生合成目标视频。我们在两个公开演讲的头部视频数据集上进行的广泛实验表明，Head3D在实际的交叉身份设置中优于2D和3D现有技术，有证据表明它可以很容易地适应姿势可控的新型视图合成任务。 et.al.|[2311.02549](http://arxiv.org/abs/2311.02549)|null|
 
-<p align=right>(<a href=#updated-on-20240629>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240630>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
