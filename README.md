@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.07.13
+## Updated on 2024.07.14
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-11-30**|**Talking Head(?) Anime from a Single Image 4: Improved Model and Its Distillation**|我们研究了创建一个可以从动漫角色的单个图像实时控制的角色模型的问题。这个问题的解决方案将大大降低创建化身、电脑游戏和其他交互式应用程序的成本。Talking Head Anime 3（THA3）是一个开源项目，试图直接解决这个问题。它接收（1）动漫角色上半身的图像和（2）45维姿势向量作为输入，并输出采取指定姿势的同一角色的新图像。可能的动作范围足以表达个人化身和某些类型的游戏角色。然而，该系统速度太慢，无法在普通PC上实时生成动画，其图像质量可以提高。本文从两个方面对THA3进行了改进。首先，我们提出了基于U-Nets的组成网络的新架构，该网络基于在现代生成模型中广泛使用的注意旋转角色的头部和身体。新架构始终比THA3基线产生更好的图像质量。然而，它们也使整个系统慢得多：生成一帧需要150毫秒。其次，我们提出了一种技术，将系统提炼成一个小网络（小于2 MB），该网络可以使用消费类游戏GPU实时生成512x512个动画帧（低于30 FPS），同时保持图像质量接近整个系统的图像质量。这一改进使整个系统适用于实时应用。 et.al.|[2311.17409](http://arxiv.org/abs/2311.17409)|null|
 |**2023-11-28**|**THInImg: Cross-modal Steganography for Presenting Talking Heads in Images**|交叉模态隐写术是一种将秘密信号隐藏在公开的覆盖信号中（与秘密信号的模态不同）的做法。虽然以前的方法主要集中在隐藏相对少量的信息上，但我们提出了THInImg，它通过利用人脸的特性，将冗长的音频数据（随后解码说话的头部视频）隐藏在身份图像中，这可以有效地用于隐蔽通信、传输和版权保护。THInImg由两部分组成：编码器和解码器。在编解码器流水线内部，我们引入了一种新的架构，大大提高了图像中隐藏音频的容量。此外，我们的框架可以扩展到迭代地将多个音频片段隐藏到身份图像中，从而提供对权限的多级控制。我们进行了广泛的实验来证明我们的方法的有效性，证明THInImg可以在160x160分辨率的身份图像中呈现长达80秒的高质量说话头视频（包括音频）。 et.al.|[2311.17177](http://arxiv.org/abs/2311.17177)|null|
 
-<p align=right>(<a href=#updated-on-20240713>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240714>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
