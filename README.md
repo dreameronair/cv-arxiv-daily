@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.07.29
+## Updated on 2024.07.30
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2024-04-28**|**SyncTalk: The Devil is in the Synchronization for Talking Head Synthesis**|在合成逼真的、语音驱动的说话头视频时实现高同步是一个重大挑战。传统的生成对抗网络（GAN）难以保持一致的面部身份，而神经辐射场（NeRF）方法虽然可以解决这个问题，但通常会产生不匹配的嘴唇动作、不充分的面部表情和不稳定的头部姿势。一个栩栩如生的会说话的头需要主体身份、嘴唇动作、面部表情和头部姿势的同步协调。缺乏这些同步是一个根本缺陷，导致不切实际和人为的结果。为了解决同步这一关键问题，我们引入了SyncTalk，它被认为是创造逼真对话头的“魔鬼”。这种基于NeRF的方法有效地保持了主体身份，增强了说话头合成的同步性和真实性。SyncTalk采用面部同步控制器将嘴唇动作与语音对齐，并创新性地使用3D面部混合形状模型来捕捉准确的面部表情。我们的头部同步稳定器优化了头部姿势，实现了更自然的头部运动。肖像同步生成器恢复头发细节，并将生成的头部与躯干融合在一起，以获得无缝的视觉体验。大量的实验和用户研究表明，SyncTalk在同步和真实性方面优于最先进的方法。我们建议您观看补充视频：https://ziqiaopeng.github.io/synctalk et.al.|[2311.17590](http://arxiv.org/abs/2311.17590)|**[link](https://github.com/ZiqiaoPeng/SyncTalk)**|
 |**2023-11-30**|**Talking Head(?) Anime from a Single Image 4: Improved Model and Its Distillation**|我们研究了创建一个可以从动漫角色的单个图像实时控制的角色模型的问题。这个问题的解决方案将大大降低创建化身、电脑游戏和其他交互式应用程序的成本。Talking Head Anime 3（THA3）是一个开源项目，试图直接解决这个问题。它接收（1）动漫角色上半身的图像和（2）45维姿势向量作为输入，并输出采取指定姿势的同一角色的新图像。可能的动作范围足以表达个人化身和某些类型的游戏角色。然而，该系统速度太慢，无法在普通PC上实时生成动画，其图像质量可以提高。本文从两个方面对THA3进行了改进。首先，我们提出了基于U-Nets的组成网络的新架构，该网络基于在现代生成模型中广泛使用的注意旋转角色的头部和身体。新架构始终比THA3基线产生更好的图像质量。然而，它们也使整个系统慢得多：生成一帧需要150毫秒。其次，我们提出了一种技术，将系统提炼成一个小网络（小于2 MB），该网络可以使用消费类游戏GPU实时生成512x512个动画帧（低于30 FPS），同时保持图像质量接近整个系统的图像质量。这一改进使整个系统适用于实时应用。 et.al.|[2311.17409](http://arxiv.org/abs/2311.17409)|null|
 
-<p align=right>(<a href=#updated-on-20240729>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240730>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
