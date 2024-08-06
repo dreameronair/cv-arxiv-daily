@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.08.05
+## Updated on 2024.08.06
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-12-07**|**VividTalk: One-Shot Audio-Driven Talking Head Generation Based on 3D Hybrid Prior**|近年来，音频驱动的说话头生成引起了人们的广泛关注，在嘴唇同步、富有表现力的面部表情、自然的头部姿势生成和高视频质量方面做出了许多努力。然而，由于音频和运动之间的一对多映射，还没有一个模型能够引领或捆绑所有这些指标。在本文中，我们提出了VividTalk，这是一个两阶段通用框架，支持生成具有上述所有属性的高视觉质量说话头视频。具体来说，在第一阶段，我们通过学习两种运动将音频映射到网格，包括非刚性表情运动和刚性头部运动。对于表情运动，采用混合形状和顶点作为中间表示，以最大限度地提高模型的表示能力。针对自然头部运动，提出了一种具有两阶段训练机制的可学习头部姿态码本。在第二阶段，我们提出了一种双分支运动矢量和一个生成器，将网格转换为密集运动，并逐帧合成高质量的视频。大量实验表明，所提出的VividTalk可以生成具有唇形同步和逼真度大幅增强的高视觉质量的说话头视频，并且在客观和主观比较方面优于先前最先进的作品。 et.al.|[2312.01841](http://arxiv.org/abs/2312.01841)|null|
 |**2024-04-28**|**SyncTalk: The Devil is in the Synchronization for Talking Head Synthesis**|在合成逼真的、语音驱动的说话头视频时实现高同步是一个重大挑战。传统的生成对抗网络（GAN）难以保持一致的面部身份，而神经辐射场（NeRF）方法虽然可以解决这个问题，但通常会产生不匹配的嘴唇动作、不充分的面部表情和不稳定的头部姿势。一个栩栩如生的会说话的头需要主体身份、嘴唇动作、面部表情和头部姿势的同步协调。缺乏这些同步是一个根本缺陷，导致不切实际和人为的结果。为了解决同步这一关键问题，我们引入了SyncTalk，它被认为是创造逼真对话头的“魔鬼”。这种基于NeRF的方法有效地保持了主体身份，增强了说话头合成的同步性和真实性。SyncTalk采用面部同步控制器将嘴唇动作与语音对齐，并创新性地使用3D面部混合形状模型来捕捉准确的面部表情。我们的头部同步稳定器优化了头部姿势，实现了更自然的头部运动。肖像同步生成器恢复头发细节，并将生成的头部与躯干融合在一起，以获得无缝的视觉体验。大量的实验和用户研究表明，SyncTalk在同步和真实性方面优于最先进的方法。我们建议您观看补充视频：https://ziqiaopeng.github.io/synctalk et.al.|[2311.17590](http://arxiv.org/abs/2311.17590)|**[link](https://github.com/ZiqiaoPeng/SyncTalk)**|
 
-<p align=right>(<a href=#updated-on-20240805>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240806>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
