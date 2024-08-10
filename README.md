@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.08.09
+## Updated on 2024.08.10
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-12-11**|**DiT-Head: High-Resolution Talking Head Synthesis using Diffusion Transformers**|我们提出了一种名为“DiT-head”的新型说话头合成流水线，该流水线基于扩散变换器，并使用音频作为条件来驱动扩散模型的去噪过程。我们的方法是可扩展的，可以推广到多个身份，同时产生高质量的结果。我们训练和评估了我们提出的方法，并将其与现有的说话头合成方法进行了比较。我们证明，我们的模型在视觉质量和唇形同步精度方面可以与这些方法竞争。我们的研究结果突出了我们提出的方法在广泛应用中的潜力，包括虚拟助手、娱乐和教育。有关结果和我们的用户研究的视频演示，请参阅我们的补充材料。 et.al.|[2312.06400](http://arxiv.org/abs/2312.06400)|null|
 |**2023-12-09**|**R2-Talker: Realistic Real-Time Talking Head Synthesis with Hash Grid Landmarks Encoding and Progressive Multilayer Conditioning**|动态NeRF最近在3D谈话肖像合成方面引起了越来越多的关注。尽管在渲染速度和视觉质量方面取得了进步，但在提高效率和有效性方面仍然存在挑战。我们提出了R2 Talker，这是一个高效且有效的框架，能够实现逼真的实时说话头合成。具体来说，我们使用多分辨率哈希网格，介绍了一种将面部地标编码为条件特征的新方法。该方法通过将任意地标映射到统一的特征空间，将地标结构无损编码为条件特征，解耦输入多样性和条件空间。我们进一步提出了一种在NeRF渲染管道中进行渐进式多层条件处理的方案，以实现有效的条件特征融合。与最先进的作品相比，我们的新方法具有以下优势：1）无损输入编码能够获得更精确的特征，从而产生卓越的视觉质量。输入和条件空间的解耦提高了泛化能力。2） 在每个MLP层融合条件特征和MLP输出增强了条件影响，从而实现了更准确的嘴唇合成和更好的视觉质量。3） 它紧凑地构建了条件特征的融合，显著提高了计算效率。 et.al.|[2312.05572](http://arxiv.org/abs/2312.05572)|null|
 
-<p align=right>(<a href=#updated-on-20240809>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240810>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
