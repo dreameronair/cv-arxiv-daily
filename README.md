@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.08.25
+## Updated on 2024.08.26
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2023-12-18**|**AE-NeRF: Audio Enhanced Neural Radiance Field for Few Shot Talking Head Synthesis**|音频驱动的说话头合成是一个有前景的话题，在数字人类、电影制作和虚拟现实中有着广泛的应用。与之前的研究相比，最近基于NeRF的方法在质量和保真度方面显示出优越性。然而，当涉及到少镜头说话头生成时，一个身份只有几秒钟的说话视频，出现了两个局限性：1）它们要么没有基础模型，作为快速收敛的面部先验，要么在构建先验时忽略了音频的重要性；2） 他们中的大多数人忽视了不同面部区域与音频之间的相关性，例如，嘴与音频相关，而耳朵与音频无关。本文中，我们提出了音频增强神经辐射场（AE-NeRF）来解决上述问题，它可以用较少的数据集生成新说话者的逼真肖像。具体来说，我们在参考方案的特征融合阶段引入了一个音频感知聚合模块，其中权重由参考图像和目标图像之间的音频相似性决定。然后，提出了一种音频对齐人脸生成策略，利用双NeRF框架分别对音频相关和音频无关区域进行建模。大量实验表明，AE NeRF在图像保真度、音频嘴唇同步和泛化能力方面超越了最先进的技术，即使在有限的训练集或训练迭代中也是如此。 et.al.|[2312.10921](http://arxiv.org/abs/2312.10921)|null|
 |**2024-08-10**|**DreamTalk: When Emotional Talking Head Generation Meets Diffusion Probabilistic Models**|情绪化说话的头代越来越受到人们的关注。以前的方法主要是基于GAN的，仍然难以在不同的情绪中一致地产生令人满意的结果，并且无法方便地指定个性化的情绪。在这项工作中，我们利用强大的扩散模型来解决这个问题，并提出了DreamTalk，这是一个采用精心设计的框架，可以释放扩散模型在生成情感对话头方面的潜力。具体来说，DreamTalk由三个关键组成部分组成：去噪网络、风格感知唇专家和风格预测器。基于扩散的去噪网络可以在不同的情绪中一致地合成高质量的音频驱动的面部运动。为了提高嘴唇运动的准确性和情感饱满度，我们引入了一种风格感知的嘴唇专家，可以在保持情感强度的同时指导嘴唇同步。为了更方便地指定个性化情绪，利用基于扩散的风格预测器直接从音频中预测个性化情绪，消除了对额外情绪参考的需要。通过这种方式，DreamTalk可以在不同的情绪中持续生成生动的说话面孔，并方便地指定个性化的情绪。大量实验验证了DreamTalk的有效性和优越性。该代码可在以下网址获得https://github.com/ali-vilab/dreamtalk. et.al.|[2312.09767](http://arxiv.org/abs/2312.09767)|**[link](https://github.com/ali-vilab/dreamtalk)**|
 
-<p align=right>(<a href=#updated-on-20240825>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240826>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
