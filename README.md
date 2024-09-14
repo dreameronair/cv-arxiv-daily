@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.09.13
+## Updated on 2024.09.14
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2024-02-27**|**Learning Dynamic Tetrahedra for High-Quality Talking Head Synthesis**|最近在隐式表示方面的工作，如神经辐射场（NeRF），已经推进了从视频序列中生成逼真和可动画化的头部化身。这些隐式方法仍然面临着视觉伪影和抖动，因为缺乏显式的几何约束对精确建模复杂的面部变形构成了根本性的挑战。在本文中，我们介绍了动态四面体（DynTet），这是一种新的混合表示，它通过神经网络对显式动态网格进行编码，以确保各种运动和视点之间的几何一致性。DynTet由基于坐标的网络参数化，该网络学习带符号距离、变形和材料纹理，将训练数据锚定到预定义的四面体网格中。利用Marching tetrahedra，DynTet有效地解码具有一致拓扑的纹理网格，通过可微光栅化器实现快速渲染，并通过像素损失进行监控。为了提高训练效率，我们结合了经典的3D可变形模型来促进几何学习，并定义了一个规范空间来简化纹理学习。由于DynTet中采用了有效的几何表示，这些优点很容易实现。与之前的工作相比，DynTet根据各种指标在保真度、唇形同步和实时性能方面都有显著提高。除了生成稳定且视觉上吸引人的合成视频外，我们的方法还输出动态网格，这有望实现许多新兴应用。 et.al.|[2402.17364](http://arxiv.org/abs/2402.17364)|**[link](https://github.com/zhangzc21/dyntet)**|
 |**2024-01-11**|**Jump Cut Smoothing for Talking Heads**|跳跃式剪辑为观看体验带来了突然的、有时是不必要的变化。我们提出了一种新的框架，用于在对话头视频的背景下平滑这些跳跃。我们利用视频中其他源帧的主体外观，将其与DensePose关键点和面部地标驱动的中级表示融合。为了实现运动，我们在切割周围的结束帧之间插值关键点和界标。然后，我们使用来自关键点和源帧的图像翻译网络来合成像素。由于关键点可能包含错误，我们提出了一种跨模态注意力方案，从每个关键点的多个选项中选择最合适的来源。通过利用这种中级表示，我们的方法可以获得比强视频插值基线更强的结果。我们在会说话的头部视频中的各种跳跃剪切上演示了我们的方法，例如剪切填充词、停顿，甚至随机剪切。我们的实验表明，我们可以实现无缝过渡，即使在具有挑战性的情况下，说话的头在跳投中旋转或剧烈移动。 et.al.|[2401.04718](http://arxiv.org/abs/2401.04718)|null|
 
-<p align=right>(<a href=#updated-on-20240913>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240914>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
