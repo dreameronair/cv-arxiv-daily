@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.09.17
+## Updated on 2024.09.18
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2024-03-11**|**A Comparative Study of Perceptual Quality Metrics for Audio-driven Talking Head Videos**|人工智能生成内容（AIGC）技术的快速发展推动了音频驱动的对话头生成，在实际应用中引起了相当大的研究关注。然而，性能评估研究滞后于说话头生成技术的发展。现有文献依赖于启发式定量指标，没有经过人工验证，阻碍了准确的进度评估。为了弥补这一差距，我们收集了四种生成方法生成的会说话的头部视频，并对视觉质量、嘴唇音频同步和头部运动自然性进行了受控的心理物理学实验。我们的实验验证了模型预测和人类注释之间的一致性，确定了比广泛使用的度量更符合人类观点的度量。我们相信，我们的工作将促进绩效评估和模型开发，在更广泛的背景下提供对AIGC的见解。代码和数据将在https://github.com/zwx8981/ADTH-QA. et.al.|[2403.06421](http://arxiv.org/abs/2403.06421)|**[link](https://github.com/zwx8981/adth-qa)**|
 |**2024-03-12**|**Style2Talker: High-Resolution Talking Head Generation with Emotion Style and Art Style**|尽管最近人们对自动动画音频驱动的说话头越来越感兴趣，但之前的努力主要集中在实现嘴唇与音频的同步，忽略了生成富有表现力的视频的两个关键要素：情感风格和艺术风格。本文提出了一种创新的音频驱动说话人脸生成方法，称为Style2Talker。它包括两个风格化阶段，即Style-E和Style-A，将文本控制的情感风格和图片控制的艺术风格整合到最终输出中。为了准备与视频相对应的稀缺情感文本描述，我们提出了一种无需人工的范式，该范式采用大规模预训练模型来自动注释现有视听数据集的情感文本标签。结合合成情感文本，Style-E阶段利用大规模CLIP模型提取情感表示，并将其与音频相结合，作为高效潜在扩散模型的条件，该模型旨在产生3DMM模型的情感运动系数。进入Style-A阶段，我们开发了一个系数驱动的运动生成器和一个嵌入在著名的StyleGAN中的艺术特定风格路径。这使我们能够使用生成的情感运动系数和艺术风格的源图片来合成高分辨率的艺术风格化的说话头视频。此外，为了更好地保留图像细节并避免伪影，我们为StyleGAN提供了从身份图像中提取的多尺度内容特征，并分别通过设计的内容编码器和细化网络细化其中间特征图。大量的实验结果表明，我们的方法在音频嘴唇同步以及情感风格和艺术风格的表现方面优于现有的最先进的方法。 et.al.|[2403.06365](http://arxiv.org/abs/2403.06365)|null|
 
-<p align=right>(<a href=#updated-on-20240917>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20240918>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
