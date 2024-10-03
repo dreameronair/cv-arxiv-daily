@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.10.02
+## Updated on 2024.10.03
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2024-09-25**|**ScanTalk: 3D Talking Heads from Unregistered Scans**|语音驱动的3D对话头生成已成为研究人员感兴趣的一个重要领域，带来了许多挑战。现有的方法受到具有固定拓扑的面动画的约束，其中建立了逐点对应关系，并且点的数量和顺序在模型可以动画化的所有身份中保持一致。在这项工作中，我们提出了\textbf{ScanTalk}，这是一个能够在包括扫描数据在内的任意拓扑中为3D人脸设置动画的新框架。我们的方法依赖于DiffusionNet架构来克服固定的拓扑约束，为更灵活、更逼真的3D动画提供了有前景的途径。通过利用DiffusionNet的强大功能，ScanTalk不仅可以适应不同的面部结构，而且在处理扫描数据时还可以保持保真度，从而增强生成的3D对话头的真实性和多功能性。通过与最先进的方法进行全面比较，我们验证了我们的方法的有效性，证明了它能够产生与现有技术相当的真实对话头。虽然我们的主要目标是开发一种不受拓扑约束的通用方法，但所有最先进的方法都受到这些限制的约束。用于复制我们结果的代码和预训练模型可在以下网址获得https://github.com/miccunifi/ScanTalk . et.al.|[2403.10942](http://arxiv.org/abs/2403.10942)|**[link](https://github.com/miccunifi/scantalk)**|
 |**2024-03-11**|**A Comparative Study of Perceptual Quality Metrics for Audio-driven Talking Head Videos**|人工智能生成内容（AIGC）技术的快速发展推动了音频驱动的对话头生成，在实际应用中引起了相当大的研究关注。然而，性能评估研究滞后于说话头生成技术的发展。现有文献依赖于启发式定量指标，没有经过人工验证，阻碍了准确的进度评估。为了弥补这一差距，我们收集了四种生成方法生成的会说话的头部视频，并对视觉质量、嘴唇音频同步和头部运动自然性进行了受控的心理物理学实验。我们的实验验证了模型预测和人类注释之间的一致性，确定了比广泛使用的度量更符合人类观点的度量。我们相信，我们的工作将促进绩效评估和模型开发，在更广泛的背景下提供对AIGC的见解。代码和数据将在https://github.com/zwx8981/ADTH-QA. et.al.|[2403.06421](http://arxiv.org/abs/2403.06421)|**[link](https://github.com/zwx8981/adth-qa)**|
 
-<p align=right>(<a href=#updated-on-20241002>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20241003>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
