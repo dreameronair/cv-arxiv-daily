@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.10.14
+## Updated on 2024.10.15
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2024-09-11**|**EmoVOCA: Speech-Driven Emotional 3D Talking Heads**|近年来，3D对话头生成领域取得了重大进展。该领域的一个显著挑战在于将语音相关运动与表情动态相结合，这主要是由于缺乏将口语句子的多样性与各种面部表情相结合的全面3D数据集造成的。尽管文献工作试图利用2D视频数据和参数化3D模型作为解决方法，但在联合建模这两种运动时，这些方法仍然存在局限性。在这项工作中，我们从不同的角度解决了这个问题，并提出了一种创新的数据驱动技术，用于创建一个名为EmoVOCA的合成数据集，该数据集是通过组合一组无表情的3D说话头和一组3D表情序列获得的。为了展示这种方法的优点和数据集的质量，我们设计并训练了一个情感3D说话头生成器，该生成器接受3D面部、音频文件、情感标签和强度值作为输入，并学习用面部的表现特征来动画化音频同步的嘴唇动作。与文献中表现最佳的方法相比，使用我们的数据和生成器证据进行定量和定性综合实验，在合成令人信服的动画方面具有更高的能力。我们的代码和预训练模型将可用。 et.al.|[2403.12886](http://arxiv.org/abs/2403.12886)|null|
 |**2024-09-25**|**ScanTalk: 3D Talking Heads from Unregistered Scans**|语音驱动的3D对话头生成已成为研究人员感兴趣的一个重要领域，带来了许多挑战。现有的方法受到具有固定拓扑的面动画的约束，其中建立了逐点对应关系，并且点的数量和顺序在模型可以动画化的所有身份中保持一致。在这项工作中，我们提出了\textbf{ScanTalk}，这是一个能够在包括扫描数据在内的任意拓扑中为3D人脸设置动画的新框架。我们的方法依赖于DiffusionNet架构来克服固定的拓扑约束，为更灵活、更逼真的3D动画提供了有前景的途径。通过利用DiffusionNet的强大功能，ScanTalk不仅可以适应不同的面部结构，而且在处理扫描数据时还可以保持保真度，从而增强生成的3D对话头的真实性和多功能性。通过与最先进的方法进行全面比较，我们验证了我们的方法的有效性，证明了它能够产生与现有技术相当的真实对话头。虽然我们的主要目标是开发一种不受拓扑约束的通用方法，但所有最先进的方法都受到这些限制的约束。用于复制我们结果的代码和预训练模型可在以下网址获得https://github.com/miccunifi/ScanTalk . et.al.|[2403.10942](http://arxiv.org/abs/2403.10942)|**[link](https://github.com/miccunifi/scantalk)**|
 
-<p align=right>(<a href=#updated-on-20241014>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20241015>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
