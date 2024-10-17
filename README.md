@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.10.16
+## Updated on 2024.10.17
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2024-03-23**|**Adaptive Super Resolution For One-Shot Talking-Head Generation**|单镜头说话头生成学习在相同或不同身份视频的驱动下，将说话头视频与一个源肖像图像合成。通常，这些方法需要通过雅可比矩阵或面部图像扭曲进行基于平面的像素变换，以生成新的姿势。使用单个图像源和像素位移的限制通常会影响合成图像的清晰度。一些方法试图通过引入额外的超分辨率模块来提高合成视频的质量，但这无疑会增加计算消耗并破坏原始数据分布。在这项工作中，我们提出了一种自适应的高质量说话头视频生成方法，该方法在没有额外预训练模块的情况下合成高分辨率视频。具体来说，受现有超分辨率方法的启发，我们对单镜头源图像进行下采样，然后通过编码器-解码器模块自适应地重建高频细节，从而提高了视频清晰度。我们的方法通过一种简单而有效的策略，不断提高生成视频的质量，并得到定量和定性评估的证实。代码和演示视频可在以下网址获得：\url{https://github.com/Songluchuan/AdaSR-TalkingHead/}. et.al.|[2403.15944](http://arxiv.org/abs/2403.15944)|**[link](https://github.com/songluchuan/adasr-talkinghead)**|
 |**2024-09-11**|**EmoVOCA: Speech-Driven Emotional 3D Talking Heads**|近年来，3D对话头生成领域取得了重大进展。该领域的一个显著挑战在于将语音相关运动与表情动态相结合，这主要是由于缺乏将口语句子的多样性与各种面部表情相结合的全面3D数据集造成的。尽管文献工作试图利用2D视频数据和参数化3D模型作为解决方法，但在联合建模这两种运动时，这些方法仍然存在局限性。在这项工作中，我们从不同的角度解决了这个问题，并提出了一种创新的数据驱动技术，用于创建一个名为EmoVOCA的合成数据集，该数据集是通过组合一组无表情的3D说话头和一组3D表情序列获得的。为了展示这种方法的优点和数据集的质量，我们设计并训练了一个情感3D说话头生成器，该生成器接受3D面部、音频文件、情感标签和强度值作为输入，并学习用面部的表现特征来动画化音频同步的嘴唇动作。与文献中表现最佳的方法相比，使用我们的数据和生成器证据进行定量和定性综合实验，在合成令人信服的动画方面具有更高的能力。我们的代码和预训练模型将可用。 et.al.|[2403.12886](http://arxiv.org/abs/2403.12886)|null|
 
-<p align=right>(<a href=#updated-on-20241016>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20241017>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
