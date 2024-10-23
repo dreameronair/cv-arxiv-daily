@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.10.22
+## Updated on 2024.10.23
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2024-03-28**|**MoDiTalker: Motion-Disentangled Diffusion Model for High-Fidelity Talking Head Generation**|传统的基于GAN的说话头生成模型往往质量有限，训练不稳定。最近基于扩散模型的方法旨在解决这些局限性并提高保真度。然而，它们仍然面临着挑战，包括广泛的采样时间和由于扩散模型的高度随机性而难以保持时间一致性。为了克服这些挑战，我们提出了一种新的用于高质量说话头生成的运动解纠缠扩散模型，称为MoDiTalker。我们介绍了两个模块：音频到运动（AToM），旨在从音频生成同步的嘴唇运动，以及运动到视频（MToV），设计用于根据生成的运动生成高质量的头部视频。AToM擅长通过利用音频注意力机制捕捉微妙的嘴唇动作。此外，MToV通过利用高效的三平面表示来增强时间一致性。我们在标准基准上进行的实验表明，与现有模型相比，我们的模型具有更优的性能。我们还提供全面的消融研究和用户研究结果。 et.al.|[2403.19144](http://arxiv.org/abs/2403.19144)|**[link](https://github.com/KU-CVLAB/MoDiTalker)**|
 |**2024-03-23**|**Adaptive Super Resolution For One-Shot Talking-Head Generation**|单镜头说话头生成学习在相同或不同身份视频的驱动下，将说话头视频与一个源肖像图像合成。通常，这些方法需要通过雅可比矩阵或面部图像扭曲进行基于平面的像素变换，以生成新的姿势。使用单个图像源和像素位移的限制通常会影响合成图像的清晰度。一些方法试图通过引入额外的超分辨率模块来提高合成视频的质量，但这无疑会增加计算消耗并破坏原始数据分布。在这项工作中，我们提出了一种自适应的高质量说话头视频生成方法，该方法在没有额外预训练模块的情况下合成高分辨率视频。具体来说，受现有超分辨率方法的启发，我们对单镜头源图像进行下采样，然后通过编码器-解码器模块自适应地重建高频细节，从而提高了视频清晰度。我们的方法通过一种简单而有效的策略，不断提高生成视频的质量，并得到定量和定性评估的证实。代码和演示视频可在以下网址获得：\url{https://github.com/Songluchuan/AdaSR-TalkingHead/}. et.al.|[2403.15944](http://arxiv.org/abs/2403.15944)|**[link](https://github.com/songluchuan/adasr-talkinghead)**|
 
-<p align=right>(<a href=#updated-on-20241022>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20241023>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
