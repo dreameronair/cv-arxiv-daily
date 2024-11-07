@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.11.06
+## Updated on 2024.11.07
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2024-04-02**|**EDTalk: Efficient Disentanglement for Emotional Talking Head Synthesis**|实现对多个面部动作的解耦控制并适应不同的输入方式，大大增强了会说话的一代的应用和娱乐性。这需要深入探索面部特征的解耦空间，确保它们a）独立运行而不相互干扰，b）可以保留以与不同的模态输入共享，这两个方面在现有方法中经常被忽视。为了解决这一差距，本文提出了一种新的用于说话头生成的高效去纠缠框架（EDTalk）。我们的框架允许根据视频或音频输入对嘴形、头部姿势和情绪表达进行单独操纵。具体来说，我们使用三个轻量级模块将面部动态分解为三个不同的潜在空间，分别表示嘴巴、姿势和表情。每个空间都有一组可学习的基，其线性组合定义了特定的运动。为了确保独立性并加快训练速度，我们加强了基地之间的正交性，并设计了一种有效的训练策略，在不依赖外部知识的情况下将运动责任分配给每个空间。然后将学习到的库存储在相应的库中，从而实现具有音频输入的共享视觉先验。此外，考虑到每个空间的特性，我们提出了一种用于音频驱动的说话头合成的音频到运动模块。实验证明了EDTalk的有效性。我们建议您查看项目网站：https://tanshuai0219.github.io/EDTalk/ et.al.|[2404.01647](http://arxiv.org/abs/2404.01647)|null|
 |**2024-03-28**|**MoDiTalker: Motion-Disentangled Diffusion Model for High-Fidelity Talking Head Generation**|传统的基于GAN的说话头生成模型往往质量有限，训练不稳定。最近基于扩散模型的方法旨在解决这些局限性并提高保真度。然而，它们仍然面临着挑战，包括广泛的采样时间和由于扩散模型的高度随机性而难以保持时间一致性。为了克服这些挑战，我们提出了一种新的用于高质量说话头生成的运动解纠缠扩散模型，称为MoDiTalker。我们介绍了两个模块：音频到运动（AToM），旨在从音频生成同步的嘴唇运动，以及运动到视频（MToV），设计用于根据生成的运动生成高质量的头部视频。AToM擅长通过利用音频注意力机制捕捉微妙的嘴唇动作。此外，MToV通过利用高效的三平面表示来增强时间一致性。我们在标准基准上进行的实验表明，与现有模型相比，我们的模型具有更优的性能。我们还提供全面的消融研究和用户研究结果。 et.al.|[2403.19144](http://arxiv.org/abs/2403.19144)|**[link](https://github.com/KU-CVLAB/MoDiTalker)**|
 
-<p align=right>(<a href=#updated-on-20241106>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20241107>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
