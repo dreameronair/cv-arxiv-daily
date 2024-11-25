@@ -28,8 +28,8 @@ keywords:
      #   filters: ["multimodal", "large model", "vision", "transformer", "GPT", "visual"]
     #"Diffusion": 
      #   filters: ["Diffusion", "video generation", "image generation", "control", "Synthesis"]
-    "avatar":
-         filters: [ti:"talking head",ti:"digital human"]
+    #"avatar":
+        # filters: [ti:"talking head",ti:"digital human"]
         # filters: [avatar,talking head, animate, motion,  digital human, charactor, Animatable Human]
    # "gaussian splatting":
      #   filters: ["3D", "reconstruction", "render", "generation"]
