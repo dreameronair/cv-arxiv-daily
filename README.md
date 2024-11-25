@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-## Updated on 2024.11.24
+## Updated on 2024.11.25
 > Usage instructions: [here](./docs/README.md#usage)
 
 <details>
@@ -48,7 +48,7 @@
 |**2024-04-07**|**GvT: A Graph-based Vision Transformer with Talking-Heads Utilizing Sparsity, Trained from Scratch on Small Datasets**|视觉变换器（ViTs）在大规模图像分类中取得了令人印象深刻的结果。然而，当在小数据集上从头开始训练时，ViT和卷积神经网络（CNN）之间仍然存在显著的性能差距，这归因于缺乏归纳偏差。为了解决这个问题，我们提出了一种基于图的视觉变换器（GvT），它利用了图卷积投影和图池。在每个块中，查询和关键字是通过基于空间邻接矩阵的图卷积投影来计算的，而点积注意力则用于另一个图卷积来生成值。当使用更多的注意力头时，查询和键的维数会降低，使它们的点积成为一个无信息的匹配函数。为了克服注意力低阶瓶颈，我们采用了基于双线性混合特征和稀疏选择注意力张量的说话头技术。这允许过滤后的注意力得分之间的交互，并使每个注意力机制都依赖于所有查询和关键字。此外，我们在两个中间块之间应用图池，以减少令牌数量并更有效地聚合语义信息。我们的实验结果表明，GvT产生了与深度卷积网络相当或更优的结果，并且在没有对大型数据集进行预训练的情况下超越了视觉变换器。我们提出的模型的代码可以在网站上公开获得。 et.al.|[2404.04924](http://arxiv.org/abs/2404.04924)|null|
 |**2024-04-02**|**EDTalk: Efficient Disentanglement for Emotional Talking Head Synthesis**|实现对多个面部动作的解耦控制并适应不同的输入方式，大大增强了会说话的一代的应用和娱乐性。这需要深入探索面部特征的解耦空间，确保它们a）独立运行而不相互干扰，b）可以保留以与不同的模态输入共享，这两个方面在现有方法中经常被忽视。为了解决这一差距，本文提出了一种新的用于说话头生成的高效去纠缠框架（EDTalk）。我们的框架允许根据视频或音频输入对嘴形、头部姿势和情绪表达进行单独操纵。具体来说，我们使用三个轻量级模块将面部动态分解为三个不同的潜在空间，分别表示嘴巴、姿势和表情。每个空间都有一组可学习的基，其线性组合定义了特定的运动。为了确保独立性并加快训练速度，我们加强了基地之间的正交性，并设计了一种有效的训练策略，在不依赖外部知识的情况下将运动责任分配给每个空间。然后将学习到的库存储在相应的库中，从而实现具有音频输入的共享视觉先验。此外，考虑到每个空间的特性，我们提出了一种用于音频驱动的说话头合成的音频到运动模块。实验证明了EDTalk的有效性。我们建议您查看项目网站：https://tanshuai0219.github.io/EDTalk/ et.al.|[2404.01647](http://arxiv.org/abs/2404.01647)|null|
 
-<p align=right>(<a href=#updated-on-20241124>back to top</a>)</p>
+<p align=right>(<a href=#updated-on-20241125>back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/Vincentqyw/cv-arxiv-daily.svg?style=for-the-badge
 [contributors-url]: https://github.com/Vincentqyw/cv-arxiv-daily/graphs/contributors
